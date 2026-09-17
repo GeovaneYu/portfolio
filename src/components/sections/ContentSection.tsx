@@ -37,7 +37,8 @@ export default function ContentSection() {
                 {job.role}
               </h3>
               <div className="font-mono text-[11px] tracking-wide text-muted mt-1">
-                {job.company} · {job.location}
+                {job.company}
+                {job.location ? ` · ${job.location}` : ""}
               </div>
               <p className="mt-3 text-[15px] leading-[1.65] text-muted max-w-3xl">{job.description}</p>
             </motion.li>
