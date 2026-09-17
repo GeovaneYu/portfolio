@@ -1,0 +1,18 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+.vite/
+
+# SO / editores
+.DS_Store
+Thumbs.db
+*.log
+
+# Env
+.env
+.env.local
+
+# Testes / coverage
+coverage/
