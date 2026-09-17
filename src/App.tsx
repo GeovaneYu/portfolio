@@ -15,7 +15,7 @@ const basename = import.meta.env.BASE_URL;
 const App = () => (
   <ErrorBoundary>
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider attribute="class" defaultTheme="system" storageKey="portfolio-ui-theme" disableTransitionOnChange>
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="portfolio-ui-theme" disableTransitionOnChange>
         <TooltipProvider>
           <Toaster />
           <Sonner />
