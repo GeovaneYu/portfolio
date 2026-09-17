@@ -105,14 +105,6 @@ Profissional de TI
           BAIXAR CV (PDF)
         </a>
         <a
-          href={`${import.meta.env.BASE_URL}CV-Geovane-Gofredo-2026-EN.pdf`}
-          download
-          className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground hover:border-accent/30 hover:bg-surface-hover transition-colors"
-        >
-          <Download className="h-3.5 w-3.5" />
-          DOWNLOAD CV (EN)
-        </a>
-        <a
           href={personalInfo.whatsapp}
           target="_blank"
           rel="noopener noreferrer"
