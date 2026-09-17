@@ -24,7 +24,7 @@ export const personalInfo: PersonalInfo = {
   phone: "(11) 96882-8204",
   whatsapp: `https://wa.me/5511968828204?text=${whatsappMessage}`,
   bio: "Profissional de TI com mais de 14 anos em infraestrutura, suporte avançado e gestão técnica de ambientes corporativos. Atuo com administração de redes, servidores, segurança e condução de projetos de melhoria. Perfil proativo, focado em estabilidade operacional e visão estratégica para otimização de ambientes críticos. Experiência direta com cliente corporativo, assumindo responsabilidade técnica, organização do ambiente e entrega de soluções com autonomia para times globais.",
-    skills: "Gestão, Liderança, Gestão de Incidentes, Gestão de Problemas, Projetos de Infraestrutura, ITSM, ITIL, COBIT, Scrum, Kanban, Ágil, Jira, Confluence, Markdown, SLA, Melhoria Contínua, Governança de TI, Windows Server, AD, GPO, DNS/DHCP, PowerShell, Linux, Proxmox, Virtualização, Docker, Backup e Restore, Monitoramento, M365, Azure, Entra ID, Intune, Windows Autopilot, MDM, Apple Business Manager, iPhone, Android, Exchange Admin, Teams Admin, Redes, Switching/Routing, Firewall, VPN, Wi-Fi Corporativo, Cabeamento Estruturado, Antivírus Corporativo, Hardware",
+    skills: "Gestão, Liderança, Gestão de Incidentes, Gestão de Problemas, Projetos de Infraestrutura, ITSM, ITIL, COBIT, Scrum, Kanban, Ágil, Jira, Confluence, Markdown, SLA, Melhoria Contínua, Governança de TI, Windows Server, AD, GPO, DNS/DHCP, PowerShell, CLI, Linux, Proxmox, Virtualização, Docker, Backup e Restore, Monitoramento, M365, Azure, Entra ID, Intune, Windows Autopilot, MDM, Apple Business Manager, iPhone, Android, Exchange Admin, Teams Admin, Redes, Switching/Routing, Firewall, VPN, Wi-Fi Corporativo, Cabeamento Estruturado, Antivírus Corporativo, Hardware",
 };
 
 export const experience: Experience[] = [
@@ -116,7 +116,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     category: "Sistemas e Servidores",
-    skills: "Windows Server, Active Directory, GPO, DNS/DHCP, PowerShell, Linux, Proxmox, Virtualização, Docker, VPS, Backup e Restore, Monitoramento, MacOS",
+    skills: "Windows Server, Active Directory, GPO, DNS/DHCP, PowerShell, CLI, Linux, Proxmox, Virtualização, Docker, VPS, Backup e Restore, Monitoramento, MacOS",
   },
   {
     category: "Cloud e Produtividade",
