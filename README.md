@@ -1,8 +1,8 @@
 # Portfólio — Geovane Gofredo
 
-Tech Lead de Operações e Infraestrutura de TI — mais de 14 anos de experiência. Portfólio editorial com modo claro/escuro, animações e foco em performance.
+Especialista Bilíngue em Infraestrutura e Operações de TI — mais de 14 anos de experiência. Portfólio editorial com modo claro/escuro, animações e foco em performance.
 
-**Demo:** https://geovaneyu.github.io/resume/ · **Cartão:** [/cartao-visita.html](https://geovaneyu.github.io/resume/cartao-visita.html) · **Assinatura:** [/email-signature.html](https://geovaneyu.github.io/resume/email-signature.html)
+**Demo:** https://geovaneyu.github.io/portfolio/ · **Cartão:** [/cartao-visita.html](https://geovaneyu.github.io/portfolio/cartao-visita.html) · **Assinatura:** [/email-signature.html](https://geovaneyu.github.io/portfolio/email-signature.html)
 
 ## Stack
 
@@ -13,8 +13,8 @@ Tech Lead de Operações e Infraestrutura de TI — mais de 14 anos de experiên
 ## Rodar local
 
 ```sh
-git clone https://github.com/GeovaneYu/resume.git
-cd resume/portfolio
+git clone https://github.com/GeovaneYu/portfolio.git
+cd portfolio
 npm install
 npm run dev      # http://localhost:8080/
 npm run build    # dist/
@@ -42,7 +42,7 @@ public/
 GitHub Pages via **Actions** (`.github/workflows/deploy.yml`):
 
 - Push em `main` → `bun install` → `vite build` → `actions/deploy-pages`
-- `vite.config.ts` com `base: GITHUB_ACTIONS ? '/resume/' : '/'` — funciona em `/` (Lovable/local) e `/resume/` (Pages)
+- `vite.config.ts` com `base: GITHUB_ACTIONS ? '/portfolio/' : '/'` — funciona em `/` (local) e `/portfolio/` (Pages)
 - Habilite em **Settings → Pages → Source: GitHub Actions**
 
 ## Personalização
