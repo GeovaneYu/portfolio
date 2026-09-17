@@ -14,7 +14,7 @@ export default function ThemeToggle() {
         aria-label="Alternar tema"
         className="h-8 w-8 rounded-lg border border-border bg-surface flex items-center justify-center opacity-50"
       >
-        <Sun className="h-4 w-4" />
+        <Moon className="h-4 w-4" />
       </button>
     );
   }
