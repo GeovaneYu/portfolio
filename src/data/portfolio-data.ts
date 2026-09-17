@@ -24,7 +24,7 @@ export const personalInfo: PersonalInfo = {
   phone: "(11) 96882-8204",
   whatsapp: `https://wa.me/5511968828204?text=${whatsappMessage}`,
   bio: "Profissional de TI com mais de 14 anos em infraestrutura, suporte avançado e gestão técnica de ambientes corporativos. Atuo com administração de redes, servidores, segurança e condução de projetos de melhoria. Perfil proativo, focado em estabilidade operacional e visão estratégica para otimização de ambientes críticos. Experiência direta com cliente corporativo, assumindo responsabilidade técnica, organização do ambiente e entrega de soluções com autonomia para times globais.",
-  skills: "Liderança Técnica, Gestão de Incidentes, Projetos de Infraestrutura, ITSM, ITIL, Scrum, Kanban, Windows Server, AD, Linux, Proxmox, Docker, M365, Azure, Intune, Redes, Firewall, VPN",
+    skills: "Liderança Técnica, Gestão de Incidentes, Gestão de Problemas, Projetos de Infraestrutura, ITSM, ITIL, Scrum, Kanban, SLA, Melhoria Contínua, Governança de TI, Windows Server, AD, GPO, DNS/DHCP, Linux, Proxmox, Virtualização, Docker, Backup e Restore, Monitoramento, M365, Azure, Entra ID, Intune, MDM, Apple Business Manager, Exchange Admin, Teams Admin, Redes, Switching/Routing, Firewall, VPN, Wi-Fi Corporativo, Cabeamento Estruturado, Antivírus Corporativo, Hardware",
 };
 
 export const experience: Experience[] = [
@@ -112,18 +112,18 @@ export const languages: Language[] = [
 export const skillCategories: SkillCategory[] = [
   {
     category: "Gestão e Operações",
-    skills: "Liderança Técnica, Gestão de Incidentes, ITSM, ITIL, Scrum, Kanban",
+    skills: "Liderança Técnica, Gestão de Incidentes, Gestão de Problemas, Projetos de Infraestrutura, ITSM, ITIL, Scrum, Kanban, SLA, Melhoria Contínua, Governança de TI",
   },
   {
     category: "Sistemas e Servidores",
-    skills: "Windows Server, Active Directory, Linux, Proxmox, Docker, VPS, MacOS",
+    skills: "Windows Server, Active Directory, GPO, DNS/DHCP, Linux, Proxmox, Virtualização, Docker, VPS, Backup e Restore, Monitoramento, MacOS",
   },
   {
     category: "Cloud e Produtividade",
-    skills: "Microsoft 365, Azure, Intune, Exchange, Teams",
+    skills: "Microsoft 365, Azure, Entra ID, Intune, MDM, Apple Business Manager, Exchange Admin, Teams Admin, Teams",
   },
   {
     category: "Infraestrutura e Redes",
-    skills: "Redes, Firewall, VPN, VLAN, Cabeamento, Hardware",
+    skills: "Redes, Switching/Routing, Firewall, VPN, Wi-Fi Corporativo, VLAN, Cabeamento Estruturado, Antivírus Corporativo, Hardware",
   },
 ];
