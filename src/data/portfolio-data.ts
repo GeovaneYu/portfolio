@@ -30,7 +30,7 @@ export const personalInfo: PersonalInfo = {
 export const experience: Experience[] = [
   {
     id: "exp-0",
-    company: "Stefanini Brasil",
+    company: "Stefanini",
     role: "Especialista Bilíngue | Infraestrutura & Operações de TI",
     location: "",
     startDate: "2026-09",
