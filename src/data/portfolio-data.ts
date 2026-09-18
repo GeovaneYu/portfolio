@@ -58,7 +58,7 @@ export const experience: Experience[] = [
     startDate: "2017-11",
     endDate: "2022-06",
     description:
-      "Suporte bilíngue para Rockwell Automation (global). Atuação em suporte técnico presencial em ambiente corporativo e industrial, prestando atendimento a usuários locais e internacionais e garantindo a estabilidade da infraestrutura de TI nas operações.\n\nPrincipais atividades:\n• Atendimento de chamados técnicos nível 2 e 3 em ambiente corporativo\n• Suporte presencial a usuários, estações de trabalho e periféricos\n• Diagnóstico e resolução de incidentes em hardware, software e rede\n• Suporte a infraestrutura de TI em ambiente de escritório e operação\n• Instalação, configuração e substituição de equipamentos de TI\n• Interface com equipes globais de suporte e fornecedores\n• Atendimento bilíngue a usuários e times internacionais (português e inglês)\n• Apoio em projetos de melhoria e implantação de infraestrutura",
+      "Suporte bilíngue para Rockwell Automation (global). Atuação em suporte técnico presencial em ambiente corporativo e industrial, prestando atendimento a usuários locais e internacionais e garantindo a estabilidade da infraestrutura de TI nas operações.\n\nPrincipais atividades:\nAtendimento de chamados técnicos nível 2 e 3 em ambiente corporativo\nSuporte presencial a usuários, estações de trabalho e periféricos\nDiagnóstico e resolução de incidentes em hardware, software e rede\nSuporte a infraestrutura de TI em ambiente de escritório e operação\nInstalação, configuração e substituição de equipamentos de TI\nInterface com equipes globais de suporte e fornecedores\nAtendimento bilíngue a usuários e times internacionais (português e inglês)\nApoio em projetos de melhoria e implantação de infraestrutura",
     current: false,
   },
   {
@@ -69,7 +69,7 @@ export const experience: Experience[] = [
     startDate: "2015-10",
     endDate: "2016-09",
     description:
-      "Suporte para Cielo e Rhodia Solvay.\n\nPrincipais atividades:\n• Atendimento de chamados técnicos nível 1 e 2\n• Suporte a usuários locais e internacionais (português e inglês)\n• Diagnóstico e resolução de incidentes em hardware, software e rede\n• Instalação e configuração de equipamentos e estações de trabalho\n• Apoio em atividades de infraestrutura e suporte a operações de TI",
+      "Suporte para Cielo e Rhodia Solvay.\n\nPrincipais atividades:\nAtendimento de chamados técnicos nível 1 e 2\nSuporte a usuários locais e internacionais (português e inglês)\nDiagnóstico e resolução de incidentes em hardware, software e rede\nInstalação e configuração de equipamentos e estações de trabalho\nApoio em atividades de infraestrutura e suporte a operações de TI",
     current: false,
   },
   {
@@ -80,7 +80,7 @@ export const experience: Experience[] = [
     startDate: "2013-05",
     endDate: "2015-10",
     description:
-      "Suporte Windows para Banco do Brasil e Mapfre (Telefonica/Vivo). Atuação em suporte técnico.\n\nPrincipais atividades:\n• Atendimento de chamados de suporte nível 1 e 2\n• Diagnóstico e resolução de problemas em estações de trabalho e periféricos\n• Instalação e configuração de equipamentos de rede e dispositivos corporativos\n• Suporte a ambientes Windows e aplicações corporativas\n• Apoio em projetos de implantação e melhorias de infraestrutura",
+      "Suporte Windows para Banco do Brasil e Mapfre (Telefonica/Vivo). Atuação em suporte técnico.\n\nPrincipais atividades:\nAtendimento de chamados de suporte nível 1 e 2\nDiagnóstico e resolução de problemas em estações de trabalho e periféricos\nInstalação e configuração de equipamentos de rede e dispositivos corporativos\nSuporte a ambientes Windows e aplicações corporativas\nApoio em projetos de implantação e melhorias de infraestrutura",
     current: false,
   },
   {
@@ -91,7 +91,7 @@ export const experience: Experience[] = [
     startDate: "2012-01",
     endDate: "2012-12",
     description:
-      "Atuação em suporte técnico presencial a usuários e estações de trabalho em ambiente corporativo.\n\nPrincipais atividades:\n• Atendimento de chamados de suporte nível 1\n• Manutenção básica de computadores e periféricos\n• Instalação e configuração de sistemas operacionais e softwares corporativos\n• Suporte a rede local (cabeamento, pontos de rede e conectividade)\n• Apoio em atividades de infraestrutura e suporte de campo",
+      "Atuação em suporte técnico presencial a usuários e estações de trabalho em ambiente corporativo.\n\nPrincipais atividades:\nAtendimento de chamados de suporte nível 1\nManutenção básica de computadores e periféricos\nInstalação e configuração de sistemas operacionais e softwares corporativos\nSuporte a rede local (cabeamento, pontos de rede e conectividade)\nApoio em atividades de infraestrutura e suporte de campo",
     current: false,
   },
 ];
