@@ -36,7 +36,7 @@ export const experience: Experience[] = [
     startDate: "2026-09",
     endDate: null,
     description:
-      "Responsável pela operação e sustentação de ambientes de alta criticidade, com foco em estabilidade e continuidade dos serviços. Gestão do ambiente de TI, análise de problemas e coordenação de tratativas junto às equipes especializadas. Interface direta com áreas de negócio e diferentes times de tecnologia, acompanhando demandas de ponta a ponta e contribuindo para a segurança e eficiência operacional.",
+      "Responsável pela operação e sustentação de ambientes de alta criticidade, com foco em estabilidade e continuidade dos serviços.\nGestão do ambiente de TI, análise de problemas e coordenação de tratativas junto às equipes especializadas.\nInterface direta com áreas de negócio e diferentes times de tecnologia, acompanhando demandas de ponta a ponta e contribuindo para a segurança e eficiência operacional.",
     current: true,
   },
   {
@@ -47,7 +47,7 @@ export const experience: Experience[] = [
     startDate: "2022-06",
     endDate: "2026-04",
     description:
-      "Responsável pela gestão e sustentação de ambientes de TI de diversos clientes, nacionais e multinacionais. Liderança de equipes, infraestrutura, redes e servidores, gestão de incidentes críticos e condução de projetos de melhoria e padronização. Interface direta com gestores e diretorias, alinhando prioridades e garantindo estabilidade, eficiência e continuidade das operações de TI.",
+      "Responsável pela gestão e sustentação de ambientes de TI de diversos clientes, nacionais e multinacionais.\nLiderança de equipes, infraestrutura, redes e servidores, gestão de incidentes críticos e condução de projetos de melhoria e padronização.\nInterface direta com gestores e diretorias, alinhando prioridades e garantindo estabilidade, eficiência e continuidade das operações de TI.",
     current: false,
   },
   {
@@ -57,7 +57,8 @@ export const experience: Experience[] = [
     location: "",
     startDate: "2017-11",
     endDate: "2022-06",
-    description: "Suporte bilíngue para Rockwell Automation (global). Diagnóstico de incidentes complexos de rede/estação, substituição de equipamentos e interface com fornecedores em projetos de implantação.",
+    description:
+      "Suporte bilíngue para Rockwell Automation (global). Atuação em suporte técnico presencial em ambiente corporativo e industrial, prestando atendimento a usuários locais e internacionais e garantindo a estabilidade da infraestrutura de TI nas operações.\n\nPrincipais atividades:\n• Atendimento de chamados técnicos nível 2 e 3 em ambiente corporativo\n• Suporte presencial a usuários, estações de trabalho e periféricos\n• Diagnóstico e resolução de incidentes em hardware, software e rede\n• Suporte a infraestrutura de TI em ambiente de escritório e operação\n• Instalação, configuração e substituição de equipamentos de TI\n• Interface com equipes globais de suporte e fornecedores\n• Atendimento bilíngue a usuários e times internacionais (português e inglês)\n• Apoio em projetos de melhoria e implantação de infraestrutura",
     current: false,
   },
   {
@@ -67,7 +68,8 @@ export const experience: Experience[] = [
     location: "",
     startDate: "2015-10",
     endDate: "2016-09",
-    description: "Suporte para Cielo e Rhodia Solvay — diagnóstico de rede, hardware e software para usuários locais e internacionais.",
+    description:
+      "Suporte para Cielo e Rhodia Solvay.\n\nPrincipais atividades:\n• Atendimento de chamados técnicos nível 1 e 2\n• Suporte a usuários locais e internacionais (português e inglês)\n• Diagnóstico e resolução de incidentes em hardware, software e rede\n• Instalação e configuração de equipamentos e estações de trabalho\n• Apoio em atividades de infraestrutura e suporte a operações de TI",
     current: false,
   },
   {
@@ -77,7 +79,8 @@ export const experience: Experience[] = [
     location: "",
     startDate: "2013-05",
     endDate: "2015-10",
-    description: "Suporte Windows para Banco do Brasil e Mapfre (Telefonica/Vivo) — configuração de rede e melhorias de infraestrutura.",
+    description:
+      "Suporte Windows para Banco do Brasil e Mapfre (Telefonica/Vivo). Atuação em suporte técnico.\n\nPrincipais atividades:\n• Atendimento de chamados de suporte nível 1 e 2\n• Diagnóstico e resolução de problemas em estações de trabalho e periféricos\n• Instalação e configuração de equipamentos de rede e dispositivos corporativos\n• Suporte a ambientes Windows e aplicações corporativas\n• Apoio em projetos de implantação e melhorias de infraestrutura",
     current: false,
   },
   {
@@ -87,7 +90,8 @@ export const experience: Experience[] = [
     location: "",
     startDate: "2012-01",
     endDate: "2012-12",
-    description: "Manutenção de PCs no varejo, redes locais (cabeamento) e atendimento presencial.",
+    description:
+      "Atuação em suporte técnico presencial a usuários e estações de trabalho em ambiente corporativo.\n\nPrincipais atividades:\n• Atendimento de chamados de suporte nível 1\n• Manutenção básica de computadores e periféricos\n• Instalação e configuração de sistemas operacionais e softwares corporativos\n• Suporte a rede local (cabeamento, pontos de rede e conectividade)\n• Apoio em atividades de infraestrutura e suporte de campo",
     current: false,
   },
 ];
