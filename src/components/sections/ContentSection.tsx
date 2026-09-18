@@ -40,7 +40,7 @@ export default function ContentSection() {
                 {job.company}
                 {job.location ? ` · ${job.location}` : ""}
               </div>
-              <p className="mt-3 text-[15px] leading-[1.65] text-muted max-w-3xl whitespace-pre-line">{job.description}</p>
+              <p className="mt-3 ml-6 md:ml-12 text-[15px] leading-[1.65] text-muted max-w-3xl whitespace-pre-line">{job.description}</p>
             </motion.li>
           ))}
         </ol>
