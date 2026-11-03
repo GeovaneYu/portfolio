@@ -88,15 +88,15 @@ html.dark {
   --color-secondary-foreground: #F0EEE9;
   --color-input: #3F3238;
 
-  --color-accent: #CFA4A4;
+  --color-accent: #D6B87A;
   --color-accent-foreground: #251A1F;
-  --color-accent-dim: #A8767B;
-  --color-accent-pastel: #33282E;
-  --color-accent-soft: #2B2228;
+  --color-accent-dim: #B99A5D;
+  --color-accent-pastel: #3B3026;
+  --color-accent-soft: #332A24;
 
-  --color-primary: #CFA4A4;
+  --color-primary: #D6B87A;
   --color-primary-foreground: #251A1F;
-  --color-ring: #CFA4A4;
+  --color-ring: #D6B87A;
 
   --glass-bg: #2E2329;
   --glass-border: #3F3238;
@@ -134,13 +134,13 @@ html.dark {
   }
   html.dark body {
     background-image:
-      radial-gradient(ellipse 70% 45% at 12% -4%, rgba(207, 164, 164, 0.14), transparent 65%),
+      radial-gradient(ellipse 70% 45% at 12% -4%, rgba(214, 184, 122, 0.14), transparent 65%),
       radial-gradient(ellipse 45% 32% at 96% 4%, rgba(192, 162, 104, 0.07), transparent 65%);
     background-size: 100% 100%, 100% 100%;
     background-attachment: fixed, fixed;
   }
   ::selection { background-color: rgba(78, 36, 49, 0.26); color: #F0EEE9; }
-  html.dark ::selection { background-color: rgba(207, 164, 164, 0.32); color: #251A1F; }
+  html.dark ::selection { background-color: rgba(214, 184, 122, 0.32); color: #251A1F; }
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: #B8B4AC; border-radius: 4px; border: 2px solid transparent; background-clip: content-box; }
@@ -176,7 +176,7 @@ html.dark {
     color: transparent;
   }
   html.dark .text-accent-gradient {
-    background-image: linear-gradient(108deg, #D6B87A 0%, #CFA4A4 50%, #8A6567 100%);
+    background-image: linear-gradient(108deg, #E8D3A2 0%, #D6B87A 55%, #B99A5D 100%);
   }
   .glass-card {
     background-color: var(--glass-bg);
