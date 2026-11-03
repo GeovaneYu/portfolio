@@ -38,14 +38,12 @@ export default function HeroSection() {
           transition={{ duration: 0.55, delay: 0.08 }}
           className="min-w-0"
         >
-          <h1 className="font-display uppercase tracking-tight leading-[0.9] text-foreground text-[clamp(3rem,8vw,5rem)]">
-            Geovane
-            <br />
-            <span className="font-display text-accent-bright">Gofredo</span>
+          <h1 className="font-display uppercase tracking-tight leading-[0.9] text-foreground text-[clamp(2.4rem,6vw,4.4rem)] whitespace-nowrap">
+            Geovane <span className="font-display text-accent-bright">Gofredo</span>
           </h1>
 
           <p className="mt-6 max-w-2xl text-[20px] md:text-[24px] leading-[1.4] text-foreground">
-            Organizo a operação e entrego uma TI estável, segura e previsível.
+            Transformo operações críticas em ambientes estáveis, seguros e previsíveis.
           </p>
 
           <p className="mt-3 max-w-xl text-[15px] md:text-[16px] leading-[1.7] text-muted">
