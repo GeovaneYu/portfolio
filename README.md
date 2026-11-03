@@ -1,8 +1,11 @@
 # Portfólio — Geovane Gofredo
 
-Especialista Bilíngue em Infraestrutura e Operações de TI — mais de 14 anos de experiência. Portfólio editorial com modo claro/escuro, animações e foco em performance.
+Portfólio profissional de Geovane Gofredo — mais de 14 anos em infraestrutura, operações e suporte de TI. Site editorial com modo claro/escuro, animações e foco em performance.
 
-**Demo:** https://geovaneyu.github.io/portfolio/ · **Cartão:** [/cartao-visita.html](https://geovaneyu.github.io/portfolio/cartao-visita.html) · **Assinatura:** [/email-signature.html](https://geovaneyu.github.io/portfolio/email-signature.html)
+**Site:** https://geovaneyu.github.io/portfolio/  
+**Currículo (PDF):** https://geovaneyu.github.io/portfolio/CV-Geovane-Gofredo-2026.pdf  
+**Cartão de visita:** https://geovaneyu.github.io/portfolio/cartao-visita.html  
+**Assinatura de e-mail:** https://geovaneyu.github.io/portfolio/email-signature.html
 
 ## Stack
 
@@ -27,14 +30,21 @@ Requer Node 20+.
 
 ```
 src/
-  components/sections/  Hero, Bio, Content, Projects, Contact
-  components/ui/        shadcn
-  data/portfolio-data.ts  fonte única de conteúdo
-  pages/Index.tsx       JSON-LD + seções
+  components/sections/   Hero, Bio, Content, Projects, Contact
+  components/ui/         shadcn
+  data/portfolio-data.ts fonte única de conteúdo
+  pages/Index.tsx        JSON-LD + seções
 public/
-  img/                  geovane.jpg/webp, meme
-  CV-Geovane-Gofredo-2026.pdf
-  cartao-visita.html    cartão 85.6×53.98mm (public/ para Pages)
+  CV-Geovane-Gofredo-2026.pdf  currículo para download
+  cartao-visita.html           cartão 85.6×53.98 mm
+  email-signature.html         assinatura de e-mail
+  img/                         geovane.jpg/webp e meme
+cv/
+  CV-Geovane-Gofredo-2026.html fonte HTML do currículo
+  DidactGothic-Regular.ttf     fonte usada no currículo
+  gerar-pdf.sh                 gera o PDF a partir do HTML
+backup/
+  planos-antigos/              histórico de planejamento
 ```
 
 ## Deploy
@@ -45,9 +55,18 @@ GitHub Pages via **Actions** (`.github/workflows/deploy.yml`):
 - `vite.config.ts` com `base: GITHUB_ACTIONS ? '/portfolio/' : '/'` — funciona em `/` (local) e `/portfolio/` (Pages)
 - Habilite em **Settings → Pages → Source: GitHub Actions**
 
+## Currículo
+
+O PDF em `public/CV-Geovane-Gofredo-2026.pdf` é gerado a partir de `cv/CV-Geovane-Gofredo-2026.html`, usando a fonte Didact Gothic local. Para atualizar:
+
+1. Edite o HTML em `cv/`.
+2. Rode `./cv/gerar-pdf.sh` (macOS, com Google Chrome instalado).
+3. O PDF é salvo em `public/CV-Geovane-Gofredo-2026.pdf`.
+4. Faça commit e push.
+
 ## Personalização
 
-Edite `src/data/portfolio-data.ts` (bio, experiências, skills) e `public/CV-*.pdf`. Cores e tipografia em `src/index.css` (`@theme`).
+Edite `src/data/portfolio-data.ts` (bio, experiências, skills) e o currículo em `cv/`. Cores e tipografia em `src/index.css` (`@theme`).
 
 ## Licença
 
