@@ -52,12 +52,6 @@ export default function HeroSection() {
             Coordenação de equipes N1/N2/N3, governança (ITIL/COBIT), SLAs críticos e gestão de fornecedores — com foco em continuidade, previsibilidade e eficiência.
           </p>
 
-          <div className="mt-5 flex flex-wrap gap-2 font-mono text-[11px] tracking-wide text-muted">
-            <span className="rounded-full border border-border bg-surface px-3 py-1.5">Mais de 14 anos de experiência</span>
-            <span className="rounded-full border border-border bg-surface px-3 py-1.5">Mais de 4 anos liderando operações</span>
-            <span className="rounded-full border border-border bg-surface px-3 py-1.5">Times globais (EN/PT)</span>
-          </div>
-
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a
               href={personalInfo.whatsapp}
