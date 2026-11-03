@@ -11,13 +11,13 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contato" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28">
+    <section id="contato" className="w-full max-w-6xl mx-auto px-6 md:px-12 py-14 md:py-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
-        className="glass-card rounded-2xl p-8 md:p-10"
+        className="glass-card rounded-2xl p-6 md:p-8"
       >
         <h2 className="label-mono mb-6">Contato</h2>
         <p className="text-[22px] md:text-[30px] font-bold tracking-tight leading-[1.15] max-w-3xl">

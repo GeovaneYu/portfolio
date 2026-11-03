@@ -16,38 +16,47 @@ function formatDateRange(start: string, end: string | null): string {
 export default function ContentSection() {
   return (
     <>
-      <section id="experiencia" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28">
-        <h2 className="label-mono mb-10">Experiência profissional</h2>
+      <section id="experiencia" className="w-full max-w-6xl mx-auto px-6 md:px-12 py-14 md:py-20">
+        <h2 className="label-mono mb-8">Experiência profissional</h2>
 
-        <ol className="relative border-l border-border pl-6 md:pl-10 space-y-8">
+        <div className="border-t border-border">
           {experience.map((job, index) => (
-            <motion.li
+            <motion.article
               key={job.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="relative"
+              className="grid gap-3 md:grid-cols-[190px_1fr] md:gap-10 border-b border-border py-6 md:py-8"
             >
-              <span className="absolute -left-[31px] md:-left-[47px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent-bright ring-4 ring-background" aria-hidden="true" />
-              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-bright">
-                {formatDateRange(job.startDate, job.endDate)}
+              <div>
+                <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-bright">
+                  {formatDateRange(job.startDate, job.endDate)}
+                </div>
+                <div className="mt-2 text-[14px] font-semibold text-foreground">
+                  {job.company}
+                </div>
+                {job.location && (
+                  <div className="mt-1 font-mono text-[10px] uppercase tracking-wide text-muted">
+                    {job.location}
+                  </div>
+                )}
               </div>
-              <h3 className="mt-2 text-[18px] md:text-[20px] font-semibold tracking-tight text-foreground leading-snug">
-                {job.role}
-              </h3>
-              <div className="font-mono text-[11px] tracking-wide text-muted mt-1">
-                {job.company}
-                {job.location ? ` · ${job.location}` : ""}
+              <div>
+                <h3 className="text-[18px] md:text-[20px] font-semibold tracking-tight text-foreground leading-snug">
+                  {job.role}
+                </h3>
+                <p className="mt-3 text-[15px] leading-[1.7] text-muted max-w-3xl whitespace-pre-line">
+                  {job.description}
+                </p>
               </div>
-              <p className="mt-3 ml-6 md:ml-12 text-[15px] leading-[1.65] text-muted max-w-3xl whitespace-pre-line">{job.description}</p>
-            </motion.li>
+            </motion.article>
           ))}
-        </ol>
+        </div>
       </section>
 
-      <section id="competencias" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28">
-        <h2 className="label-mono mb-10">Competências técnicas</h2>
+      <section id="competencias" className="w-full max-w-6xl mx-auto px-6 md:px-12 py-14 md:py-20">
+        <h2 className="label-mono mb-8">Competências técnicas</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {skillCategories.map((category, index) => (

@@ -7,7 +7,7 @@ export default function HeroSection() {
   const handle = personalInfo.website.split("/").pop();
 
   return (
-    <section id="top" className="relative w-full max-w-7xl mx-auto px-6 md:px-12 pt-24 pb-12 md:pt-28 md:pb-16 overflow-hidden">
+    <section id="top" className="relative w-full max-w-6xl mx-auto px-6 md:px-12 pt-20 pb-8 md:pt-24 md:pb-12 overflow-hidden">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 opacity-[0.12]"
@@ -31,12 +31,12 @@ export default function HeroSection() {
         </span>
       </motion.p>
 
-      <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div className="grid lg:grid-cols-[minmax(0,720px)_auto] gap-8 lg:gap-16 items-center">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.08 }}
-          className="lg:col-span-7"
+          className="min-w-0"
         >
           <h1 className="font-display uppercase tracking-tight leading-[0.9] text-foreground text-[clamp(3rem,8vw,5rem)]">
             Geovane
@@ -44,21 +44,21 @@ export default function HeroSection() {
             <span className="font-display text-accent-bright">Gofredo</span>
           </h1>
 
-          <p className="mt-7 max-w-2xl text-[20px] md:text-[24px] leading-[1.4] text-foreground">
+          <p className="mt-6 max-w-2xl text-[20px] md:text-[24px] leading-[1.4] text-foreground">
             Organizo a operação e entrego uma TI estável, segura e previsível.
           </p>
 
-          <p className="mt-4 max-w-xl text-[15px] md:text-[16px] leading-[1.7] text-muted">
+          <p className="mt-3 max-w-xl text-[15px] md:text-[16px] leading-[1.7] text-muted">
             Coordenação de equipes N1/N2/N3, governança (ITIL/COBIT), SLAs críticos e gestão de fornecedores — com foco em continuidade, previsibilidade e eficiência.
           </p>
 
-          <div className="mt-6 flex flex-wrap gap-2 font-mono text-[11px] tracking-wide text-muted">
-            <span className="rounded-full border border-border bg-surface px-3 py-1.5">14+ anos</span>
-            <span className="rounded-full border border-border bg-surface px-3 py-1.5">4+ anos liderando operações</span>
+          <div className="mt-5 flex flex-wrap gap-2 font-mono text-[11px] tracking-wide text-muted">
+            <span className="rounded-full border border-border bg-surface px-3 py-1.5">Mais de 14 anos de experiência</span>
+            <span className="rounded-full border border-border bg-surface px-3 py-1.5">Mais de 4 anos liderando operações</span>
             <span className="rounded-full border border-border bg-surface px-3 py-1.5">Times globais (EN/PT)</span>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <div className="mt-6 flex flex-wrap items-center gap-3">
             <a
               href={personalInfo.whatsapp}
               target="_blank"
@@ -78,7 +78,7 @@ export default function HeroSection() {
             </a>
           </div>
 
-          <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3 font-mono text-[11px] md:text-xs">
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 font-mono text-[11px] md:text-xs">
             <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-2 text-muted hover:text-accent-bright transition-colors min-w-0">
               <Mail className="h-4 w-4 shrink-0 text-accent-bright" />
               <span className="truncate">{personalInfo.email}</span>
@@ -102,9 +102,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.14 }}
-          className="lg:col-span-5"
+          className="shrink-0"
         >
-          <div className="relative mx-auto max-w-[190px] sm:max-w-[220px] lg:max-w-[230px]">
+          <div className="relative mx-auto lg:ml-auto lg:mr-0 max-w-[190px] sm:max-w-[220px] lg:max-w-[230px]">
             <div aria-hidden="true" className="absolute -inset-3 rounded-full bg-accent-soft blur-xl" />
             <picture>
               <source srcSet={`${import.meta.env.BASE_URL}img/geovane.webp`} type="image/webp" />

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Github, ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
@@ -26,8 +27,25 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projetos" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28">
-      <h2 className="label-mono mb-10">Projetos e resultados</h2>
+    <section id="projetos" className="w-full max-w-6xl mx-auto px-6 md:px-12 py-14 md:py-20">
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+        <div>
+          <h2 className="label-mono">Projetos e resultados</h2>
+          <p className="mt-2 max-w-xl text-[15px] leading-[1.6] text-muted">
+            Principais entregas e resultados com infraestrutura, cloud e governança.
+          </p>
+        </div>
+        <a
+          href="https://github.com/GeovaneYu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2.5 font-mono text-[11px] uppercase tracking-widest text-muted hover:text-foreground hover:border-accent-bright hover:bg-surface-hover transition-colors"
+        >
+          <Github className="h-4 w-4" aria-hidden="true" />
+          Ver no GitHub
+          <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+        </a>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {projects.map((project, index) => (
