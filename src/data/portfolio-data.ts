@@ -29,17 +29,6 @@ export const personalInfo: PersonalInfo = {
 
 export const experience: Experience[] = [
   {
-    id: "exp-0",
-    company: "Stefanini",
-    role: "Especialista Bilíngue | Infraestrutura & Operações de TI",
-    location: "",
-    startDate: "2026-09",
-    endDate: null,
-    description:
-      "Responsável pela operação e sustentação de ambientes de alta criticidade, com foco em estabilidade e continuidade dos serviços.\nGestão do ambiente de TI, análise de problemas e coordenação de tratativas junto às equipes especializadas.\nInterface direta com áreas de negócio e diferentes times de tecnologia, acompanhando demandas de ponta a ponta e contribuindo para a segurança e eficiência operacional.",
-    current: true,
-  },
-  {
     id: "exp-1",
     company: "FCA TI",
     role: "Líder de Infraestrutura e Operações de TI | Projetos, Redes e Ambientes Corporativos",
