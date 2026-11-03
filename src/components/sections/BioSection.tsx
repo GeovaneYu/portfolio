@@ -42,7 +42,7 @@ export default function BioSection() {
           <div className="flex items-center gap-2 text-muted dark:text-white/50 mb-3">
             <span className="text-accent">$</span> cat sobre.txt
           </div>
-          <p className="text-[oklch(24%_0.01_240)] dark:text-white/90">
+          <p className="whitespace-pre-line text-[oklch(24%_0.01_240)] dark:text-white/90">
             {personalInfo.bio}
           </p>
           <div className="mt-5 flex items-center gap-2">
