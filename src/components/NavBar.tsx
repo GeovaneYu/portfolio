@@ -52,8 +52,8 @@ export default function NavBar() {
         aria-label="Navegação principal"
         className="max-w-7xl mx-auto px-4 md:px-12 h-16 flex items-center gap-2 md:gap-4"
       >
-        <a href="#top" className="shrink-0 label-mono text-foreground hover:text-accent transition-colors">
-          GG<span className="text-accent">.</span>
+        <a href="#top" className="shrink-0 label-mono text-foreground hover:text-accent-bright transition-colors">
+          GG<span className="text-accent-bright">.</span>
         </a>
 
         <div className="flex flex-1 min-w-0 items-center justify-end gap-2 md:gap-3">
@@ -67,7 +67,7 @@ export default function NavBar() {
                     className={cn(
                       "inline-flex whitespace-nowrap font-mono text-[10px] md:text-xs uppercase tracking-widest px-2 md:px-3 py-2 rounded-md transition-colors",
                       active === link.id
-                        ? "text-accent bg-accent-soft"
+                        ? "text-foreground bg-accent-soft"
                         : "text-muted hover:text-foreground"
                     )}
                   >

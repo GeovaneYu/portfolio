@@ -29,8 +29,8 @@ export default function ContentSection() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className="relative"
             >
-              <span className="absolute -left-[31px] md:-left-[47px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent ring-4 ring-background" aria-hidden="true" />
-              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
+              <span className="absolute -left-[31px] md:-left-[47px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent-bright ring-4 ring-background" aria-hidden="true" />
+              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-bright">
                 {formatDateRange(job.startDate, job.endDate)}
               </div>
               <h3 className="mt-2 text-[18px] md:text-[20px] font-semibold tracking-tight text-foreground leading-snug">
@@ -59,7 +59,7 @@ export default function ContentSection() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className="glass-card rounded-xl p-6"
             >
-              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
+              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-bright">
                 {category.category}
               </h3>
               {category.description && (

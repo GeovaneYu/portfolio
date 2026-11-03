@@ -39,7 +39,7 @@ export default function ProjectsSection() {
             transition={{ duration: 0.5, delay: index * 0.05 }}
             className="glass-card rounded-xl p-6 flex flex-col"
           >
-            <span className="font-display text-5xl leading-none text-accent" aria-hidden="true">
+            <span className="font-display text-5xl leading-none text-accent-bright" aria-hidden="true">
               {project.num}
             </span>
             <h3 className="mt-5 text-[17px] md:text-[18px] font-semibold leading-snug text-foreground">
@@ -49,7 +49,7 @@ export default function ProjectsSection() {
               {project.text}
             </p>
             <div className="mt-5 border-t border-border pt-4">
-              <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-accent">Como foi entregue</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-bright">Como foi entregue</p>
               <p className="mt-2 text-[13px] leading-[1.6] text-muted">
                 {project.result}
               </p>

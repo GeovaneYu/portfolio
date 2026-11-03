@@ -11,14 +11,14 @@ export default function BioSection() {
   return (
     <section id="sobre" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28">
       <h2 className="label-mono mb-10 flex items-center gap-3">
-        <span className="h-px w-8 bg-accent" aria-hidden="true" />
+        <span className="h-px w-8 bg-accent-bright" aria-hidden="true" />
         Sobre
       </h2>
 
       <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         <div className="lg:col-span-7">
           <blockquote className="font-display uppercase leading-[0.98] tracking-tight text-foreground text-[clamp(2rem,5vw,3.6rem)]">
-            Organizo a operação<br />e entrego <span className="text-accent">resultado.</span>
+            Organizo a operação<br />e entrego <span className="text-accent-bright">resultado.</span>
           </blockquote>
 
           <p className="mt-8 text-[16px] md:text-[17px] leading-[1.75] text-muted whitespace-pre-line max-w-2xl">
@@ -33,7 +33,7 @@ export default function BioSection() {
           <ul className="border-t border-border divide-y divide-border">
             {deliverables.map((item) => (
               <li key={item.num} className="flex items-start gap-5 py-4">
-                <span className="font-mono text-[12px] text-accent pt-0.5">{item.num}</span>
+                <span className="font-mono text-[12px] text-accent-bright pt-0.5">{item.num}</span>
                 <span className="min-w-0">
                   <span className="block text-[16px] md:text-[17px] font-semibold text-foreground leading-snug">{item.title}</span>
                   <span className="block mt-1 text-[14px] leading-[1.55] text-muted">{item.text}</span>

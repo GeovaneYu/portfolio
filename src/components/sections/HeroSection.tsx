@@ -23,10 +23,10 @@ export default function HeroSection() {
         transition={{ duration: 0.5 }}
         className="label-mono mb-6 inline-flex items-center gap-2"
       >
-        <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
+        <span className="h-2 w-2 rounded-full bg-accent-bright" aria-hidden="true" />
         {personalInfo.title}
         <span className="hidden md:inline-flex items-center gap-2 ml-3 pl-3 border-l border-border font-mono text-[10px] tracking-widest text-muted" title="Disponível para novas oportunidades">
-          <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-accent-bright animate-pulse" />
           open to work
         </span>
       </motion.p>
@@ -41,7 +41,7 @@ export default function HeroSection() {
           <h1 className="font-display uppercase tracking-tight leading-[0.9] text-foreground text-[clamp(3rem,8vw,5rem)]">
             Geovane
             <br />
-            <span className="font-display text-accent">Gofredo</span>
+            <span className="font-display text-accent-bright">Gofredo</span>
           </h1>
 
           <p className="mt-7 max-w-2xl text-[20px] md:text-[24px] leading-[1.4] text-foreground">
@@ -63,7 +63,7 @@ export default function HeroSection() {
               href={personalInfo.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 font-mono text-xs uppercase tracking-widest text-accent-foreground hover:bg-accent/90 transition-colors"
+              className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 font-mono text-xs uppercase tracking-widest text-accent-foreground hover:bg-accent-dim transition-colors"
             >
               <WhatsAppIcon className="h-4 w-4" />
               Agendar uma conversa
@@ -71,7 +71,7 @@ export default function HeroSection() {
             <a
               href={`${import.meta.env.BASE_URL}CV-Geovane-Gofredo-2026.pdf`}
               download
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-3 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground hover:border-accent hover:bg-surface-hover transition-colors"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-3 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground hover:border-accent-bright hover:bg-surface-hover transition-colors"
             >
               <Download className="h-4 w-4" />
               Baixar CV (PDF)
@@ -79,20 +79,20 @@ export default function HeroSection() {
           </div>
 
           <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3 font-mono text-[11px] md:text-xs">
-            <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-2 text-muted hover:text-accent transition-colors min-w-0">
-              <Mail className="h-4 w-4 shrink-0 text-accent" />
+            <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-2 text-muted hover:text-accent-bright transition-colors min-w-0">
+              <Mail className="h-4 w-4 shrink-0 text-accent-bright" />
               <span className="truncate">{personalInfo.email}</span>
             </a>
-            <a href={personalInfo.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted hover:text-accent transition-colors">
-              <WhatsAppIcon className="h-4 w-4 shrink-0 text-accent" />
+            <a href={personalInfo.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted hover:text-accent-bright transition-colors">
+              <WhatsAppIcon className="h-4 w-4 shrink-0 text-accent-bright" />
               <span>{personalInfo.phone}</span>
             </a>
             <div className="flex items-center gap-2 text-muted">
-              <MapPin className="h-4 w-4 shrink-0 text-accent" />
+              <MapPin className="h-4 w-4 shrink-0 text-accent-bright" />
               <span>{personalInfo.location.city}</span>
             </div>
-            <a href={`https://${personalInfo.website}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted hover:text-accent transition-colors min-w-0">
-              <Linkedin className="h-4 w-4 shrink-0 text-accent" />
+            <a href={`https://${personalInfo.website}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted hover:text-accent-bright transition-colors min-w-0">
+              <Linkedin className="h-4 w-4 shrink-0 text-accent-bright" />
               <span className="truncate">@{handle}</span>
             </a>
           </div>
@@ -113,7 +113,7 @@ export default function HeroSection() {
                 alt="Geovane Gofredo"
                 width="360"
                 height="360"
-                className="relative w-full aspect-square rounded-full object-cover border border-accent shadow-[0_24px_50px_-16px_rgba(78,36,49,0.48)]"
+                className="relative w-full aspect-square rounded-full object-cover border border-accent-bright shadow-[0_24px_50px_-16px_rgba(78,36,49,0.48)]"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
