@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import ThemeToggle from "@/components/ThemeToggle";
 
 const links = [
   { id: "sobre", label: "Sobre" },
@@ -77,9 +76,6 @@ export default function NavBar() {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="shrink-0">
-            <ThemeToggle />
           </div>
         </div>
       </nav>
