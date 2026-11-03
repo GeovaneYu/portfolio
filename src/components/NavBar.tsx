@@ -46,7 +46,7 @@ export default function NavBar() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled ? "glass-card border-b border-border/60" : "bg-transparent"
+        scrolled ? "glass-card border-b border-border" : "bg-transparent"
       )}
     >
       <nav
@@ -68,7 +68,7 @@ export default function NavBar() {
                     className={cn(
                       "inline-flex whitespace-nowrap font-mono text-[10px] md:text-xs uppercase tracking-widest px-2 md:px-3 py-2 rounded-md transition-colors",
                       active === link.id
-                        ? "text-accent bg-accent/10"
+                        ? "text-accent bg-accent-soft"
                         : "text-muted hover:text-foreground"
                     )}
                   >

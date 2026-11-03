@@ -33,7 +33,7 @@ export default function ContentSection() {
             {["Coordenação N1/N2/N3", "SLAs críticos", "LGPD · ITAM", "DRP / backup"].map((item) => (
               <span
                 key={item}
-                className="font-mono text-[10px] uppercase tracking-wider px-3 py-1.5 rounded-full border border-accent/30 text-accent bg-accent/5"
+                className="font-mono text-[10px] uppercase tracking-wider px-3 py-1.5 rounded-full border border-accent text-accent bg-accent-soft"
               >
                 {item}
               </span>
@@ -119,7 +119,7 @@ export default function ContentSection() {
             <h2 className="label-mono mb-8">Idiomas</h2>
             <ul className="space-y-0">
               {languages.map((lang) => (
-                <li key={lang.language} className="flex items-baseline justify-between gap-4 border-b border-border/60 py-3">
+                <li key={lang.language} className="flex items-baseline justify-between gap-4 border-b border-border py-3">
                   <span className="text-[15px] text-foreground">{lang.language}</span>
                   <span className="font-mono text-[11px] uppercase tracking-wide text-muted">{lang.proficiency}</span>
                 </li>

@@ -30,7 +30,7 @@ export default function BioSection() {
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted mb-5">
             O que eu entrego
           </p>
-          <ul className="border-t border-border/60 divide-y divide-border/60">
+          <ul className="border-t border-border divide-y divide-border">
             {deliverables.map((item) => (
               <li key={item.num} className="flex items-start gap-5 py-4">
                 <span className="font-mono text-[12px] text-accent pt-0.5">{item.num}</span>

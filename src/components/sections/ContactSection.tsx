@@ -39,10 +39,10 @@ export default function ContactSection() {
               href={href}
               target={href.startsWith("http") ? "_blank" : undefined}
               rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="group relative flex flex-col rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:bg-accent-soft/20 hover:shadow-lg hover:shadow-accent/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              className="group relative flex flex-col rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:bg-accent-soft hover:shadow-lg hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
               <div className="flex items-center justify-between">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/10 ring-1 ring-accent/10 transition-all duration-300 group-hover:bg-accent group-hover:ring-accent group-hover:scale-105">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-soft ring-1 ring-accent/10 transition-all duration-300 group-hover:bg-accent group-hover:ring-accent group-hover:scale-105">
                   <Icon className="h-5 w-5 text-accent transition-colors group-hover:text-accent-foreground" aria-hidden="true" />
                 </div>
                 <ArrowUpRight className="h-4 w-4 text-muted transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent" aria-hidden="true" />

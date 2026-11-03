@@ -48,7 +48,7 @@ export default function ProjectsSection() {
             <p className="mt-3 text-[14px] leading-[1.6] text-muted flex-1">
               {project.text}
             </p>
-            <div className="mt-5 border-t border-border/60 pt-4">
+            <div className="mt-5 border-t border-border pt-4">
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-accent">Como foi entregue</p>
               <p className="mt-2 text-[13px] leading-[1.6] text-muted">
                 {project.result}

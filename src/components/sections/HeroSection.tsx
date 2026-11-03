@@ -7,7 +7,7 @@ export default function HeroSection() {
   const handle = personalInfo.website.split("/").pop();
 
   return (
-    <section id="top" className="relative w-full max-w-7xl mx-auto px-6 md:px-12 pt-28 pb-16 md:pt-32 overflow-hidden">
+    <section id="top" className="relative w-full max-w-7xl mx-auto px-6 md:px-12 pt-24 pb-12 md:pt-28 md:pb-16 overflow-hidden">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 opacity-[0.12]"
@@ -25,13 +25,13 @@ export default function HeroSection() {
       >
         <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
         {personalInfo.title}
-        <span className="hidden md:inline-flex items-center gap-2 ml-3 pl-3 border-l border-border/50 font-mono text-[10px] tracking-widest text-muted" title="Disponível para novas oportunidades">
+        <span className="hidden md:inline-flex items-center gap-2 ml-3 pl-3 border-l border-border font-mono text-[10px] tracking-widest text-muted" title="Disponível para novas oportunidades">
           <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
           open to work
         </span>
       </motion.p>
 
-      <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+      <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-[20px] md:text-[24px] leading-[1.4] text-foreground">
-            Organizo a operação e entreguo uma TI estável, segura e previsível.
+            Organizo a operação e entrego uma TI estável, segura e previsível.
           </p>
 
           <p className="mt-4 max-w-xl text-[15px] md:text-[16px] leading-[1.7] text-muted">
@@ -53,9 +53,9 @@ export default function HeroSection() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2 font-mono text-[11px] tracking-wide text-muted">
-            <span className="rounded-full border border-border/60 bg-surface/60 px-3 py-1.5">14+ anos</span>
-            <span className="rounded-full border border-border/60 bg-surface/60 px-3 py-1.5">4+ anos liderando operações</span>
-            <span className="rounded-full border border-border/60 bg-surface/60 px-3 py-1.5">Times globais (EN/PT)</span>
+            <span className="rounded-full border border-border bg-surface px-3 py-1.5">14+ anos</span>
+            <span className="rounded-full border border-border bg-surface px-3 py-1.5">4+ anos liderando operações</span>
+            <span className="rounded-full border border-border bg-surface px-3 py-1.5">Times globais (EN/PT)</span>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -71,7 +71,7 @@ export default function HeroSection() {
             <a
               href={`${import.meta.env.BASE_URL}CV-Geovane-Gofredo-2026.pdf`}
               download
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-3 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground hover:border-accent/40 hover:bg-surface-hover transition-colors"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-3 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground hover:border-accent hover:bg-surface-hover transition-colors"
             >
               <Download className="h-4 w-4" />
               Baixar CV (PDF)
@@ -105,7 +105,7 @@ export default function HeroSection() {
           className="lg:col-span-5"
         >
           <div className="relative mx-auto max-w-[190px] sm:max-w-[220px] lg:max-w-[230px]">
-            <div aria-hidden="true" className="absolute -inset-3 rounded-full bg-accent/10 blur-xl" />
+            <div aria-hidden="true" className="absolute -inset-3 rounded-full bg-accent-soft blur-xl" />
             <picture>
               <source srcSet={`${import.meta.env.BASE_URL}img/geovane.webp`} type="image/webp" />
               <img
@@ -113,7 +113,7 @@ export default function HeroSection() {
                 alt="Geovane Gofredo"
                 width="360"
                 height="360"
-                className="relative w-full aspect-square rounded-full object-cover border border-accent/30 shadow-[0_24px_50px_-16px_rgba(78,36,49,0.48)]"
+                className="relative w-full aspect-square rounded-full object-cover border border-accent shadow-[0_24px_50px_-16px_rgba(78,36,49,0.48)]"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
