@@ -41,7 +41,7 @@ public/
 
 GitHub Pages via **Actions** (`.github/workflows/deploy.yml`):
 
-- Push em `main` → `bun install` → `vite build` → `actions/deploy-pages`
+- Push em `main` → `npm ci` → `vite build` → `actions/deploy-pages`
 - `vite.config.ts` com `base: GITHUB_ACTIONS ? '/portfolio/' : '/'` — funciona em `/` (local) e `/portfolio/` (Pages)
 - Habilite em **Settings → Pages → Source: GitHub Actions**
 
