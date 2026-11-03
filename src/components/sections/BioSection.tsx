@@ -9,7 +9,7 @@ const deliverables = [
 
 export default function BioSection() {
   return (
-    <section id="sobre" className="w-full max-w-6xl mx-auto px-6 md:px-12 py-14 md:py-20">
+    <section id="sobre" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-14 md:py-20">
       <h2 className="label-mono mb-8 flex items-center gap-3">
         <span className="h-px w-8 bg-accent-bright" aria-hidden="true" />
         Sobre

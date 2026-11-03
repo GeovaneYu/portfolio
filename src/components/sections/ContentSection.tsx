@@ -16,7 +16,7 @@ function formatDateRange(start: string, end: string | null): string {
 export default function ContentSection() {
   return (
     <>
-      <section id="experiencia" className="w-full max-w-6xl mx-auto px-6 md:px-12 py-14 md:py-20">
+      <section id="experiencia" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-14 md:py-20">
         <h2 className="label-mono mb-8">Experiência profissional</h2>
 
         <div className="border-t border-border">
@@ -55,7 +55,7 @@ export default function ContentSection() {
         </div>
       </section>
 
-      <section id="competencias" className="w-full max-w-6xl mx-auto px-6 md:px-12 py-14 md:py-20">
+      <section id="competencias" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-14 md:py-20">
         <h2 className="label-mono mb-8">Competências técnicas</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

@@ -7,7 +7,7 @@ export default function HeroSection() {
   const handle = personalInfo.website.split("/").pop();
 
   return (
-    <section id="top" className="relative w-full max-w-6xl mx-auto px-6 md:px-12 pt-20 pb-8 md:pt-24 md:pb-12 overflow-hidden">
+    <section id="top" className="relative w-full max-w-7xl mx-auto px-6 md:px-12 pt-20 pb-8 md:pt-24 md:pb-12 overflow-hidden">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 opacity-[0.12]"
@@ -31,14 +31,14 @@ export default function HeroSection() {
         </span>
       </motion.p>
 
-      <div className="grid lg:grid-cols-[minmax(0,720px)_auto] gap-8 lg:gap-16 items-center">
+      <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.08 }}
-          className="min-w-0"
+          className="lg:col-span-7"
         >
-          <h1 className="font-display uppercase tracking-tight leading-[0.9] text-foreground text-[clamp(2.4rem,6vw,4.4rem)] whitespace-nowrap">
+          <h1 className="font-display uppercase tracking-tight leading-[0.9] text-foreground text-[clamp(2.4rem,5.4vw,4.5rem)] whitespace-nowrap">
             Geovane <span className="font-display text-accent-bright">Gofredo</span>
           </h1>
 
@@ -94,9 +94,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.14 }}
-          className="shrink-0"
+          className="lg:col-span-5"
         >
-          <div className="relative mx-auto lg:ml-auto lg:mr-0 max-w-[190px] sm:max-w-[220px] lg:max-w-[230px]">
+          <div className="relative mx-auto lg:ml-auto lg:mr-0 max-w-[160px] sm:max-w-[180px] lg:max-w-[200px]">
             <div aria-hidden="true" className="absolute -inset-3 rounded-full bg-accent-soft blur-xl" />
             <picture>
               <source srcSet={`${import.meta.env.BASE_URL}img/geovane.webp`} type="image/webp" />
