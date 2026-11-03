@@ -38,7 +38,7 @@ public/
   CV-Geovane-Gofredo-2026.pdf  currículo para download
   cartao-visita.html           cartão 85.6×53.98 mm
   email-signature.html         assinatura de e-mail
-  img/                         geovane.jpg/webp e meme
+  img/                         geovane.jpg e geovane.webp
 cv/
   CV-Geovane-Gofredo-2026.html fonte HTML do currículo
   DidactGothic-Regular.ttf     fonte usada no currículo

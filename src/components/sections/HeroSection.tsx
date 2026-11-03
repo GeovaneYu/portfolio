@@ -1,12 +1,10 @@
 import { personalInfo } from "@/data/portfolio-data";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
-import { Mail, MapPin, Linkedin, Download, X } from "lucide-react";
+import { motion } from "framer-motion";
+import { Mail, MapPin, Linkedin, Download } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export default function HeroSection() {
   const handle = personalInfo.website.split("/").pop();
-  const [showEgg, setShowEgg] = useState(false);
 
   return (
     <section id="top" className="relative w-full max-w-7xl mx-auto px-6 md:px-12 pt-28 pb-16 md:pt-32 overflow-hidden">
@@ -84,10 +82,7 @@ export default function HeroSection() {
         className="mt-6 lg:mt-3 font-mono text-xs md:text-sm leading-relaxed text-muted w-full flex flex-wrap gap-x-1.5 gap-y-1"
       >
         <span className="text-accent">▸</span>{" "}
-        <button onClick={() => setShowEgg(true)} className="hover:text-accent transition-colors cursor-pointer" title="clique 👀">
-Profissional de TI
-        </button>{" "}
-        <span>• Na minha máquina funciona • Já abriu o chamado? • CTRL+ALT+DEL</span>
+        <span>Coordenação de TI • Governança • Service Delivery • Liderança de equipes e operações</span>
       </motion.p>
 
       <motion.div
@@ -139,37 +134,6 @@ Profissional de TI
         </a>
       </motion.div>
 
-      <AnimatePresence>
-        {showEgg && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-background/80 backdrop-blur-md"
-            onClick={() => setShowEgg(false)}
-          >
-            <motion.div
-              initial={{ scale: 0.9, y: 20 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.9, y: 20 }}
-              transition={{ type: "spring", damping: 20, stiffness: 300 }}
-              className="relative max-w-[420px] w-full glass-card-elevated rounded-2xl p-6 border border-accent/20"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button
-                onClick={() => setShowEgg(false)}
-                className="absolute top-3 right-3 p-1.5 rounded-full bg-surface hover:bg-surface-hover text-muted hover:text-foreground transition-colors"
-                aria-label="Fechar"
-              >
-                <X className="w-4 h-4" />
-              </button>
-              <p className="font-mono text-xs uppercase tracking-widest text-accent mb-3">easter egg — suporte_</p>
-              <img src={`${import.meta.env.BASE_URL}img/meme-menino-suporte.jpg`} alt="Meme: Menino do computador é o C@#%*! Eu sou profissional de TI — SUPORTE" className="w-full rounded-xl border border-border" loading="lazy" />
-              <p className="mt-3 font-mono text-xs text-muted text-center">Clique em “Profissional de TI” na tagline 😉</p>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   );
 }
