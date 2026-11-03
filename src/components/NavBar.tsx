@@ -52,7 +52,7 @@ export default function NavBar() {
         aria-label="Navegação principal"
         className="max-w-6xl mx-auto px-4 md:px-12 h-16 flex items-center gap-2 md:gap-4"
       >
-        <a href="#top" className="shrink-0 label-mono text-foreground hover:text-accent-bright transition-colors">
+        <a href="#top" className="shrink-0 label-mono text-foreground hover:text-foreground transition-colors">
           GG<span className="text-accent-bright">.</span>
         </a>
 

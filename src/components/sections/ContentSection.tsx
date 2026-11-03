@@ -30,7 +30,7 @@ export default function ContentSection() {
               className="grid gap-3 md:grid-cols-[190px_1fr] md:gap-10 border-b border-border py-6 md:py-8"
             >
               <div>
-                <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-bright">
+                <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
                   {formatDateRange(job.startDate, job.endDate)}
                 </div>
                 <div className="mt-2 text-[14px] font-semibold text-foreground">
@@ -68,7 +68,7 @@ export default function ContentSection() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className="glass-card rounded-xl p-6"
             >
-              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-bright">
+              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
                 {category.category}
               </h3>
               {category.description && (

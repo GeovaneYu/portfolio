@@ -43,15 +43,15 @@ export default function ContactSection() {
             >
               <div className="flex items-center justify-between">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-soft ring-1 ring-accent/10 transition-all duration-300 group-hover:bg-accent group-hover:ring-accent group-hover:scale-105">
-                  <Icon className="h-5 w-5 text-accent-bright transition-colors group-hover:text-accent-foreground" aria-hidden="true" />
+                  <Icon className="h-5 w-5 text-muted transition-colors group-hover:text-accent-foreground" aria-hidden="true" />
                 </div>
-                <ArrowUpRight className="h-4 w-4 text-muted transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent-bright" aria-hidden="true" />
+                <ArrowUpRight className="h-4 w-4 text-muted transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground" aria-hidden="true" />
               </div>
               <div className="mt-4 font-mono text-[11px] uppercase tracking-[0.18em] text-muted">{label}</div>
-              <div className="mt-1.5 text-[15px] font-medium leading-snug break-all text-foreground transition-colors group-hover:text-accent-bright">
+              <div className="mt-1.5 text-[15px] font-medium leading-snug break-all text-foreground transition-colors group-hover:text-foreground">
                 {value}
               </div>
-              <div className="mt-4 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-wide text-accent-bright opacity-80 transition-all group-hover:gap-2 group-hover:opacity-100">
+              <div className="mt-4 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-wide text-muted opacity-80 transition-all group-hover:gap-2 group-hover:opacity-100">
                 {cta} <span aria-hidden="true">→</span>
               </div>
             </a>

@@ -63,7 +63,7 @@ export default function HeroSection() {
               href={personalInfo.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 font-mono text-xs uppercase tracking-widest text-accent-foreground hover:bg-accent-dim transition-colors"
+              className="inline-flex items-center gap-2 rounded-full border border-accent-bright bg-accent px-5 py-3 font-mono text-xs uppercase tracking-widest text-accent-foreground hover:bg-accent-dim transition-colors"
             >
               <WhatsAppIcon className="h-4 w-4" />
               Agendar uma conversa
@@ -79,20 +79,20 @@ export default function HeroSection() {
           </div>
 
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 font-mono text-[11px] md:text-xs">
-            <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-2 text-muted hover:text-accent-bright transition-colors min-w-0">
-              <Mail className="h-4 w-4 shrink-0 text-accent-bright" />
+            <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-2 text-muted hover:text-foreground transition-colors min-w-0">
+              <Mail className="h-4 w-4 shrink-0 text-muted" />
               <span className="truncate">{personalInfo.email}</span>
             </a>
-            <a href={personalInfo.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted hover:text-accent-bright transition-colors">
-              <WhatsAppIcon className="h-4 w-4 shrink-0 text-accent-bright" />
+            <a href={personalInfo.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted hover:text-foreground transition-colors">
+              <WhatsAppIcon className="h-4 w-4 shrink-0 text-muted" />
               <span>{personalInfo.phone}</span>
             </a>
             <div className="flex items-center gap-2 text-muted">
-              <MapPin className="h-4 w-4 shrink-0 text-accent-bright" />
+              <MapPin className="h-4 w-4 shrink-0 text-muted" />
               <span>{personalInfo.location.city}</span>
             </div>
-            <a href={`https://${personalInfo.website}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted hover:text-accent-bright transition-colors min-w-0">
-              <Linkedin className="h-4 w-4 shrink-0 text-accent-bright" />
+            <a href={`https://${personalInfo.website}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted hover:text-foreground transition-colors min-w-0">
+              <Linkedin className="h-4 w-4 shrink-0 text-muted" />
               <span className="truncate">@{handle}</span>
             </a>
           </div>
