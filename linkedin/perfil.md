@@ -20,7 +20,7 @@ Coordenação e Gestão de TI | Governança, Operações e Infraestrutura | ITIL
 ```
 Sou líder de TI e profissional com mais de 14 anos de carreira construída na prática — evoluindo da operação técnica e do suporte avançado bilíngue até a coordenação de equipes, governança e operações de infraestrutura em ambientes corporativos e industriais de alta criticidade.
 
-Nos últimos quatro anos, liderei a operação de TI para múltiplos clientes, conectando a execução técnica (N1, N2 e N3) às prioridades de gestores e diretorias. Meu foco é tirar a TI do modo reativo e consolidar uma operação estável, segura, documentada e previsível.
+Organizo a operação e entrego uma TI estável, segura e previsível: lidero a execução técnica (N1, N2 e N3) e conecto os times técnicos às prioridades de gestores e diretorias. Meu foco é tirar a TI do modo reativo e consolidar uma operação estável e previsível.
 
 Principais frentes de atuação em Coordenação, Governança e Gestão de TI:
 • Liderança de Operações e Serviços (ITSM / SDM): Coordenação de times de suporte e infraestrutura, definição de fluxos de escalonamento, condução de incidentes críticos (Major Incidents / RCA) e gestão de SLAs e indicadores de eficiência operacional.

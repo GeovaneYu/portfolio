@@ -1,13 +1,12 @@
 {
-  "name": "Geovane Gofredo - Portfólio",
+  "name": "Geovane Gofredo — Coordenação de TI",
   "short_name": "Geovane Gofredo",
-  "description": "Geovane Gofredo - Portfólio",
+  "description": "Coordenação de TI, governança e Service Delivery (ITSM/SDM).",
   "icons": [
     { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "/apple-touch-icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ],
-  "theme_color": "#0F1419",
-  "background_color": "#FCFCF9",
+  "theme_color": "#1D1B1A",
+  "background_color": "#F0EEE9",
   "display": "standalone"
 }

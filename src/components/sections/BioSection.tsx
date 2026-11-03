@@ -1,81 +1,48 @@
 import { personalInfo } from "@/data/portfolio-data";
-import { motion } from "framer-motion";
-import { Users, ShieldCheck, Globe2, Clock } from "lucide-react";
 
-const highlights = [
-  { icon: Clock, value: "14+", label: "anos em TI" },
-  { icon: Users, value: "N1/N2/N3", label: "liderança de equipes" },
-  { icon: ShieldCheck, value: "ITIL/COBIT", label: "governança e ITSM" },
-  { icon: Globe2, value: "EN/PT", label: "atuação global" },
+const deliverables = [
+  { num: "01", title: "Operação estável", text: "Rotinas preventivas, documentação e padronização para eliminar incidentes recorrentes." },
+  { num: "02", title: "SLAs e KPIs", text: "Incidentes críticos, RCA, GMUD e indicadores de serviço controlados." },
+  { num: "03", title: "Governança", text: "ITIL e COBIT aplicados com prática: ITSM, ITAM, LGPD e compliance." },
+  { num: "04", title: "Interface executiva", text: "Reporte direto a gestores e diretorias com alinhamento de prioridades." },
 ];
 
 export default function BioSection() {
   return (
     <section id="sobre" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28">
-      <motion.h2
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.4 }}
-        transition={{ duration: 0.5 }}
-        className="label-mono mb-8 flex items-center gap-3"
-      >
+      <h2 className="label-mono mb-10 flex items-center gap-3">
         <span className="h-px w-8 bg-accent" aria-hidden="true" />
         Sobre
-      </motion.h2>
+      </h2>
 
-      {/* Terminal Window — light: warm editorial paper, dark: grafite */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.6, delay: 0.05 }}
-        className="rounded-xl border overflow-hidden bg-[#FFFBF5] dark:bg-[#0F1419] border-[#F0E6DD] dark:border-white/10 shadow-[0_8px_28px_-14px_rgba(185,28,46,0.18),0_2px_8px_rgba(0,0,0,0.04)] dark:shadow-xl"
-      >
-        <div className="flex items-center gap-1.5 px-4 py-3 border-b border-[#F0E6DD] dark:border-white/10 bg-white/70 dark:bg-white/[0.03] backdrop-blur-sm">
-          <span className="w-3 h-3 rounded-full bg-red-500 shadow-[0_1px_2px_rgba(0,0,0,0.15)]" />
-          <span className="w-3 h-3 rounded-full bg-yellow-500 shadow-[0_1px_2px_rgba(0,0,0,0.15)]" />
-          <span className="w-3 h-3 rounded-full bg-green-500 shadow-[0_1px_2px_rgba(0,0,0,0.15)]" />
-          <span className="ml-3 font-mono text-xs tracking-wide text-muted dark:text-white/40">geovane@portfolio: ~/sobre</span>
-          <span className="ml-auto hidden md:inline font-mono text-[10px] tracking-widest text-accent/60 dark:text-white/20">— light editorial</span>
-        </div>
-        <div className="relative p-6 md:p-8 font-mono text-[14px] md:text-[15px] leading-[1.75] bg-[#FFFBF5] dark:bg-[#0F1419]">
-          <div className="flex items-center gap-2 text-muted dark:text-white/50 mb-3">
-            <span className="text-accent">$</span> cat sobre.txt
-          </div>
-          <p className="whitespace-pre-line text-[oklch(24%_0.01_240)] dark:text-white/90">
+      <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="lg:col-span-7">
+          <blockquote className="font-display uppercase leading-[0.98] tracking-tight text-foreground text-[clamp(2rem,5vw,3.6rem)]">
+            Organizo a operação<br />e entrego <span className="text-accent">resultado.</span>
+          </blockquote>
+
+          <p className="mt-8 text-[16px] md:text-[17px] leading-[1.75] text-muted whitespace-pre-line max-w-2xl">
             {personalInfo.bio}
           </p>
-          <div className="mt-5 flex items-center gap-2">
-            <span className="text-accent">$</span>
-            <span className="w-2 h-5 bg-accent animate-pulse shadow-[0_0_8px_oklch(54%_0.18_20_/_0.4)]" aria-hidden="true" />
-          </div>
         </div>
-      </motion.div>
 
-      <motion.ul
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.6, delay: 0.15 }}
-        className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto"
-      >
-        {highlights.map(({ icon: Icon, value, label }) => (
-          <li
-            key={label}
-            className="group relative flex flex-col items-center text-center rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:bg-accent-soft/20 hover:shadow-lg hover:shadow-accent/10 cursor-default"
-          >
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-accent/10 ring-1 ring-accent/10 transition-all duration-300 group-hover:bg-accent group-hover:ring-accent group-hover:scale-105">
-              <Icon className="h-5 w-5 text-accent transition-colors group-hover:text-accent-foreground" aria-hidden="true" />
-            </div>
-            <div className="mt-4 text-2xl md:text-[26px] font-bold tracking-tight text-foreground leading-none transition-colors group-hover:text-accent">
-              {value}
-            </div>
-            <div className="mt-2 font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
-              {label}
-            </div>
-          </li>
-        ))}
-      </motion.ul>
+        <div className="lg:col-span-5">
+          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted mb-5">
+            O que eu entrego
+          </p>
+          <ul className="border-t border-border/60 divide-y divide-border/60">
+            {deliverables.map((item) => (
+              <li key={item.num} className="flex items-start gap-5 py-4">
+                <span className="font-mono text-[12px] text-accent pt-0.5">{item.num}</span>
+                <span className="min-w-0">
+                  <span className="block text-[16px] md:text-[17px] font-semibold text-foreground leading-snug">{item.title}</span>
+                  <span className="block mt-1 text-[14px] leading-[1.55] text-muted">{item.text}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </section>
   );
 }

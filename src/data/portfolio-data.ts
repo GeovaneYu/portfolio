@@ -23,7 +23,7 @@ export const personalInfo: PersonalInfo = {
   email: "geovane.gofredo@outlook.com",
   phone: "(11) 96882-8204",
   whatsapp: `https://wa.me/5511968828204?text=${whatsappMessage}`,
-  bio: "Sou líder de TI e profissional com mais de 14 anos de carreira construída na prática — evoluindo da operação técnica e do suporte avançado bilíngue até a coordenação de equipes, governança e operações de infraestrutura em ambientes corporativos e industriais de alta criticidade.\n\nNos últimos quatro anos, liderei a operação de TI para múltiplos clientes, conectando a execução técnica (N1/N2/N3) às prioridades de gestores e diretorias. Atuo com ITSM/SDM, gestão de incidentes críticos e SLAs, governança (ITIL/COBIT), gestão de fornecedores, projetos de infraestrutura e cloud, continuidade de negócios e segurança. Meu foco é tirar a TI do modo reativo e consolidar uma operação estável, segura, documentada e previsível. Inglês avançado/fluente para atuação com times globais.",
+  bio: "Sou líder de TI e profissional com mais de 14 anos de carreira construída na prática — evoluindo da operação técnica e do suporte avançado bilíngue até a coordenação de equipes, governança e operações de infraestrutura em ambientes corporativos e industriais de alta criticidade.\n\nOrganizo a operação e entrego uma TI estável, segura e previsível: lidero equipes N1/N2/N3, gestão de incidentes críticos, SLAs e KPIs, governança (ITIL/COBIT), gestão de fornecedores, projetos de infraestrutura e cloud, continuidade de negócios e segurança. Meu foco é tirar a TI do modo reativo e consolidar uma operação estável e previsível. Inglês avançado/fluente para atuação com times globais.",
   skills: "Governança de TI, Coordenação de TI, Gestão de Operações, Service Delivery (SDM), Liderança de Equipes, ITIL, COBIT, ITSM, Gestão de Incidentes, Gestão de Problemas, GMUD, RCA, SLA, KPI, MTTR, FCR, CSAT, Gestão de Fornecedores, Contratos, CapEx/OpEx, ITAM, CMDB, LGPD, Compliance, BCP, DRP, Scrum, Kanban, PMBOK, Microsoft 365, Azure, Entra ID, Intune, Autopilot, MDM/MAM, Exchange Online, SharePoint Online, Teams Admin, Google Workspace, DaaS, Windows Server, Active Directory, GPO, DNS, DHCP, File Server, Linux, macOS, Proxmox, VMware, Hyper-V, VPS, Docker, RMM, Zabbix, Grafana, ServiceNow, Jira Service Management, GLPI, Redes Corporativas, TCP/IP, Roteamento, Switching, VLANs, Cabeamento Estruturado, Firewall, VPN Site-to-Site, VPN Client-to-Site, EDR, Antivírus, Acesso Condicional, Privilégio Mínimo, Backup Local, Backup em Nuvem, Acronis, Veeam, Hardware",
 };
 
@@ -106,18 +106,22 @@ export const languages: Language[] = [
 export const skillCategories: SkillCategory[] = [
   {
     category: "Governança e Gestão",
+    description: "Operação organizada e previsível com processos, indicadores e governança.",
     skills: "Governança de TI, Coordenação de TI, Gestão de Operações, Service Delivery (SDM), Liderança de Equipes N1/N2/N3, ITIL, COBIT, ITSM, Gestão de Incidentes, Gestão de Problemas, GMUD, RCA, SLA, KPI, MTTR, FCR, CSAT, Gestão de Fornecedores, Contratos, CapEx/OpEx, ITAM, CMDB, LGPD, Compliance, BCP, DRP, Scrum, Kanban, PMBOK",
   },
   {
     category: "Cloud e Modern Workplace",
+    description: "Identidade, dispositivos e colaboração sob gestão com M365, Azure e Intune.",
     skills: "Microsoft 365, Azure, Entra ID, Intune, Autopilot, MDM/MAM, Exchange Online, SharePoint Online, Teams Admin, Google Workspace, DaaS, Migrações de Nuvem",
   },
   {
     category: "Sistemas, Virtualização e Monitoramento",
+    description: "Servidores e virtualização sustentados por observabilidade e automação.",
     skills: "Windows Server, Active Directory, GPO, DNS, DHCP, File Server, Linux, macOS, Proxmox, VMware, Hyper-V, VPS, Docker, RMM, Zabbix, Grafana, ServiceNow, Jira Service Management, GLPI",
   },
   {
     category: "Infraestrutura, Redes e Segurança",
+    description: "Redes, firewalls, backups e proteção de endpoints de ponta a ponta.",
     skills: "Redes Corporativas, TCP/IP, Roteamento, Switching, VLANs, Cabeamento Estruturado, Firewall, VPN Site-to-Site, VPN Client-to-Site, EDR, Antivírus, Acesso Condicional, Privilégio Mínimo, Backup Local, Backup em Nuvem, Acronis, Veeam, Hardware",
   },
 ];

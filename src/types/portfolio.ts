@@ -104,5 +104,6 @@ export interface Language {
 
 export interface SkillCategory {
   category: string;
+  description?: string;
   skills: string;
 }

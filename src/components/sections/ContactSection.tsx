@@ -24,11 +24,12 @@ export default function ContactSection() {
           Vamos <span className="text-accent">conversar</span>?
         </p>
         <p className="mt-3 text-[15px] leading-[1.65] text-muted max-w-2xl">
-          Seja para uma nova oportunidade profissional, suporte técnico, manutenção ou um projeto de infraestrutura,{" "}
-          <span className="text-foreground">estou aberto a conversar</span>.
+          Seja para uma nova oportunidade, um projeto de infraestrutura ou a organização de uma operação de TI,{" "}
+          <span className="text-foreground">eu organizo e entrego</span>.
         </p>
         <p className="mt-2 text-[15px] leading-[1.65] text-muted max-w-2xl">
-          Conte o que você precisa e <span className="text-foreground font-medium">vamos encontrar a melhor solução</span>.
+          Conte o que você precisa e{" "}
+          <span className="text-foreground font-medium">vamos encontrar a melhor solução</span>.
         </p>
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-5">

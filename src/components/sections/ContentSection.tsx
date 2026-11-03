@@ -19,6 +19,28 @@ export default function ContentSection() {
       <section id="experiencia" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28">
         <h2 className="label-mono mb-10">Experiência profissional</h2>
 
+        <div className="glass-card mb-8 rounded-xl p-5 md:p-6 grid gap-4 md:grid-cols-[1fr_auto] md:items-center">
+          <div>
+            <p className="label-mono">Em destaque</p>
+            <p className="mt-1 text-[17px] md:text-[18px] font-semibold text-foreground leading-snug">
+              FCA TI — coordenação de infraestrutura e operações
+            </p>
+            <p className="mt-1 text-[13px] text-muted">
+              Múltiplos clientes nacionais e multinacionais · Jun/2022 – Abr/2026
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2 md:justify-end md:max-w-xs">
+            {["Coordenação N1/N2/N3", "SLAs críticos", "LGPD · ITAM", "DRP / backup"].map((item) => (
+              <span
+                key={item}
+                className="font-mono text-[10px] uppercase tracking-wider px-3 py-1.5 rounded-full border border-accent/30 text-accent bg-accent/5"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+
         <ol className="relative border-l border-border pl-6 md:pl-10 space-y-8">
           {experience.map((job, index) => (
             <motion.li
@@ -59,10 +81,15 @@ export default function ContentSection() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className="glass-card rounded-xl p-6"
             >
-              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent mb-3">
+              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
                 {category.category}
               </h3>
-              <ul className="flex flex-wrap gap-2">
+              {category.description && (
+                <p className="mt-2 text-[13px] leading-[1.55] text-muted">
+                  {category.description}
+                </p>
+              )}
+              <ul className="mt-4 flex flex-wrap gap-2">
                 {category.skills.split(",").map((skill) => (
                   <li key={skill} className="font-mono text-[11px] leading-none px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground border border-border">
                     {skill.trim()}
