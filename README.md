@@ -1,6 +1,6 @@
 # Portfólio — Geovane Gofredo
 
-Portfólio profissional de Geovane Gofredo — mais de 14 anos em infraestrutura, operações e suporte de TI. Site editorial com modo claro/escuro, animações e foco em performance.
+Portfólio profissional de Geovane Gofredo — mais de 14 anos em coordenação, governança e operações de TI. Site editorial com modo claro/escuro, animações e foco em performance.
 
 **Site:** https://geovaneyu.github.io/portfolio/  
 **Currículo (PDF):** https://geovaneyu.github.io/portfolio/CV-Geovane-Gofredo-2026.pdf  

@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { Users, ShieldCheck, Globe2, Clock } from "lucide-react";
 
 const highlights = [
-  { icon: Clock, value: "Mais de 14", label: "anos em TI" },
-  { icon: Globe2, value: "Diversos", label: "países atendidos" },
-  { icon: ShieldCheck, value: "24/7", label: "sustentação crítica" },
-  { icon: Users, value: "Bilíngue", label: "suporte a times globais" },
+  { icon: Clock, value: "14+", label: "anos em TI" },
+  { icon: Users, value: "N1/N2/N3", label: "liderança de equipes" },
+  { icon: ShieldCheck, value: "ITIL/COBIT", label: "governança e ITSM" },
+  { icon: Globe2, value: "EN/PT", label: "atuação global" },
 ];
 
 export default function BioSection() {

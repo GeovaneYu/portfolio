@@ -11,25 +11,17 @@
     font-style: normal;
   }
 
-  @page {
-    size: A4;
-    margin: 0;
-  }
-
+  @page { size: A4; margin: 0; }
   * { box-sizing: border-box; }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
+  html, body { margin: 0; padding: 0; }
 
   body {
     width: 210mm;
     min-height: 297mm;
-    padding: 4.55mm 9.53mm;
+    padding: 3.5mm 9.53mm;
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 7.6pt;
-    line-height: 1.35;
+    font-size: 6.9pt;
+    line-height: 1.22;
     color: #1a1a1a;
     background: #fff;
   }
@@ -38,68 +30,57 @@
     font-size: 18.5pt;
     font-weight: 400;
     text-align: center;
-    margin: 0 0 7.2pt 0;
+    margin: 0 0 5pt 0;
     line-height: 1.1;
   }
 
   .contact {
     text-align: center;
-    font-size: 7.6pt;
+    font-size: 7.2pt;
     color: #555555;
     line-height: 1.45;
   }
 
-  .contact a,
-  a {
+  .contact a, a { color: #b91c1c; text-decoration: underline; }
+
+  .headline {
+    text-align: center;
+    font-size: 8.2pt;
     color: #b91c1c;
-    text-decoration: underline;
+    letter-spacing: 0.02em;
+    margin: 4pt 0 0 0;
+    line-height: 1.25;
   }
 
-  .section {
-    margin-top: 14.5pt;
-  }
+  .section { margin-top: 8.5pt; }
 
   h2 {
-    font-size: 9.5pt;
+    font-size: 9pt;
     font-weight: 400;
     color: #b91c1c;
-    margin: 0 0 6pt 0;
+    margin: 0 0 3pt 0;
     line-height: 1.2;
     padding: 0;
   }
 
-  .section-body {
-    padding-left: 3.17mm;
-  }
+  .section-body { padding-left: 3.17mm; }
+  p { margin: 0 0 1.2pt 0; }
 
-  p {
-    margin: 0 0 2.2pt 0;
-  }
-
-  .skills p {
-    margin: 0 0 2.2pt 0;
-  }
-
-  .job {
-    margin-top: 7.5pt;
-  }
-
-  .job:first-child {
-    margin-top: 0;
-  }
+  .job { margin-top: 4.5pt; }
+  .job:first-child { margin-top: 0; }
 
   .job-title {
-    font-size: 9pt;
+    font-size: 8.8pt;
     font-weight: 400;
-    margin: 0 0 1.5pt 0;
+    margin: 0 0 1pt 0;
     line-height: 1.2;
   }
 
   .job-role {
-    font-size: 7.6pt;
+    font-size: 6.9pt;
     font-weight: 400;
-    margin: 0 0 3.5pt 0;
-    line-height: 1.3;
+    margin: 0 0 2pt 0;
+    line-height: 1.22;
   }
 
   ul {
@@ -111,12 +92,10 @@
   li {
     margin: 0;
     padding: 0;
-    line-height: 1.35;
+    line-height: 1.22;
   }
 
-  .education {
-    margin: 0;
-  }
+  .education { margin: 0; }
 </style>
 </head>
 <body>
@@ -130,27 +109,31 @@
     Portfólio: <a href="https://geovaneyu.github.io/portfolio/">geovaneyu.github.io/portfolio/</a>
   </div>
 
+  <div class="headline">
+    COORDENAÇÃO DE TI | GOVERNANÇA | SERVICE DELIVERY (ITSM/SDM) | OPERAÇÕES E INFRAESTRUTURA
+  </div>
+
   <div class="section">
     <h2>Resumo Profissional</h2>
     <div class="section-body">
-      <p>Profissional de TI com mais de 14 anos em infraestrutura, suporte avançado e gestão técnica de ambientes corporativos de alta criticidade. Experiência comprovada em liderança de equipes, gestão de incidentes críticos, administração de redes e servidores e condução de projetos de melhoria e padronização. Atendimento corporativo bilíngue para times globais.</p>
+      <p>Profissional de TI com mais de 14 anos de experiência na sustentação, governança e liderança técnica de operações e infraestrutura em ambientes corporativos e industriais de alta criticidade. Sólida atuação na coordenação de equipes técnicas (N1, N2 e N3), gestão de incidentes críticos (Major Incident Management), controle de níveis de serviço (SLAs e KPIs) e condução de projetos de melhoria, padronização e continuidade operacional. Experiência direta na interface executiva com gestores, diretorias e fornecedores, aplicando boas práticas de governança (ITIL, COBIT e adequação à LGPD) para otimização de custos (CapEx/OpEx), mitigação de riscos e eficiência de processos. Inglês avançado/fluente consolidado no atendimento corporativo e na articulação com times globais em multinacionais de grande porte.</p>
     </div>
   </div>
 
   <div class="section">
-    <h2>Competências Técnicas</h2>
-    <div class="section-body skills">
-      <p>Gestão e Operações: Liderança Técnica, Gestão de Incidentes, Projetos de Infraestrutura, ITSM, Kanban, Scrum, ITIL.</p>
-      <p>Sistemas e Servidores: Windows, Windows Server, Active Directory, MacOS, Linux, Proxmox, VPS, Docker.</p>
-      <p>Cloud e Produtividade: Microsoft 365, Azure, Intune, Exchange, Teams Admin.</p>
-      <p>Infraestrutura e Redes: Redes de Computadores, Firewall, VPN, VLANs, Hardware, Software.</p>
+    <h2>Competências de Gestão, Governança e Tecnologia</h2>
+    <div class="section-body">
+      <p>Governança, Gestão e Processos: Governança de TI, Coordenação e Gestão de Operações de TI, Service Delivery Management (SDM), Liderança de Equipes Técnicas (N1/N2/N3), ITIL, COBIT, ITSM (Gestão de Incidentes, Problemas, Mudanças/GMUD e Requisições), Gestão de Crises (War Room) e Análise de Causa Raiz (RCA), Indicadores de Desempenho (SLA, OLA, MTTR, FCR, CSAT), Gestão de Fornecedores e Contratos, Otimização de Custos (CapEx/OpEx), Gestão de Ativos e Licenciamento de Software (ITAM/CMDB), Adequação Técnica à LGPD e Compliance, Planos de Continuidade de Negócios e Disaster Recovery (BCP/DRP), Gestão de Projetos de Infraestrutura (Scrum, Kanban, PMBOK).</p>
+      <p>Cloud, Modern Workplace e Produtividade: Administração e Governança Microsoft 365, Microsoft Azure, Microsoft Entra ID (Azure AD), Microsoft Intune (MDM/MAM e Autopilot), Exchange Online, SharePoint Online, Teams Admin, Google Workspace, Migrações de Plataforma e Nuvem, Desktop as a Service (DaaS).</p>
+      <p>Sistemas, Virtualização e Monitoramento: Windows Server (Active Directory, GPO, DNS, DHCP, File Server), Linux, Virtualização (Proxmox, VMware, Hyper-V), Ambientes VPS e Containers (Docker), Sistemas Windows e macOS, Monitoramento Proativo 24/7, Ferramentas de RMM, Observabilidade (Zabbix, Grafana) e Plataformas ITSM (ServiceNow, Jira Service Management, GLPI).</p>
+      <p>Infraestrutura, Redes e Segurança da Informação: Administração de Redes Corporativas e Industriais (TCP/IP, Roteamento, Switching, VLANs, Cabeamento Estruturado), Firewalls Gerenciados e Segurança de Perímetro, VPNs (Site-to-Site e Client-to-Site), Proteção de Endpoints (EDR/Antivírus), Políticas de Acesso Condicional e Privilégio Mínimo, Backup Corporativo Local e em Nuvem (Acronis, Veeam), Gestão de Hardware e Software.</p>
     </div>
   </div>
 
   <div class="section">
     <h2>Idiomas</h2>
     <div class="section-body">
-      <p>Português: Nativo. &nbsp; Inglês: Avançado / Fluente (suporte internacional e times globais). &nbsp; Espanhol: Intermediário.</p>
+      <p>Português: Nativo. &nbsp; Inglês: Avançado / Fluente (suporte internacional, condução de chamados críticos e alinhamento com times globais). &nbsp; Espanhol: Intermediário.</p>
     </div>
   </div>
 
@@ -158,67 +141,54 @@
     <h2>Experiência Profissional</h2>
     <div class="section-body">
       <div class="job">
-        <div class="job-title">FCA TI</div>
-        <div class="job-role">Líder de Infraestrutura e Operações de TI | Projetos, Redes e Ambientes Corporativos | Jun/2022 – Abr/2026</div>
+        <div class="job-title">FCA TI | São Paulo, SP</div>
+        <div class="job-role">Líder de Infraestrutura e Operações de TI | Coordenação, Governança e Projetos | Jun/2022 – Abr/2026</div>
+        <p>Gestão operacional, governança técnica e sustentação de ambientes de TI de múltiplos clientes corporativos, nacionais e multinacionais, assegurando alta disponibilidade e alinhamento estratégico ao negócio:</p>
         <ul>
-          <li>Gestão e sustentação de ambientes de TI de diversos clientes, nacionais e multinacionais.</li>
-          <li>Liderança de equipes, infraestrutura, redes e servidores, gestão de incidentes críticos e condução de projetos de melhoria e padronização.</li>
-          <li>Interface direta com gestores e diretorias, alinhando prioridades e garantindo estabilidade, eficiência e continuidade das operações de TI.</li>
+          <li>Liderança de Equipes e Operações (N1, N2 e N3): Coordenação técnica das equipes de suporte (Help Desk, Service Desk e Field Service), redes e servidores, definindo prioridades, fluxos de escalonamento e padronização do atendimento.</li>
+          <li>Interface Executiva e Alinhamento Estratégico: Atuação direta junto a gestores e diretorias dos clientes para reporte de indicadores operacionais, alinhamento de demandas prioritárias e defesa técnica de projetos de evolução tecnológica.</li>
+          <li>Gestão de Incidentes Críticos e Controle de SLAs: Liderança na condução de incidentes de alta severidade (Major Incidents), coordenando diagnósticos de causa raiz (RCA) e planos de ação para cumprimento de SLAs rigorosos e redução de tempo de parada (downtime).</li>
+          <li>Governança de Ativos, Custos e Compliance (LGPD): Estruturação de auditorias técnicas, inventário de parque tecnológico e controle do ciclo de vida de hardware e licenciamento de software (Microsoft 365 e soluções corporativas), otimizando custos com licenças ou recursos subutilizados e apoiando a adequação técnica à LGPD.</li>
+          <li>Condução de Projetos de Infraestrutura e Cloud: Planejamento e execução de projetos de onboarding de novos clientes, migrações e administração de Microsoft 365, Azure, Intune, servidores Windows/Linux, virtualização (Proxmox, VPS, Docker) e reestruturação de redes.</li>
+          <li>Continuidade de Negócios e Cibersegurança: Implementação e acompanhamento de estratégias de backup corporativo (local e em nuvem), planos de recuperação de desastres (DRP), administração de firewalls, VPNs (Site-to-Site e Client-to-Site), VLANs e políticas de proteção de endpoints.</li>
+          <li>Monitoramento Proativo e Melhoria Contínua: Gestão de rotinas preventivas 24/7 via ferramentas de RMM, documentação de topologias de rede e criação de procedimentos operacionais para eliminar incidentes recorrentes.</li>
         </ul>
       </div>
 
       <div class="job">
-        <div class="job-title">HCL Technologies</div>
-        <div class="job-role">Analista Sênior de Suporte e Infraestrutura | Nov/2017 – Jun/2022</div>
+        <div class="job-title">HCL Technologies | São Paulo, SP</div>
+        <div class="job-role">Analista Sênior de Suporte e Infraestrutura | Operações Globais (Rockwell Automation) | Nov/2017 – Jun/2022</div>
+        <p>Sustentação bilíngue de infraestrutura de TI dedicada à operação global da Rockwell Automation, atuando presencialmente em ambiente corporativo e industrial de alta criticidade com atendimento a usuários e equipes locais e internacionais:</p>
         <ul>
-          <li>Suporte bilíngue para Rockwell Automation (global). Atuação em suporte técnico presencial em ambiente corporativo e industrial, prestando atendimento a usuários locais e internacionais e garantindo a estabilidade da infraestrutura de TI nas operações.</li>
-          <li>Atendimento de chamados técnicos nível 2 e 3 em ambiente corporativo</li>
-          <li>Suporte presencial a usuários, estações de trabalho e periféricos</li>
-          <li>Diagnóstico e resolução de incidentes em hardware, software e rede</li>
-          <li>Suporte a infraestrutura de TI em ambiente de escritório e operação</li>
-          <li>Instalação, configuração e substituição de equipamentos de TI</li>
-          <li>Interface com equipes globais de suporte e fornecedores</li>
-          <li>Atendimento bilíngue a usuários e times internacionais (português e inglês)</li>
-          <li>Apoio em projetos de melhoria e implantação de infraestrutura</li>
+          <li>Sustentação Avançada N2/N3 em Ambiente Corporativo e Industrial: Ponto focal técnico para diagnóstico e resolução de incidentes complexos de hardware, software, servidores e conectividade de rede tanto nas áreas de escritório quanto na operação industrial.</li>
+          <li>Articulação Global e Gestão de Fornecedores: Interface contínua em inglês e português com times globais de suporte e engenharia internacional, além do alinhamento técnico e operacional com fornecedores e parceiros locais.</li>
+          <li>Projetos de Melhoria e Implantação de Infraestrutura: Condução local e apoio técnico em projetos de atualização tecnológica, rollout de equipamentos, padronização de estações de trabalho e melhorias de infraestrutura física e lógica.</li>
+          <li>Gestão de Ativos e Continuidade Operacional: Controle de instalação, configuração e substituição de ativos de TI, garantindo o cumprimento dos acordos globais de nível de serviço (SLAs) e a disponibilidade dos recursos para o negócio.</li>
+          <li>Padronização e Prevenção de Incidentes: Identificação de gargalos operacionais recorrentes e aplicação de ações corretivas e preventivas alinhadas às práticas ITIL e aos padrões globais de segurança da operação.</li>
         </ul>
       </div>
 
       <div class="job">
-        <div class="job-title">Sonda IT</div>
-        <div class="job-role">Analista Pleno de Suporte de TI | Out/2015 – Set/2016</div>
+        <div class="job-title">Sonda IT | São Paulo, SP</div>
+        <div class="job-role">Analista Pleno de Suporte e Infraestrutura de TI | Out/2015 – Set/2016</div>
         <ul>
-          <li>Suporte para Cielo e Rhodia Solvay.</li>
-          <li>Atendimento de chamados técnicos nível 1 e 2</li>
-          <li>Suporte a usuários locais e internacionais (português e inglês)</li>
-          <li>Diagnóstico e resolução de incidentes em hardware, software e rede</li>
-          <li>Instalação e configuração de equipamentos e estações de trabalho</li>
-          <li>Apoio em atividades de infraestrutura e suporte a operações de TI</li>
+          <li>Sustentação Bilíngue e Operações de TI: Atendimento técnico N1 e N2 (português e inglês) para usuários locais e internacionais nos ambientes corporativos da Cielo e da Rhodia Solvay, realizando diagnóstico de incidentes em hardware, software e redes, configuração de equipamentos e apoio direto às rotinas de infraestrutura.</li>
         </ul>
       </div>
 
       <div class="job">
-        <div class="job-title">Econocom Brasil</div>
-        <div class="job-role">Analista Pleno de Suporte de TI | Mai/2013 – Out/2015</div>
+        <div class="job-title">Econocom Brasil | São Paulo, SP</div>
+        <div class="job-role">Analista Pleno de Suporte e Infraestrutura de TI | Mai/2013 – Out/2015</div>
         <ul>
-          <li>Suporte Windows para Banco do Brasil e Mapfre (Telefonica/Vivo). Atuação em suporte técnico.</li>
-          <li>Atendimento de chamados de suporte nível 1 e 2</li>
-          <li>Diagnóstico e resolução de problemas em estações de trabalho e periféricos</li>
-          <li>Instalação e configuração de equipamentos de rede e dispositivos corporativos</li>
-          <li>Suporte a ambientes Windows e aplicações corporativas</li>
-          <li>Apoio em projetos de implantação e melhorias de infraestrutura</li>
+          <li>Suporte Corporativo e Projetos de Implantação: Atendimento de chamados N1 e N2 em ambientes Windows e aplicações corporativas, configuração de ativos de rede e dispositivos, e participação direta em projetos de implantação e melhorias de infraestrutura.</li>
         </ul>
       </div>
 
       <div class="job">
-        <div class="job-title">Grupo Help Online</div>
-        <div class="job-role">Técnico de Campo Júnior | Jan/2012 – Dez/2012</div>
+        <div class="job-title">Grupo Help Online | São Paulo, SP</div>
+        <div class="job-role">Técnico de Campo Júnior | Infraestrutura e Suporte de TI | Jan/2012 – Dez/2012</div>
         <ul>
-          <li>Atuação em suporte técnico presencial a usuários e estações de trabalho em ambiente corporativo.</li>
-          <li>Atendimento de chamados de suporte nível 1</li>
-          <li>Manutenção básica de computadores e periféricos</li>
-          <li>Instalação e configuração de sistemas operacionais e softwares corporativos</li>
-          <li>Suporte a rede local (cabeamento, pontos de rede e conectividade)</li>
-          <li>Apoio em atividades de infraestrutura e suporte de campo</li>
+          <li>Operações de Campo e Redes Locais: Suporte técnico presencial N1 em ambiente corporativo, manutenção de estações e periféricos, instalação de sistemas operacionais e softwares corporativos, e estruturação de rede local (cabeamento, pontos de rede e conectividade).</li>
         </ul>
       </div>
     </div>
@@ -227,7 +197,8 @@
   <div class="section">
     <h2>Formação Acadêmica</h2>
     <div class="section-body education">
-      <p>Redes de Computadores – FATEC Osasco.</p>
+      <p>Graduação Tecnológica em Redes de Computadores – FATEC Osasco</p>
+      <p>Disciplinas de Gestão e Governança na Matriz Curricular: Gestão de Projetos, Planejamento Estratégico, Fundamentos de Gestão de Pessoas, Administração Geral, Segurança em Redes de Computadores e Legislação Aplicada à TI.</p>
     </div>
   </div>
 </body>

@@ -17,70 +17,70 @@ const whatsappMessage = encodeURIComponent("Olá Geovane! Vim pelo seu portfóli
 
 export const personalInfo: PersonalInfo = {
   name: "Geovane Gofredo",
-  title: "MANUTENÇÃO, SUPORTE, INFRA, OPERAÇÕES E SERVIÇOS DE TI",
+  title: "COORDENAÇÃO DE TI | GOVERNANÇA | OPERAÇÕES E SERVIÇOS (ITSM/SDM)",
   location: { city: "São Paulo, SP", country: "Brasil" },
   website: "linkedin.com/in/geovane-gofredo",
   email: "geovane.gofredo@outlook.com",
   phone: "(11) 96882-8204",
   whatsapp: `https://wa.me/5511968828204?text=${whatsappMessage}`,
-  bio: "Profissional de TI com mais de 14 anos em infraestrutura, suporte avançado e gestão técnica de ambientes corporativos. Atuo com administração de redes, servidores, segurança e condução de projetos de melhoria. Perfil proativo, focado em estabilidade operacional e visão estratégica para otimização de ambientes críticos. Experiência direta com cliente corporativo, assumindo responsabilidade técnica, organização do ambiente e entrega de soluções com autonomia para times globais.",
-    skills: "Gestão, Liderança, Gestão de Incidentes, Gestão de Problemas, Projetos de Infraestrutura, ITSM, ITIL, COBIT, Scrum, Kanban, Ágil, Jira, Confluence, Markdown, SLA, Melhoria Contínua, Governança de TI, Windows Server, AD, GPO, DNS/DHCP, PowerShell, CLI, Linux, Proxmox, Virtualização, Docker, Backup e Restore, Monitoramento, M365, Azure, Entra ID, Intune, Windows Autopilot, MDM, Apple Business Manager, iPhone, Android, Exchange Admin, Teams Admin, Redes, Switching/Routing, Firewall, VPN, Wi-Fi Corporativo, Cabeamento Estruturado, Antivírus Corporativo, Hardware",
+  bio: "Profissional de TI com mais de 14 anos em infraestrutura, operações e serviços de TI. Atuação na coordenação de equipes N1/N2/N3, gestão de incidentes críticos, SLAs e KPIs, governança (ITIL/COBIT), gestão de fornecedores e projetos de infraestrutura e cloud. Interface executiva com gestores e diretorias, com foco em estabilidade, eficiência e continuidade operacional. Inglês avançado/fluente para atuação com times globais.",
+  skills: "Governança de TI, Coordenação de TI, Gestão de Operações, Service Delivery (SDM), Liderança de Equipes, ITIL, COBIT, ITSM, Gestão de Incidentes, Gestão de Problemas, GMUD, RCA, SLA, KPI, MTTR, FCR, CSAT, Gestão de Fornecedores, Contratos, CapEx/OpEx, ITAM, CMDB, LGPD, Compliance, BCP, DRP, Scrum, Kanban, PMBOK, Microsoft 365, Azure, Entra ID, Intune, Autopilot, MDM/MAM, Exchange Online, SharePoint Online, Teams Admin, Google Workspace, DaaS, Windows Server, Active Directory, GPO, DNS, DHCP, File Server, Linux, macOS, Proxmox, VMware, Hyper-V, VPS, Docker, RMM, Zabbix, Grafana, ServiceNow, Jira Service Management, GLPI, Redes Corporativas, TCP/IP, Roteamento, Switching, VLANs, Cabeamento Estruturado, Firewall, VPN Site-to-Site, VPN Client-to-Site, EDR, Antivírus, Acesso Condicional, Privilégio Mínimo, Backup Local, Backup em Nuvem, Acronis, Veeam, Hardware",
 };
 
 export const experience: Experience[] = [
   {
     id: "exp-1",
     company: "FCA TI",
-    role: "Líder de Infraestrutura e Operações de TI | Projetos, Redes e Ambientes Corporativos",
-    location: "",
+    role: "Líder de Infraestrutura e Operações de TI | Coordenação, Governança e Projetos",
+    location: "São Paulo, SP",
     startDate: "2022-06",
     endDate: "2026-04",
     description:
-      "Responsável pela gestão e sustentação de ambientes de TI de diversos clientes, nacionais e multinacionais.\nLiderança de equipes, infraestrutura, redes e servidores, gestão de incidentes críticos e condução de projetos de melhoria e padronização.\nInterface direta com gestores e diretorias, alinhando prioridades e garantindo estabilidade, eficiência e continuidade das operações de TI.",
+      "Gestão operacional, governança técnica e sustentação de ambientes de TI de múltiplos clientes corporativos, nacionais e multinacionais, assegurando alta disponibilidade e alinhamento estratégico ao negócio:\nLiderança de Equipes e Operações (N1, N2 e N3): Coordenação técnica das equipes de suporte (Help Desk, Service Desk e Field Service), redes e servidores, definindo prioridades, fluxos de escalonamento e padronização do atendimento.\nInterface Executiva e Alinhamento Estratégico: Atuação direta junto a gestores e diretorias dos clientes para reporte de indicadores operacionais, alinhamento de demandas prioritárias e defesa técnica de projetos de evolução tecnológica.\nGestão de Incidentes Críticos e Controle de SLAs: Liderança na condução de incidentes de alta severidade (Major Incidents), coordenando diagnósticos de causa raiz (RCA) e planos de ação para cumprimento de SLAs rigorosos e redução de tempo de parada (downtime).\nGovernança de Ativos, Custos e Compliance (LGPD): Estruturação de auditorias técnicas, inventário de parque tecnológico e controle do ciclo de vida de hardware e licenciamento de software (Microsoft 365 e soluções corporativas), otimizando custos com licenças ou recursos subutilizados e apoiando a adequação técnica à LGPD.\nCondução de Projetos de Infraestrutura e Cloud: Planejamento e execução de projetos de onboarding de novos clientes, migrações e administração de Microsoft 365, Azure, Intune, servidores Windows/Linux, virtualização (Proxmox, VPS, Docker) e reestruturação de redes.\nContinuidade de Negócios e Cibersegurança: Implementação e acompanhamento de estratégias de backup corporativo (local e em nuvem), planos de recuperação de desastres (DRP), administração de firewalls, VPNs (Site-to-Site e Client-to-Site), VLANs e políticas de proteção de endpoints.\nMonitoramento Proativo e Melhoria Contínua: Gestão de rotinas preventivas 24/7 via ferramentas de RMM, documentação de topologias de rede e criação de procedimentos operacionais para eliminar incidentes recorrentes.",
     current: false,
   },
   {
     id: "exp-2",
     company: "HCL Technologies",
-    role: "Analista Sênior de Suporte e Infraestrutura",
-    location: "",
+    role: "Analista Sênior de Suporte e Infraestrutura | Operações Globais (Rockwell Automation)",
+    location: "São Paulo, SP",
     startDate: "2017-11",
     endDate: "2022-06",
     description:
-      "Suporte bilíngue para Rockwell Automation (global). Atuação em suporte técnico presencial em ambiente corporativo e industrial, prestando atendimento a usuários locais e internacionais e garantindo a estabilidade da infraestrutura de TI nas operações.\n\nAtendimento de chamados técnicos nível 2 e 3 em ambiente corporativo\nSuporte presencial a usuários, estações de trabalho e periféricos\nDiagnóstico e resolução de incidentes em hardware, software e rede\nSuporte a infraestrutura de TI em ambiente de escritório e operação\nInstalação, configuração e substituição de equipamentos de TI\nInterface com equipes globais de suporte e fornecedores\nAtendimento bilíngue a usuários e times internacionais (português e inglês)\nApoio em projetos de melhoria e implantação de infraestrutura",
+      "Sustentação bilíngue de infraestrutura de TI dedicada à operação global da Rockwell Automation, atuando presencialmente em ambiente corporativo e industrial de alta criticidade com atendimento a usuários e equipes locais e internacionais:\nSustentação Avançada N2/N3 em Ambiente Corporativo e Industrial: Ponto focal técnico para diagnóstico e resolução de incidentes complexos de hardware, software, servidores e conectividade de rede tanto nas áreas de escritório quanto na operação industrial.\nArticulação Global e Gestão de Fornecedores: Interface contínua em inglês e português com times globais de suporte e engenharia internacional, além do alinhamento técnico e operacional com fornecedores e parceiros locais.\nProjetos de Melhoria e Implantação de Infraestrutura: Condução local e apoio técnico em projetos de atualização tecnológica, rollout de equipamentos, padronização de estações de trabalho e melhorias de infraestrutura física e lógica.\nGestão de Ativos e Continuidade Operacional: Controle de instalação, configuração e substituição de ativos de TI, garantindo o cumprimento dos acordos globais de nível de serviço (SLAs) e a disponibilidade dos recursos para o negócio.\nPadronização e Prevenção de Incidentes: Identificação de gargalos operacionais recorrentes e aplicação de ações corretivas e preventivas alinhadas às práticas ITIL e aos padrões globais de segurança da operação.",
     current: false,
   },
   {
     id: "exp-3",
     company: "Sonda IT",
-    role: "Analista Pleno de Suporte de TI",
-    location: "",
+    role: "Analista Pleno de Suporte e Infraestrutura de TI",
+    location: "São Paulo, SP",
     startDate: "2015-10",
     endDate: "2016-09",
     description:
-      "Suporte para Cielo e Rhodia Solvay.\n\nAtendimento de chamados técnicos nível 1 e 2\nSuporte a usuários locais e internacionais (português e inglês)\nDiagnóstico e resolução de incidentes em hardware, software e rede\nInstalação e configuração de equipamentos e estações de trabalho\nApoio em atividades de infraestrutura e suporte a operações de TI",
+      "Sustentação Bilíngue e Operações de TI: Atendimento técnico N1 e N2 (português e inglês) para usuários locais e internacionais nos ambientes corporativos da Cielo e da Rhodia Solvay, realizando diagnóstico de incidentes em hardware, software e redes, configuração de equipamentos e apoio direto às rotinas de infraestrutura.",
     current: false,
   },
   {
     id: "exp-4",
     company: "Econocom Brasil",
-    role: "Analista Pleno de Suporte de TI",
-    location: "",
+    role: "Analista Pleno de Suporte e Infraestrutura de TI",
+    location: "São Paulo, SP",
     startDate: "2013-05",
     endDate: "2015-10",
     description:
-      "Suporte Windows para Banco do Brasil e Mapfre (Telefonica/Vivo). Atuação em suporte técnico.\n\nAtendimento de chamados de suporte nível 1 e 2\nDiagnóstico e resolução de problemas em estações de trabalho e periféricos\nInstalação e configuração de equipamentos de rede e dispositivos corporativos\nSuporte a ambientes Windows e aplicações corporativas\nApoio em projetos de implantação e melhorias de infraestrutura",
+      "Suporte Corporativo e Projetos de Implantação: Atendimento de chamados N1 e N2 em ambientes Windows e aplicações corporativas, configuração de ativos de rede e dispositivos, e participação direta em projetos de implantação e melhorias de infraestrutura.",
     current: false,
   },
   {
     id: "exp-5",
     company: "Grupo Help Online",
-    role: "Técnico de Campo Júnior",
-    location: "",
+    role: "Técnico de Campo Júnior | Infraestrutura e Suporte de TI",
+    location: "São Paulo, SP",
     startDate: "2012-01",
     endDate: "2012-12",
     description:
-      "Atuação em suporte técnico presencial a usuários e estações de trabalho em ambiente corporativo.\n\nAtendimento de chamados de suporte nível 1\nManutenção básica de computadores e periféricos\nInstalação e configuração de sistemas operacionais e softwares corporativos\nSuporte a rede local (cabeamento, pontos de rede e conectividade)\nApoio em atividades de infraestrutura e suporte de campo",
+      "Operações de Campo e Redes Locais: Suporte técnico presencial N1 em ambiente corporativo, manutenção de estações e periféricos, instalação de sistemas operacionais e softwares corporativos, e estruturação de rede local (cabeamento, pontos de rede e conectividade).",
     current: false,
   },
 ];
@@ -100,23 +100,24 @@ export const education: Education[] = [
 export const languages: Language[] = [
   { language: "Português", proficiency: "Nativo" },
   { language: "Inglês", proficiency: "Avançado / Fluente" },
+  { language: "Espanhol", proficiency: "Intermediário" },
 ];
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: "Gestão e Operações",
-    skills: "Gestão, Liderança, Gestão de Incidentes, Gestão de Problemas, Projetos de Infraestrutura, ITSM, ITIL, COBIT, Scrum, Kanban, Ágil, Jira, Confluence, Markdown, SLA, Melhoria Contínua, Governança de TI",
+    category: "Governança e Gestão",
+    skills: "Governança de TI, Coordenação de TI, Gestão de Operações, Service Delivery (SDM), Liderança de Equipes N1/N2/N3, ITIL, COBIT, ITSM, Gestão de Incidentes, Gestão de Problemas, GMUD, RCA, SLA, KPI, MTTR, FCR, CSAT, Gestão de Fornecedores, Contratos, CapEx/OpEx, ITAM, CMDB, LGPD, Compliance, BCP, DRP, Scrum, Kanban, PMBOK",
   },
   {
-    category: "Sistemas e Servidores",
-    skills: "Windows Server, Active Directory, GPO, DNS/DHCP, PowerShell, CLI, Linux, Proxmox, Virtualização, Docker, VPS, Backup e Restore, Monitoramento, MacOS",
+    category: "Cloud e Modern Workplace",
+    skills: "Microsoft 365, Azure, Entra ID, Intune, Autopilot, MDM/MAM, Exchange Online, SharePoint Online, Teams Admin, Google Workspace, DaaS, Migrações de Nuvem",
   },
   {
-    category: "Cloud e Produtividade",
-    skills: "Microsoft 365, Azure, Entra ID, Intune, Windows Autopilot, MDM, Apple Business Manager, iPhone, Android, Exchange Admin, Teams Admin, Teams",
+    category: "Sistemas, Virtualização e Monitoramento",
+    skills: "Windows Server, Active Directory, GPO, DNS, DHCP, File Server, Linux, macOS, Proxmox, VMware, Hyper-V, VPS, Docker, RMM, Zabbix, Grafana, ServiceNow, Jira Service Management, GLPI",
   },
   {
-    category: "Infraestrutura e Redes",
-    skills: "Redes, Switching/Routing, Firewall, VPN, Wi-Fi Corporativo, VLAN, Cabeamento Estruturado, Antivírus Corporativo, Hardware",
+    category: "Infraestrutura, Redes e Segurança",
+    skills: "Redes Corporativas, TCP/IP, Roteamento, Switching, VLANs, Cabeamento Estruturado, Firewall, VPN Site-to-Site, VPN Client-to-Site, EDR, Antivírus, Acesso Condicional, Privilégio Mínimo, Backup Local, Backup em Nuvem, Acronis, Veeam, Hardware",
   },
 ];
