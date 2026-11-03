@@ -18,7 +18,7 @@ Coordenação e Gestão de TI | Governança, Operações e Infraestrutura | ITIL
 ## 2. Seção "Sobre"
 
 ```
-Sou profissional de TI com mais de 14 anos de carreira construída na prática — evoluindo da operação técnica e do suporte avançado bilíngue até a coordenação de equipes, governança e operações de infraestrutura em ambientes corporativos e industriais de alta criticidade.
+Sou líder de TI e profissional com mais de 14 anos de carreira construída na prática — evoluindo da operação técnica e do suporte avançado bilíngue até a coordenação de equipes, governança e operações de infraestrutura em ambientes corporativos e industriais de alta criticidade.
 
 Nos últimos quatro anos, liderei a operação de TI para múltiplos clientes, conectando a execução técnica (N1, N2 e N3) às prioridades de gestores e diretorias. Meu foco é tirar a TI do modo reativo e consolidar uma operação estável, segura, documentada e previsível.
 
