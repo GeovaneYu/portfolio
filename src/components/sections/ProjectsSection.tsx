@@ -30,7 +30,7 @@ export default function ProjectsSection() {
     <section id="projetos" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-14 md:py-20">
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
         <div>
-          <h2 className="label-mono">Projetos e resultados</h2>
+          <h2 className="label-mono section-label">Projetos e resultados</h2>
           <p className="mt-2 max-w-xl text-[15px] leading-[1.6] text-muted">
             Principais entregas e resultados com infraestrutura, cloud e governança.
           </p>
@@ -57,7 +57,7 @@ export default function ProjectsSection() {
             transition={{ duration: 0.5, delay: index * 0.05 }}
             className="glass-card rounded-xl p-6 flex flex-col"
           >
-            <span className="font-display text-5xl leading-none text-accent-bright" aria-hidden="true">
+            <span className="font-display text-5xl leading-none text-copper" aria-hidden="true">
               {project.num}
             </span>
             <h3 className="mt-5 text-[17px] md:text-[18px] font-semibold leading-snug text-foreground">

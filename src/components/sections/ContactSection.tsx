@@ -19,7 +19,7 @@ export default function ContactSection() {
         transition={{ duration: 0.6 }}
         className="glass-card rounded-2xl p-6 md:p-8"
       >
-        <h2 className="label-mono mb-6">Contato</h2>
+        <h2 className="label-mono section-label mb-6">Contato</h2>
         <p className="text-[22px] md:text-[30px] font-bold tracking-tight leading-[1.15] max-w-3xl">
           Vamos <span className="text-accent-bright">conversar</span>?
         </p>

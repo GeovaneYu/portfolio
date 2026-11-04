@@ -13,7 +13,7 @@ export default function HeroSection() {
         className="pointer-events-none absolute inset-0 -z-10 opacity-[0.12]"
         style={{
           backgroundImage:
-            "radial-gradient(ellipse 70% 45% at 18% 12%, rgba(78, 36, 49, 0.28), transparent 60%), radial-gradient(ellipse 45% 32% at 88% 8%, rgba(192, 162, 104, 0.14), transparent 65%)",
+            "radial-gradient(ellipse 70% 45% at 18% 12%, rgba(31, 91, 85, 0.30), transparent 60%), radial-gradient(ellipse 45% 32% at 88% 8%, rgba(198, 162, 107, 0.12), transparent 65%)",
         }}
       />
 
@@ -68,6 +68,15 @@ export default function HeroSection() {
               <Download className="h-4 w-4" />
               Baixar CV (PDF)
             </a>
+            <a
+              href={`${import.meta.env.BASE_URL}CV-Geovane-Gofredo-2026-EN.pdf`}
+              download
+              aria-label="Baixar CV em inglês"
+              title="Baixar CV em inglês"
+              className="inline-flex items-center justify-center rounded-full border border-border bg-surface px-4 py-3 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground hover:border-copper hover:bg-surface-hover transition-colors"
+            >
+              EN
+            </a>
           </div>
 
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 font-mono text-[11px] md:text-xs">
@@ -105,7 +114,7 @@ export default function HeroSection() {
                 alt="Geovane Gofredo"
                 width="360"
                 height="360"
-                className="relative w-full aspect-square rounded-full object-cover border border-accent-bright shadow-[0_24px_50px_-16px_rgba(78,36,49,0.48)]"
+                className="relative w-full aspect-square rounded-full object-cover border border-copper/80 shadow-[0_24px_50px_-16px_rgba(15,61,58,0.62)]"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
