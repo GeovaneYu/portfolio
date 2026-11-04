@@ -16,7 +16,7 @@ body {
   font-family: 'Didact Gothic', 'Helvetica Neue', Arial, sans-serif;
   font-size: 6.8pt;
   line-height: 1.2;
-  color: #1B2623;
+  color: #202624;
   background: #FFFFFF;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
@@ -50,10 +50,6 @@ a {
 
 .header-inner {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 9mm;
 }
 
 h1 {
@@ -90,28 +86,6 @@ h1 {
   color: #5E8D86;
 }
 
-.header-meta {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 4.6mm;
-  border-left: 0.55pt solid rgba(169, 212, 206, 0.35);
-}
-
-.meta-number {
-  font-size: 21pt;
-  line-height: 1;
-  color: #C6A26B;
-}
-
-.meta-label {
-  margin-top: 1mm;
-  font-size: 5.7pt;
-  line-height: 1.35;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #A9D4CE;
-}
 
 /* ===== Conteúdo ===== */
 .content {
@@ -128,15 +102,13 @@ h1 {
 }
 
 h2 {
-  margin: 0 0 1.45mm;
-  padding-bottom: 0.65mm;
-  border-bottom: 0.45pt solid #D9E4E0;
+  margin: 0 0 1.8mm;
   font-size: 7.8pt;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #1B4B46;
+  color: #39413E;
 }
 
 
@@ -158,7 +130,7 @@ p {
 }
 
 .cat {
-  color: #1B4B46;
+  color: #111816;
 }
 
 /* ===== Experiência ===== */
@@ -180,8 +152,6 @@ p {
   align-items: baseline;
   justify-content: space-between;
   gap: 5mm;
-  padding-bottom: 0.7mm;
-  border-bottom: 0.35pt solid #E4ECE9;
 }
 
 .company {
@@ -207,17 +177,15 @@ p {
 }
 
 .role {
-  margin: 0.85mm 0 0;
+  margin: 1.1mm 0 0;
   font-size: 7.5pt;
   line-height: 1.25;
-  color: #1B4B46;
+  color: #16201D;
 }
 
 /* Recuo único de todas as descrições, alinhado abaixo de empresa/cargo */
 .job-body {
-  margin: 1.05mm 0 0 4.8mm;
-  padding-left: 3.2mm;
-  border-left: 0.7pt solid #D3E0DC;
+  margin: 1.2mm 0 0 6.4mm;
 }
 
 .job-body p {
@@ -230,7 +198,7 @@ p {
 }
 
 .lead {
-  color: #1B4B46;
+  color: #111816;
 }
 
 /* ===== Idiomas e formação ===== */
@@ -245,7 +213,7 @@ p {
 }
 
 .languages .language {
-  color: #1B4B46;
+  color: #111816;
 }
 
 .education { margin-top: 2pt; }
@@ -282,8 +250,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 5mm;
-  padding-top: 1.45mm;
-  border-top: 0.45pt solid #D9E4E0;
+  padding-top: 0;
   font-size: 5.8pt;
   line-height: 1.2;
   letter-spacing: 0.1em;
@@ -292,7 +259,7 @@ p {
 }
 
 .footer .footer-brand {
-  color: #1B4B46;
+  color: #39413E;
 }
 
 .footer .footer-dot {
