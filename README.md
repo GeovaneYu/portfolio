@@ -3,7 +3,7 @@
 Portfólio executivo de Geovane Gofredo — coordenação de TI, governança e Service Delivery (ITSM/SDM), em modo escuro, com animações e foco em performance.
 
 **Site:** https://geovaneyu.github.io/portfolio/  
-**Currículo (PDF):** https://geovaneyu.github.io/portfolio/CV-Geovane-Gofredo-2026.pdf  
+**Currículos (PDF):** [PT](https://geovaneyu.github.io/portfolio/CV-Geovane-Gofredo-2026.pdf) · [EN](https://geovaneyu.github.io/portfolio/CV-Geovane-Gofredo-2026-EN.pdf)  
 **Cartão de visita:** https://geovaneyu.github.io/portfolio/cartao-visita.html  
 **Assinatura de e-mail:** https://geovaneyu.github.io/portfolio/email-signature.html
 
@@ -35,14 +35,17 @@ src/
   data/portfolio-data.ts fonte única de conteúdo
   pages/Index.tsx        JSON-LD + seções
 public/
-  CV-Geovane-Gofredo-2026.pdf  currículo para download
+  CV-Geovane-Gofredo-2026.pdf     currículo PT para download
+  CV-Geovane-Gofredo-2026-EN.pdf  currículo EN para download
   cartao-visita.html           cartão 85.6×53.98 mm
   email-signature.html         assinatura de e-mail
   img/                         geovane.jpg e geovane.webp
 cv/
-  CV-Geovane-Gofredo-2026.html fonte HTML do currículo
-  DidactGothic-Regular.ttf     fonte usada no currículo
-  gerar-pdf.sh                 gera o PDF a partir do HTML
+  CV-Geovane-Gofredo-2026.html     fonte HTML do currículo PT
+  CV-Geovane-Gofredo-2026-EN.html  fonte HTML do currículo EN
+  cv.css                           identidade visual dos currículos
+  DidactGothic-Regular.ttf         fonte usada nos currículos
+  gerar-pdf.sh                     gera os PDFs PT e EN
 backup/
   planos-antigos/              histórico de planejamento
 ```
@@ -57,11 +60,11 @@ GitHub Pages via **Actions** (`.github/workflows/deploy.yml`):
 
 ## Currículo
 
-O PDF em `public/CV-Geovane-Gofredo-2026.pdf` é gerado a partir de `cv/CV-Geovane-Gofredo-2026.html`, usando a fonte Didact Gothic local. Para atualizar:
+Os PDFs em `public/CV-Geovane-Gofredo-2026.pdf` e `public/CV-Geovane-Gofredo-2026-EN.pdf` são gerados a partir dos HTMLs em `cv/`, com a fonte Didact Gothic local e o CSS compartilhado `cv/cv.css`. Para atualizar:
 
-1. Edite o HTML em `cv/`.
+1. Edite o HTML ou o CSS em `cv/`.
 2. Rode `./cv/gerar-pdf.sh` (macOS, com Google Chrome instalado).
-3. O PDF é salvo em `public/CV-Geovane-Gofredo-2026.pdf`.
+3. Os PDFs são salvos em `public/`.
 4. Faça commit e push.
 
 ## Personalização

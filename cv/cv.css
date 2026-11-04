@@ -1,0 +1,318 @@
+@font-face {
+  font-family: 'Didact Gothic';
+  src: url('DidactGothic-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@page { size: A4; margin: 0; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  width: 210mm;
+  min-height: 297mm;
+  font-family: 'Didact Gothic', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 6.8pt;
+  line-height: 1.2;
+  color: #1B2623;
+  background: #FFFFFF;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+a {
+  color: #1B4B46;
+  text-decoration: none;
+  border-bottom: 0.45pt solid #C6A26B;
+}
+
+/* ===== Cabeçalho verde-petróleo ===== */
+.header {
+  position: relative;
+  overflow: hidden;
+  padding: 5mm 10mm 4.8mm;
+  color: #F7F3E9;
+  background:
+    radial-gradient(ellipse 60% 130% at 88% -20%, rgba(127, 184, 177, 0.18), transparent 62%),
+    linear-gradient(127deg, #17433F 0%, #10332F 52%, #0A2421 100%);
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.1pt;
+  background: linear-gradient(90deg, #C6A26B 0%, #8FC9C2 42%, #2A625C 100%);
+}
+
+.header-pattern {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.62;
+}
+
+.header-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 25mm;
+  align-items: center;
+  gap: 7mm;
+}
+
+.kicker {
+  margin: 0 0 1.9mm;
+  font-size: 6.2pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #C6A26B;
+}
+
+h1 {
+  margin: 0 0 2.2mm;
+  font-size: 24.5pt;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.012em;
+  color: #F9F6ED;
+}
+
+.headline {
+  margin: 0 0 2.9mm;
+  font-size: 6.95pt;
+  line-height: 1.45;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #A9D4CE;
+}
+
+.contact {
+  font-size: 6.8pt;
+  line-height: 1.55;
+  color: #C6D8D2;
+}
+
+.contact a {
+  color: #EAD6B0;
+  border-bottom-color: rgba(198, 162, 107, 0.55);
+}
+
+.contact .sep {
+  margin: 0 1.3mm;
+  color: #5E8D86;
+}
+
+.badge {
+  display: block;
+  width: 21.5mm;
+  height: 21.5mm;
+}
+
+/* ===== Conteúdo ===== */
+.content {
+  padding: 3.4mm 11mm 6.5mm;
+  position: relative;
+}
+
+.section {
+  margin-top: 3pt;
+}
+
+.section:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  margin: 0 0 1.2mm;
+  padding-bottom: 0.6mm;
+  border-bottom: 0.45pt solid #D9E4E0;
+  font-size: 8pt;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #1B4B46;
+}
+
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 4.8mm;
+  height: 1.5pt;
+  margin-right: 2.4mm;
+  vertical-align: 0.7pt;
+  background: #C6A26B;
+}
+
+p {
+  margin: 0 0 0.8mm;
+}
+
+.summary {
+  text-align: justify;
+}
+
+.skills p {
+  margin-bottom: 0.9mm;
+  text-align: left;
+}
+
+.skills p:last-child {
+  margin-bottom: 0;
+}
+
+.cat {
+  color: #1B4B46;
+}
+
+/* ===== Experiência ===== */
+.jobs {
+  margin: 0;
+}
+
+.job {
+  margin: 0 0 2.3mm;
+  page-break-inside: avoid;
+}
+
+.job:last-child {
+  margin-bottom: 0;
+}
+
+.job-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 5mm;
+  padding-bottom: 0.7mm;
+  border-bottom: 0.35pt solid #E4ECE9;
+}
+
+.company {
+  font-size: 8.8pt;
+  line-height: 1.2;
+  color: #15221F;
+}
+
+.company .loc {
+  margin-left: 2.3mm;
+  font-size: 6.8pt;
+  letter-spacing: 0.035em;
+  color: #70817C;
+}
+
+.dates {
+  flex-shrink: 0;
+  font-size: 6.5pt;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  color: #8B6A3F;
+  white-space: nowrap;
+}
+
+.role {
+  margin: 0.85mm 0 0;
+  font-size: 7.5pt;
+  line-height: 1.25;
+  color: #1B4B46;
+}
+
+/* Recuo único de todas as descrições, alinhado abaixo de empresa/cargo */
+.job-body {
+  margin: 1.05mm 0 0 4.8mm;
+  padding-left: 3.2mm;
+  border-left: 0.95pt solid #C9DCD7;
+}
+
+.job-body p {
+  margin: 0 0 0.6mm;
+  text-align: justify;
+}
+
+.job-body p:last-child {
+  margin-bottom: 0;
+}
+
+.lead {
+  color: #1B4B46;
+}
+
+/* ===== Idiomas e formação ===== */
+.languages,
+.education {
+  margin: 0;
+}
+
+.languages p,
+.education p {
+  margin: 0 0 0.65mm;
+}
+
+.languages .language {
+  color: #1B4B46;
+}
+
+.education { margin-top: 2pt; }
+
+.education.compact p {
+  margin: 0;
+}
+
+.edu-label {
+  margin-right: 1.8mm;
+  font-size: 6.6pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1B4B46;
+}
+
+.edu-label::before {
+  content: "";
+  display: inline-block;
+  width: 4.8mm;
+  height: 1.5pt;
+  margin-right: 2.2mm;
+  vertical-align: 0.7pt;
+  background: #C6A26B;
+}
+
+.education .degree {
+  color: #15221F;
+}
+
+.edu-extra {
+  color: #70817C;
+  font-size: 6.45pt;
+}
+
+/* ===== Rodapé ===== */
+.footer {
+  position: fixed;
+  left: 12mm;
+  right: 12mm;
+  bottom: 3.2mm;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5mm;
+  padding-top: 1.45mm;
+  border-top: 0.45pt solid #D9E4E0;
+  font-size: 5.8pt;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #71817C;
+}
+
+.footer .footer-brand {
+  color: #1B4B46;
+}
+
+.footer .footer-dot {
+  color: #C6A26B;
+}
