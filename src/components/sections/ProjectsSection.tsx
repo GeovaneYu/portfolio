@@ -6,7 +6,7 @@ const projects = [
     id: "proj-1",
     num: "01",
     title: "Onboarding e migração para Microsoft 365",
-    text: "Coordenação do onboarding de novos clientes e da migração para Microsoft 365, Azure e Intune — identidade, dispositivos e produtividade desde o primeiro dia.",
+    text: "Condução do onboarding de novos clientes e da migração para Microsoft 365, Azure e Intune — identidade, dispositivos e produtividade desde o primeiro dia.",
     result: "Ambiente padronizado, identidade e dispositivos sob gestão e menos chamados iniciais.",
   },
   {

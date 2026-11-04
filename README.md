@@ -1,6 +1,6 @@
 # Portfólio — Geovane Gofredo
 
-Portfólio executivo de Geovane Gofredo — coordenação de TI, governança e Service Delivery (ITSM/SDM), em modo escuro, com animações e foco em performance.
+Portfólio executivo de Geovane Gofredo — liderança de TI, governança e Service Delivery (ITSM/SDM), em modo escuro, com animações e foco em performance.
 
 **Site:** https://geovaneyu.github.io/portfolio/  
 **Currículos (PDF):** [PT](https://geovaneyu.github.io/portfolio/CV-Geovane-Gofredo-2026.pdf) · [EN](https://geovaneyu.github.io/portfolio/CV-Geovane-Gofredo-2026-EN.pdf)  

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="text-center md:text-left">
           <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
-            Coordenação de TI · Governança · Service Delivery (ITSM/SDM)
+            Liderança de TI · Governança · Service Delivery (ITSM/SDM)
           </p>
           <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
             © {new Date().getFullYear()} {personalInfo.name}

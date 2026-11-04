@@ -47,7 +47,7 @@ export default function HeroSection() {
           </p>
 
           <p className="mt-3 max-w-xl text-[15px] md:text-[16px] leading-[1.7] text-muted">
-            Coordenação de equipes N1/N2/N3, governança (ITIL/COBIT), SLAs críticos e gestão de fornecedores — com foco em continuidade, previsibilidade e eficiência.
+            Liderança de equipes N1/N2/N3, governança (ITIL/COBIT), SLAs críticos e gestão de fornecedores — com foco em continuidade, previsibilidade e eficiência.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
