@@ -32,11 +32,9 @@ a {
 .header {
   position: relative;
   overflow: hidden;
-  padding: 5mm 10mm 4.8mm;
+  padding: 5.2mm 10mm 4.8mm;
   color: #F7F3E9;
-  background:
-    radial-gradient(ellipse 60% 130% at 88% -20%, rgba(127, 184, 177, 0.18), transparent 62%),
-    linear-gradient(127deg, #17433F 0%, #10332F 52%, #0A2421 100%);
+  background: linear-gradient(125deg, #17433F 0%, #10332F 55%, #0B2522 100%);
 }
 
 .header::after {
@@ -45,37 +43,22 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 2.1pt;
-  background: linear-gradient(90deg, #C6A26B 0%, #8FC9C2 42%, #2A625C 100%);
+  height: 1.7pt;
+  background: #C6A26B;
 }
 
-.header-pattern {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.62;
-}
 
 .header-inner {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 25mm;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: 7mm;
-}
-
-.kicker {
-  margin: 0 0 1.9mm;
-  font-size: 6.2pt;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #C6A26B;
+  gap: 9mm;
 }
 
 h1 {
   margin: 0 0 2.2mm;
-  font-size: 24.5pt;
+  font-size: 25.5pt;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.012em;
@@ -83,12 +66,12 @@ h1 {
 }
 
 .headline {
-  margin: 0 0 2.9mm;
-  font-size: 6.95pt;
+  margin: 0 0 2.8mm;
+  font-size: 6.85pt;
   line-height: 1.45;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #A9D4CE;
+  color: #B6D8D2;
 }
 
 .contact {
@@ -98,8 +81,8 @@ h1 {
 }
 
 .contact a {
-  color: #EAD6B0;
-  border-bottom-color: rgba(198, 162, 107, 0.55);
+  color: #F1E4C9;
+  border-bottom-color: rgba(198, 162, 107, 0.42);
 }
 
 .contact .sep {
@@ -107,15 +90,32 @@ h1 {
   color: #5E8D86;
 }
 
-.badge {
-  display: block;
-  width: 21.5mm;
-  height: 21.5mm;
+.header-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 4.6mm;
+  border-left: 0.55pt solid rgba(169, 212, 206, 0.35);
+}
+
+.meta-number {
+  font-size: 21pt;
+  line-height: 1;
+  color: #C6A26B;
+}
+
+.meta-label {
+  margin-top: 1mm;
+  font-size: 5.7pt;
+  line-height: 1.35;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #A9D4CE;
 }
 
 /* ===== Conteúdo ===== */
 .content {
-  padding: 3.4mm 11mm 6.5mm;
+  padding: 3.8mm 11mm 6.5mm;
   position: relative;
 }
 
@@ -128,26 +128,17 @@ h1 {
 }
 
 h2 {
-  margin: 0 0 1.2mm;
-  padding-bottom: 0.6mm;
+  margin: 0 0 1.45mm;
+  padding-bottom: 0.65mm;
   border-bottom: 0.45pt solid #D9E4E0;
-  font-size: 8pt;
+  font-size: 7.8pt;
   font-weight: 400;
   line-height: 1.2;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #1B4B46;
 }
 
-h2::before {
-  content: "";
-  display: inline-block;
-  width: 4.8mm;
-  height: 1.5pt;
-  margin-right: 2.4mm;
-  vertical-align: 0.7pt;
-  background: #C6A26B;
-}
 
 p {
   margin: 0 0 0.8mm;
@@ -176,7 +167,7 @@ p {
 }
 
 .job {
-  margin: 0 0 2.3mm;
+  margin: 0 0 2.7mm;
   page-break-inside: avoid;
 }
 
@@ -211,7 +202,7 @@ p {
   font-size: 6.5pt;
   letter-spacing: 0.105em;
   text-transform: uppercase;
-  color: #8B6A3F;
+  color: #6F817C;
   white-space: nowrap;
 }
 
@@ -226,7 +217,7 @@ p {
 .job-body {
   margin: 1.05mm 0 0 4.8mm;
   padding-left: 3.2mm;
-  border-left: 0.95pt solid #C9DCD7;
+  border-left: 0.7pt solid #D3E0DC;
 }
 
 .job-body p {
@@ -271,15 +262,6 @@ p {
   color: #1B4B46;
 }
 
-.edu-label::before {
-  content: "";
-  display: inline-block;
-  width: 4.8mm;
-  height: 1.5pt;
-  margin-right: 2.2mm;
-  vertical-align: 0.7pt;
-  background: #C6A26B;
-}
 
 .education .degree {
   color: #15221F;
