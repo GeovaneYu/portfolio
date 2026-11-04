@@ -14,8 +14,8 @@ body {
   width: 210mm;
   min-height: 297mm;
   font-family: 'Didact Gothic', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 6.8pt;
-  line-height: 1.2;
+  font-size: 7.1pt;
+  line-height: 1.24;
   color: #202624;
   background: #FFFFFF;
   -webkit-print-color-adjust: exact;
@@ -32,7 +32,7 @@ a {
 .header {
   position: relative;
   overflow: hidden;
-  padding: 5.2mm 10mm 4.8mm;
+  padding: 4.6mm 10mm 4.2mm;
   color: #F7F3E9;
   background: linear-gradient(125deg, #17433F 0%, #10332F 55%, #0B2522 100%);
 }
@@ -54,21 +54,13 @@ a {
 
 h1 {
   margin: 0 0 2.2mm;
-  font-size: 25.5pt;
+  font-size: 22pt;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.012em;
   color: #F9F6ED;
 }
 
-.headline {
-  margin: 0 0 2.8mm;
-  font-size: 6.85pt;
-  line-height: 1.45;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #B6D8D2;
-}
 
 .contact {
   font-size: 6.8pt;
@@ -139,7 +131,7 @@ p {
 }
 
 .job {
-  margin: 0 0 2.7mm;
+  margin: 0 0 3.4mm;
   page-break-inside: avoid;
 }
 
@@ -189,7 +181,7 @@ p {
 }
 
 .job-body p {
-  margin: 0 0 0.6mm;
+  margin: 0 0 0.65mm;
   text-align: justify;
 }
 
