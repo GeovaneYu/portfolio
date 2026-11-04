@@ -14,8 +14,8 @@ body {
   width: 210mm;
   min-height: 297mm;
   font-family: 'Didact Gothic', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 7.1pt;
-  line-height: 1.24;
+  font-size: 7pt;
+  line-height: 1.29;
   color: #202624;
   background: #FFFFFF;
   -webkit-print-color-adjust: exact;
@@ -81,7 +81,7 @@ h1 {
 
 /* ===== Conteúdo ===== */
 .content {
-  padding: 3.8mm 11mm 6.5mm;
+  padding: 3.8mm 10mm 8mm;
   position: relative;
 }
 
@@ -131,7 +131,7 @@ p {
 }
 
 .job {
-  margin: 0 0 3.4mm;
+  margin: 0 0 3.6mm;
   page-break-inside: avoid;
 }
 
@@ -181,7 +181,7 @@ p {
 }
 
 .job-body p {
-  margin: 0 0 0.65mm;
+  margin: 0 0 0.7mm;
   text-align: justify;
 }
 
@@ -233,27 +233,3 @@ p {
 }
 
 /* ===== Rodapé ===== */
-.footer {
-  position: fixed;
-  left: 12mm;
-  right: 12mm;
-  bottom: 3.2mm;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5mm;
-  padding-top: 0;
-  font-size: 5.8pt;
-  line-height: 1.2;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #71817C;
-}
-
-.footer .footer-brand {
-  color: #39413E;
-}
-
-.footer .footer-dot {
-  color: #C6A26B;
-}
