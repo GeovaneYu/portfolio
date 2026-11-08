@@ -1,6 +1,9 @@
 import type { Config } from "tailwindcss";
 import TailwindCssAnimate from "tailwindcss-animate";
+import path from "path";
 
+// Nota: o tema principal vive em src/index.css (@theme, Tailwind v4).
+// Este arquivo só mantém compatibilidade de alias @/ e plugins.
 export default {
   darkMode: ["class"],
   content: [
@@ -19,48 +22,39 @@ export default {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        border: "#111111",
+        input: "#111111",
+        ring: "#FF4D00",
+        background: "#F4F4F0",
+        foreground: "#111111",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#111111",
+          foreground: "#F4F4F0",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#FFFFFF",
+          foreground: "#111111",
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "#FF4D00",
+          foreground: "#111111",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "#555552",
+          foreground: "#555552",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "#111111",
+          foreground: "#F4F4F0",
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "#FFFFFF",
+          foreground: "#111111",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "#FFFFFF",
+          foreground: "#111111",
         },
-        // Brand colors from specification
-        "brand-blue": "hsl(var(--brand-blue))",
-        "brand-blue-dark": "hsl(var(--brand-blue-dark))",
-        "brand-blue-light": "hsl(var(--brand-blue-light))",
-        // Status colors
-        success: "hsl(var(--success))",
-        warning: "hsl(var(--warning))",
-        info: "hsl(var(--info))",
-        error: "hsl(var(--error))",
       },
       borderRadius: {
         lg: "var(--radius-lg)",
@@ -68,32 +62,9 @@ export default {
         sm: "var(--radius-sm)",
       },
       fontFamily: {
-        sans: ["'Gothic A1'", "-apple-system", "BlinkMacSystemFont", "'Segoe UI'", "sans-serif"],
-      },
-      fontSize: {
-        // Hero title: 48-60px
-        hero: ["3rem", { lineHeight: "1.2", fontWeight: "300" }],
-        "hero-lg": ["3.75rem", { lineHeight: "1.2", fontWeight: "300" }],
-        // Section headings: 30-36px
-        "section-heading": ["1.875rem", { lineHeight: "1.2", fontWeight: "600" }],
-        "section-heading-lg": ["2.25rem", { lineHeight: "1.2", fontWeight: "600" }],
-        // Card titles: 20-24px
-        "card-title": ["1.25rem", { lineHeight: "1.4", fontWeight: "600" }],
-        "card-title-lg": ["1.5rem", { lineHeight: "1.4", fontWeight: "600" }],
-        // Subsection: 18px
-        subsection: ["1.125rem", { lineHeight: "1.5", fontWeight: "500" }],
-        // Metadata: 14px
-        metadata: ["0.875rem", { lineHeight: "1.5", fontWeight: "400" }],
-      },
-      spacing: {
-        // Custom spacing from specification
-        "4xl": "6rem", // 96px - Major section separation
-        "3xl": "4rem", // 64px - Section padding (desktop)
-        "2xl": "3rem", // 48px - Section padding (mobile)
-      },
-      maxWidth: {
-        "reading": "48rem", // 768px - Optimal reading width
-        "content": "80rem", // 1280px - Max content width
+        sans: ["'Inter'", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["'Archivo'", "ui-sans-serif", "system-ui", "sans-serif"],
+        mono: ["'JetBrains Mono'", "ui-monospace", "monospace"],
       },
       keyframes: {
         "accordion-down": {

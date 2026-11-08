@@ -33,27 +33,27 @@ export class ErrorBoundary extends Component<Props, State> {
     if (this.state.hasError) {
       return (
         <div className="min-h-screen flex items-center justify-center bg-background p-6">
-          <Card className="max-w-lg w-full">
+          <Card className="max-w-lg w-full rounded-none border-border shadow-[8px_8px_0_0_#FF4D00]">
             <CardHeader className="text-center">
-              <div className="mx-auto mb-4 w-12 h-12 rounded-full bg-destructive/10 flex items-center justify-center">
-                <AlertTriangle className="w-6 h-6 text-destructive" />
+              <div className="mx-auto mb-4 w-12 h-12 bg-accent-bright flex items-center justify-center">
+                <AlertTriangle className="w-6 h-6 text-foreground" />
               </div>
-              <CardTitle className="text-2xl">Something went wrong</CardTitle>
+              <CardTitle className="font-display text-2xl font-extrabold uppercase tracking-tight">Algo deu errado</CardTitle>
             </CardHeader>
             <CardContent className="text-center space-y-4">
-              <p className="text-muted-foreground">
-                We encountered an unexpected error. Please try refreshing the page.
+              <p className="text-muted">
+                Encontramos um erro inesperado. Tente recarregar a página.
               </p>
               {this.state.error && (
-                <details className="text-left text-sm text-muted-foreground bg-muted p-4 rounded-lg">
-                  <summary className="cursor-pointer font-medium">Error details</summary>
+                <details className="text-left text-sm text-muted-foreground bg-muted p-4">
+                  <summary className="cursor-pointer font-medium">Detalhes do erro</summary>
                   <p className="mt-2 font-mono text-xs break-all">
                     {this.state.error.toString()}
                   </p>
                 </details>
               )}
-              <Button onClick={this.handleRefresh} className="w-full">
-                Refresh Page
+              <Button onClick={this.handleRefresh} className="w-full rounded-none bg-foreground text-background hover:bg-black">
+                Recarregar página
               </Button>
             </CardContent>
           </Card>

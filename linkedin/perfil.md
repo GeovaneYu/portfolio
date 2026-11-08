@@ -1,13 +1,13 @@
 # Perfil LinkedIn — Geovane Gofredo
 
 > Textos sincronizados com o CV e com o portfólio.  
-> Posicionamento: **Coordenação de TI, Governança, Service Delivery (ITSM/SDM) e Operações/Infraestrutura**.
+> Posicionamento: **Liderança de TI, Governança, Service Delivery (ITSM/SDM) e Operações/Infraestrutura**.
 
 ## 1. Headline (título do perfil)
 
 ### Opção A — foco em coordenação, governança e service delivery
 ```
-Coordenador de TI | Governança, Infraestrutura e Operações | Service Delivery (ITSM / ITIL) | Liderança de Equipes, Projetos, Cloud (M365/Azure) e Gestão de Incidentes Críticos | Inglês Fluente
+Líder de Infraestrutura e Operações de TI | Governança, Redes e Operações | Service Delivery (ITSM/SDM) | Liderança de Equipes N1/N2/N3, Projetos, Cloud (M365/Azure) e Gestão de Incidentes Críticos | Inglês Fluente
 ```
 
 ### Opção B — foco em gestão e operações
@@ -18,12 +18,12 @@ Coordenação e Gestão de TI | Governança, Operações e Infraestrutura | ITIL
 ## 2. Seção "Sobre"
 
 ```
-Sou líder de TI e profissional com mais de 14 anos de carreira construída na prática — evoluindo da operação técnica e do suporte avançado bilíngue até a coordenação de equipes, governança e operações de infraestrutura em ambientes corporativos e industriais de alta criticidade.
+Sou líder de TI e profissional com mais de 14 anos de carreira construída na prática — evoluindo da operação técnica e do suporte avançado bilíngue até a liderança de equipes, governança e operações de infraestrutura em ambientes corporativos e industriais de alta criticidade.
 
 Organizo a operação e entrego uma TI estável, segura e previsível: lidero a execução técnica (N1, N2 e N3) e conecto os times técnicos às prioridades de gestores e diretorias. Meu foco é tirar a TI do modo reativo e consolidar uma operação estável e previsível.
 
-Principais frentes de atuação em Coordenação, Governança e Gestão de TI:
-• Liderança de Operações e Serviços (ITSM / SDM): Coordenação de times de suporte e infraestrutura, definição de fluxos de escalonamento, condução de incidentes críticos (Major Incidents / RCA) e gestão de SLAs e indicadores de eficiência operacional.
+Principais frentes de atuação em Liderança, Governança e Gestão de TI:
+• Liderança de Operações e Serviços (ITSM / SDM): Liderança de times de suporte e infraestrutura, definição de fluxos de escalonamento, condução de incidentes críticos (Major Incidents / RCA) e gestão de SLAs e indicadores de eficiência operacional.
 • Governança, Custos e Compliance: Aplicação de práticas ITIL e COBIT na padronização de processos (Incidentes, Problemas e Mudanças/GMUD), gestão do ciclo de vida de ativos e licenciamento (ITAM) para redução de custos (CapEx/OpEx), gestão de fornecedores e adequação técnica à LGPD.
 • Base Técnica Sólida em Infraestrutura, Cloud e Segurança: Domínio prático de Microsoft 365, Azure, Entra ID, Intune, Exchange, Teams Admin, Windows Server, Active Directory, Linux, macOS, virtualização (Proxmox, VPS, Docker), redes corporativas (Firewall, VPN, VLANs), monitoramento proativo (RMM) e estratégias de backup e Disaster Recovery (DRP).
 • Experiência Internacional Bilíngue (EN/PT): Inglês avançado/fluente consolidado no suporte e alinhamento técnico com equipes globais e lideranças internacionais (incluindo quase 5 anos dedicados à operação global da Rockwell Automation pela HCL Technologies), além de espanhol intermediário.
