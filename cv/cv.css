@@ -1,7 +1,21 @@
 @font-face {
-  font-family: 'Didact Gothic';
-  src: url('DidactGothic-Regular.ttf') format('truetype');
+  font-family: 'Archivo';
+  src: url('Archivo-Regular.ttf') format('truetype');
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('Archivo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('Archivo-Black.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -13,40 +27,27 @@ html, body { margin: 0; padding: 0; }
 body {
   width: 210mm;
   min-height: 297mm;
-  font-family: 'Didact Gothic', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 7pt;
-  line-height: 1.29;
-  color: #202624;
-  background: #FFFFFF;
+  font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 6.65pt;
+  line-height: 1.24;
+  color: #111111;
+  background: #F4F4F0;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
 
 a {
-  color: #1B4B46;
+  color: #111111;
   text-decoration: none;
-  border-bottom: 0.45pt solid #C6A26B;
+  border-bottom: 0.45pt solid #FF4D00;
 }
 
-/* ===== Cabeçalho verde-petróleo ===== */
+/* ===== Cabeçalho Neo-Swiss ===== */
 .header {
   position: relative;
-  overflow: hidden;
-  padding: 4.6mm 10mm 4.2mm;
-  color: #F7F3E9;
-  background: linear-gradient(125deg, #17433F 0%, #10332F 55%, #0B2522 100%);
+  padding: 4.2mm 10mm 3.8mm;
+  color: #111111;
 }
-
-.header::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 1.7pt;
-  background: #C6A26B;
-}
-
 
 .header-inner {
   position: relative;
@@ -54,39 +55,42 @@ a {
 
 h1 {
   margin: 0 0 2.2mm;
-  font-size: 22pt;
-  font-weight: 400;
+  font-size: 24pt;
+  font-weight: 900;
+  text-transform: uppercase;
   line-height: 1;
-  letter-spacing: 0.012em;
-  color: #F9F6ED;
+  letter-spacing: -0.02em;
+  color: #111111;
 }
 
+h1 .name-last {
+  color: #FF4D00;
+}
 
 .contact {
   font-size: 6.8pt;
   line-height: 1.55;
-  color: #C6D8D2;
+  color: #555552;
 }
 
 .contact a {
-  color: #F1E4C9;
-  border-bottom-color: rgba(198, 162, 107, 0.42);
+  color: #111111;
+  border-bottom-color: #FF4D00;
 }
 
 .contact .sep {
   margin: 0 1.3mm;
-  color: #5E8D86;
+  color: #111111;
 }
-
 
 /* ===== Conteúdo ===== */
 .content {
-  padding: 3.8mm 10mm 8mm;
+  padding: 3.4mm 10mm 7mm;
   position: relative;
 }
 
 .section {
-  margin-top: 3pt;
+  margin-top: 4pt;
 }
 
 .section:first-child {
@@ -96,13 +100,22 @@ h1 {
 h2 {
   margin: 0 0 1.8mm;
   font-size: 7.8pt;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #39413E;
+  color: #111111;
 }
 
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 1.8mm;
+  height: 1.8mm;
+  margin-right: 2.2mm;
+  vertical-align: 0.4pt;
+  background: #FF4D00;
+}
 
 p {
   margin: 0 0 0.8mm;
@@ -122,7 +135,8 @@ p {
 }
 
 .cat {
-  color: #111816;
+  color: #111111;
+  font-weight: 700;
 }
 
 /* ===== Experiência ===== */
@@ -131,7 +145,7 @@ p {
 }
 
 .job {
-  margin: 0 0 3.6mm;
+  margin: 0 0 2.6mm;
   page-break-inside: avoid;
 }
 
@@ -148,15 +162,17 @@ p {
 
 .company {
   font-size: 8.8pt;
+  font-weight: 700;
   line-height: 1.2;
-  color: #15221F;
+  color: #111111;
 }
 
 .company .loc {
   margin-left: 2.3mm;
   font-size: 6.8pt;
+  font-weight: 400;
   letter-spacing: 0.035em;
-  color: #5F6E69;
+  color: #555552;
 }
 
 .dates {
@@ -164,15 +180,16 @@ p {
   font-size: 6.5pt;
   letter-spacing: 0.105em;
   text-transform: uppercase;
-  color: #5F6E69;
+  color: #555552;
   white-space: nowrap;
 }
 
 .role {
   margin: 1.1mm 0 0;
   font-size: 7.5pt;
+  font-weight: 700;
   line-height: 1.25;
-  color: #16201D;
+  color: #111111;
 }
 
 /* Recuo único de todas as descrições, alinhado abaixo de empresa/cargo */
@@ -190,7 +207,8 @@ p {
 }
 
 .lead {
-  color: #111816;
+  color: #111111;
+  font-weight: 700;
 }
 
 /* ===== Idiomas e formação ===== */
@@ -205,7 +223,8 @@ p {
 }
 
 .languages .language {
-  color: #111816;
+  color: #111111;
+  font-weight: 700;
 }
 
 .education { margin-top: 2pt; }
@@ -217,12 +236,22 @@ p {
 .edu-label {
   margin-right: 1.8mm;
   font-size: 6.6pt;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #39413E;
+  color: #111111;
+}
+
+.edu-label::before {
+  content: "";
+  display: inline-block;
+  width: 1.8mm;
+  height: 1.8mm;
+  margin-right: 2mm;
+  vertical-align: 0.4pt;
+  background: #FF4D00;
 }
 
 .education .degree {
-  color: #15221F;
+  color: #111111;
 }
-
