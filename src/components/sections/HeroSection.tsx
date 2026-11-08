@@ -7,7 +7,7 @@ export default function HeroSection() {
   const handle = personalInfo.website.split("/").pop();
 
   return (
-    <section id="top" className="relative w-full max-w-4xl mx-auto px-6 md:px-8 pt-20 pb-8 md:pt-24 md:pb-12 overflow-hidden">
+    <section id="top" className="relative w-full max-w-7xl mx-auto px-6 md:px-12 pt-20 pb-8 md:pt-24 md:pb-12 overflow-hidden">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 opacity-[0.12]"
@@ -42,11 +42,11 @@ export default function HeroSection() {
             Geovane <span className="font-display text-accent-bright">Gofredo</span>
           </h1>
 
-          <p className="mt-6 max-w-2xl text-[20px] md:text-[24px] leading-[1.4] text-foreground">
+          <p className="mt-6 max-w-none text-[20px] md:text-[24px] leading-[1.4] text-foreground">
             Transformo operações críticas em ambientes estáveis, seguros e previsíveis.
           </p>
 
-          <p className="mt-3 max-w-xl text-[15px] md:text-[16px] leading-[1.7] text-muted">
+          <p className="mt-3 max-w-none text-[15px] md:text-[16px] leading-[1.7] text-muted">
             Liderança de equipes N1/N2/N3, governança (ITIL/COBIT), SLAs críticos e gestão de fornecedores — com foco em continuidade, previsibilidade e eficiência.
           </p>
 

@@ -3,8 +3,8 @@ import { personalInfo } from "@/data/portfolio-data";
 export default function Footer() {
   return (
     <footer className="border-t border-border mt-8">
-      <div className="max-w-4xl mx-auto px-6 md:px-8 py-8 flex flex-col items-start gap-4">
-        <div className="text-left">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="text-center md:text-left">
           <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
             Liderança de TI · Governança · Service Delivery (ITSM/SDM)
           </p>

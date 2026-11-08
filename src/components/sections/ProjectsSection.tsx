@@ -27,8 +27,8 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projetos" className="w-full max-w-4xl mx-auto px-6 md:px-8 py-14 md:py-20">
-      <div className="flex flex-col gap-4 mb-8">
+    <section id="projetos" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-14 md:py-20">
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
         <div>
           <h2 className="label-mono section-label">Projetos e resultados</h2>
           <p className="mt-2 max-w-xl text-[15px] leading-[1.6] text-muted">
@@ -47,7 +47,7 @@ export default function ProjectsSection() {
         </a>
       </div>
 
-      <div className="grid grid-cols-1 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {projects.map((project, index) => (
           <motion.article
             key={project.id}

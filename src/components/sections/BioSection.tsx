@@ -9,11 +9,11 @@ const deliverables = [
 
 export default function BioSection() {
   return (
-    <section id="sobre" className="w-full max-w-4xl mx-auto px-6 md:px-8 py-14 md:py-20">
+    <section id="sobre" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-14 md:py-20">
       <h2 className="label-mono section-label mb-8">Sobre</h2>
 
-      <div className="flex flex-col gap-12">
-        <div className="min-w-0">
+      <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+        <div className="lg:col-span-7">
           <blockquote className="font-display uppercase leading-[0.98] tracking-tight text-foreground text-[clamp(2rem,5vw,3.6rem)]">
             Organizo a operação<br />e entrego <span className="text-accent-bright">resultado.</span>
           </blockquote>
@@ -23,7 +23,7 @@ export default function BioSection() {
           </p>
         </div>
 
-        <div className="min-w-0">
+        <div className="lg:col-span-5">
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted mb-5">
             O que eu entrego
           </p>
