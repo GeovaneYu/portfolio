@@ -9,16 +9,16 @@ const deliverables = [
 
 export default function BioSection() {
   return (
-    <section id="sobre" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-14 md:py-20">
+    <section id="sobre" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-16">
       <h2 className="label-mono section-label mb-8">Sobre</h2>
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-12">
         <div className="min-w-0">
-          <blockquote className="font-display font-extrabold uppercase leading-[0.95] tracking-tighter text-foreground text-[clamp(2rem,5vw,3.4rem)]">
+          <blockquote className="font-display font-black uppercase leading-[0.95] tracking-tighter text-foreground text-[clamp(2rem,4vw,3rem)]">
             Organizo a operação<br />e entrego <span className="text-accent-bright">resultado.</span>
           </blockquote>
 
-          <p className="mt-6 text-[16px] md:text-[17px] leading-[1.75] text-muted whitespace-pre-line max-w-3xl">
+          <p className="mt-5 text-[16px] md:text-[17px] leading-[1.75] text-muted whitespace-pre-line max-w-2xl">
             {personalInfo.bio}
           </p>
         </div>
@@ -29,10 +29,10 @@ export default function BioSection() {
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 border-t border-l border-border">
             {deliverables.map((item) => (
-              <li key={item.num} className="border-b border-r border-border p-5">
-                <span className="font-mono text-[12px] text-accent-bright">{item.num}</span>
-                <span className="block mt-2 text-[16px] md:text-[17px] font-semibold text-foreground leading-snug">{item.title}</span>
-                <span className="block mt-1 text-[14px] leading-[1.55] text-muted">{item.text}</span>
+              <li key={item.num} className="border-b border-r border-border p-5 md:p-6">
+                <span className="font-mono text-[12px] font-medium text-accent-bright">{item.num}</span>
+                <span className="block mt-2 text-[16px] md:text-[17px] font-bold text-foreground leading-snug">{item.title}</span>
+                <span className="block mt-1 text-[13px] md:text-sm leading-[1.6] text-muted">{item.text}</span>
               </li>
             ))}
           </ul>
