@@ -90,10 +90,6 @@ export default function HeroSection() {
             Transformo operações críticas em ambientes estáveis, seguros e previsíveis.
           </p>
 
-          <p className="mt-3 max-w-none text-[15px] md:text-[16px] leading-[1.7] text-muted">
-            Liderança de equipes N1/N2/N3, governança (ITIL/COBIT), SLAs críticos e gestão de fornecedores — com foco em continuidade, previsibilidade e eficiência.
-          </p>
-
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a
               href={personalInfo.whatsapp}
@@ -158,14 +154,14 @@ export default function HeroSection() {
               <WhatsAppIcon className="h-4 w-4 shrink-0 text-muted" />
               <span>{personalInfo.phone}</span>
             </a>
-            <div className="flex items-center gap-2 text-muted">
-              <MapPin className="h-4 w-4 shrink-0 text-muted" />
-              <span>{personalInfo.location.city}</span>
-            </div>
             <a href={`https://${personalInfo.website}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted hover:text-foreground transition-colors min-w-0">
               <Linkedin className="h-4 w-4 shrink-0 text-muted" />
               <span className="truncate">@{handle}</span>
             </a>
+            <div className="flex items-center gap-2 text-muted md:ml-auto">
+              <MapPin className="h-4 w-4 shrink-0 text-muted" />
+              <span>{personalInfo.location.city}</span>
+            </div>
           </div>
         </motion.div>
       </div>

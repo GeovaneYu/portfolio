@@ -75,18 +75,18 @@ export default function ProjectsSection() {
         </a>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {projects.map((project, index) => (
           <motion.article
             key={project.id}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, delay: index * 0.05 }}
-            className="glass-card rounded-none p-4 flex flex-col"
+            transition={{ duration: 0.7, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
+            className={index === projects.length - 1 ? "group glass-card rounded-none p-4 flex gap-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent-bright hover:shadow-[5px_5px_0_0_#FF4D00] md:col-span-2" : "group glass-card rounded-none p-4 flex gap-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent-bright hover:shadow-[5px_5px_0_0_#FF4D00]"}
           >
-            <div className="flex items-start justify-between gap-2">
-              <span className="font-display text-3xl leading-none text-copper" aria-hidden="true">
+            <div className="flex flex-col items-start gap-2 shrink-0">
+              <span className="font-display text-2xl font-extrabold leading-none text-copper" aria-hidden="true">
                 {project.num}
               </span>
               {project.lang && (
@@ -96,16 +96,12 @@ export default function ProjectsSection() {
                 </span>
               )}
             </div>
-            <h3 className="mt-3 text-[15px] md:text-base font-semibold leading-snug text-foreground">
-              {project.title}
-            </h3>
-            <p className="mt-2 text-[13px] leading-[1.55] text-muted flex-1">
-              {project.text}
-            </p>
-            <div className="mt-4 border-t border-border pt-3">
-              <p className="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Como foi entregue</p>
-              <p className="mt-1.5 text-[12px] leading-[1.55] text-muted">
-                {project.result}
+            <div className="min-w-0 flex-1">
+              <h3 className="text-[15px] md:text-base font-bold leading-snug text-foreground">
+                {project.title}
+              </h3>
+              <p className="mt-1.5 text-[13px] leading-[1.5] text-muted">
+                {project.text}
               </p>
               {project.url && (
                 <a

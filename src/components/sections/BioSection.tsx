@@ -14,7 +14,7 @@ export default function BioSection() {
 
       <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
         <div className="lg:col-span-7 min-w-0">
-          <blockquote className="font-display font-black uppercase leading-[0.95] tracking-tighter text-foreground text-[clamp(2rem,4vw,3rem)]">
+          <blockquote className="font-display font-extrabold uppercase leading-[1.05] tracking-tight text-foreground text-[clamp(1.6rem,3vw,2.1rem)]">
             Organizo a operação<br />e entrego <span className="text-accent-bright">resultado.</span>
           </blockquote>
 

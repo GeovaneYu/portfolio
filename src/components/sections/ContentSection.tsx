@@ -47,13 +47,13 @@ export default function ContentSection() {
                   {job.role}
                 </h3>
                 <div className="mt-3 border-l border-accent/45 pl-5 md:pl-6">
-                  <div className="max-w-3xl space-y-2">
+                  <div className="max-w-3xl">
                     {job.description.split("\n").map((line, lineIndex) => {
                       const colon = line.indexOf(":");
                       const isIntro = lineIndex === 0 && line.trim().endsWith(":");
                       const hasLead = colon > 0 && !isIntro;
                       return (
-                        <p key={lineIndex} className="text-[15px] leading-[1.7] text-muted">
+                        <p key={lineIndex} className={lineIndex > 0 ? "mt-3 border-t border-border/60 pt-3 text-[15px] leading-[1.65] text-muted" : "text-[15px] leading-[1.7] text-muted"}>
                           {hasLead ? (
                             <>
                               <span className="text-foreground/90">{line.slice(0, colon + 1)}</span>
@@ -83,10 +83,10 @@ export default function ContentSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="glass-card rounded-none p-6"
+              transition={{ duration: 0.7, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
+              className="group glass-card rounded-none p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-bright hover:bg-secondary hover:shadow-[6px_6px_0_0_#FF4D00]"
             >
-              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted transition-colors group-hover:text-accent-bright">
                 {category.category}
               </h3>
               {category.description && (
@@ -96,7 +96,7 @@ export default function ContentSection() {
               )}
               <ul className="mt-4 flex flex-wrap gap-2">
                 {category.skills.split(",").map((skill) => (
-                  <li key={skill} className="font-mono text-[11px] leading-none px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground border border-border">
+                  <li key={skill} className="font-mono text-[11px] leading-none px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground border border-border transition-all duration-300 hover:-translate-y-0.5 hover:border-foreground hover:bg-foreground hover:text-background">
                     {skill.trim()}
                   </li>
                 ))}
