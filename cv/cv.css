@@ -29,7 +29,7 @@ body {
   min-height: 297mm;
   font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
   font-size: 6.65pt;
-  line-height: 1.21;
+  line-height: 1.19;
   color: #111111;
   background: #F4F4F0;
   -webkit-print-color-adjust: exact;
@@ -145,7 +145,7 @@ p {
 }
 
 .job {
-  margin: 0 0 1.2mm;
+  margin: 0 0 2.4mm;
   page-break-inside: avoid;
 }
 
@@ -188,7 +188,7 @@ p {
   margin: 1.4mm 0 0;
   font-size: 7.5pt;
   font-weight: 700;
-  line-height: 1.21;
+  line-height: 1.19;
   color: #111111;
 }
 
@@ -198,7 +198,7 @@ p {
 }
 
 .job-body p {
-  margin: 0 0 0.6mm;
+  margin: 0 0 0.5mm;
   text-align: justify;
 }
 
