@@ -16,39 +16,41 @@ export default function ContactSection() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.6 }}
-        className="glass-card rounded-none p-6 md:p-8"
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        className="rounded-none bg-foreground p-6 md:p-10 text-background"
       >
-        <h2 className="label-mono section-label mb-6">Contato</h2>
-        <p className="text-[22px] md:text-[30px] font-bold tracking-tight leading-[1.15] max-w-3xl">
+        <h2 className="font-mono text-[11px] uppercase tracking-[0.18em] text-background/60 mb-6 flex items-center gap-3">
+          <span className="h-[2px] w-7 bg-accent-bright" aria-hidden="true" />
+          Contato
+        </h2>
+        <p className="text-[26px] md:text-[36px] font-black uppercase tracking-tighter leading-[1.02] max-w-3xl">
           Vamos <span className="text-accent-bright">conversar</span>?
         </p>
-        <p className="mt-3 text-[15px] leading-[1.65] text-muted max-w-2xl">
+        <p className="mt-3 text-[15px] leading-[1.65] text-background/70 max-w-2xl">
           Seja para uma nova oportunidade, um projeto de infraestrutura ou a organização de uma operação de TI,{" "}
-          <span className="text-foreground">eu organizo e entrego</span>.
+          <span className="text-background font-semibold">eu organizo e entrego</span>.
         </p>
-        <p className="mt-2 text-[15px] leading-[1.65] text-muted max-w-2xl">
-          Conte o que você precisa e{" "}
-          <span className="text-foreground font-medium">vamos encontrar a melhor solução</span>.
+        <p className="mt-2 text-[15px] leading-[1.65] text-background/70 max-w-2xl">
+          Conte o que você precisa e <span className="text-background font-semibold">vamos encontrar a melhor solução</span>.
         </p>
 
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
           {channels.map(({ icon: Icon, label, value, href, cta }) => (
             <a
               key={label}
               href={href}
               target={href.startsWith("http") ? "_blank" : undefined}
               rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="group relative flex flex-col rounded-none border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-bright hover:bg-accent-soft hover:shadow-lg hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              className="group relative flex flex-col rounded-none border border-background/20 bg-background p-6 text-foreground transition-all duration-300 hover:-translate-y-1 hover:border-background/60"
             >
               <div className="flex items-center justify-between">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-soft ring-1 ring-accent/10 transition-all duration-300 group-hover:bg-accent group-hover:ring-accent group-hover:scale-105">
-                  <Icon className="h-5 w-5 text-muted transition-colors group-hover:text-accent-foreground" aria-hidden="true" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-soft ring-1 ring-foreground/10 transition-all duration-300 group-hover:bg-foreground group-hover:scale-105">
+                  <Icon className="h-5 w-5 text-foreground transition-colors group-hover:text-background" aria-hidden="true" />
                 </div>
                 <ArrowUpRight className="h-4 w-4 text-muted transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground" aria-hidden="true" />
               </div>
               <div className="mt-4 font-mono text-[11px] uppercase tracking-[0.18em] text-muted">{label}</div>
-              <div className="mt-1.5 text-[15px] font-medium leading-snug break-all text-foreground transition-colors group-hover:text-foreground">
+              <div className="mt-1.5 text-[15px] font-semibold leading-snug break-all text-foreground">
                 {value}
               </div>
               <div className="mt-4 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-wide text-muted opacity-80 transition-all group-hover:gap-2 group-hover:opacity-100">

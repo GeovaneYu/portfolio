@@ -17,9 +17,14 @@ export default function NavBar() {
   const [active, setActive] = useState<string>("sobre");
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -50,6 +55,9 @@ export default function NavBar() {
         scrolled ? "glass-card border-b border-border" : "bg-transparent"
       )}
     >
+      <div className="absolute inset-x-0 bottom-0 h-[2px] bg-background/60" aria-hidden="true">
+        <div className="h-full bg-accent-bright transition-[width] duration-150 ease-out" style={{ width: `${Math.round(progress * 100)}%` }} />
+      </div>
       <nav
         aria-label="Navegação principal"
         className="max-w-7xl mx-auto px-6 md:px-12 h-16 flex items-center gap-2 md:gap-4"
@@ -80,6 +88,14 @@ export default function NavBar() {
         </div>
 
         <div className="ml-auto md:ml-0 flex items-center gap-2 shrink-0">
+          <a
+            href="https://wa.me/5511968828204?text=Ol%C3%A1%20Geovane!%20Vim%20pelo%20seu%20portf%C3%B3lio."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:inline-flex h-9 items-center rounded-full bg-foreground px-4 font-mono text-[10px] uppercase tracking-widest text-background transition-colors hover:bg-black"
+          >
+            WhatsApp
+          </a>
           <a
             href="https://github.com/GeovaneYu"
             target="_blank"

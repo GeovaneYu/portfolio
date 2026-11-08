@@ -26,10 +26,10 @@ export default function ContentSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5, delay: index * 0.05 }}
+              transition={{ duration: 0.7, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
               className="grid gap-3 md:grid-cols-[190px_1fr] md:gap-10 border-b border-border py-6 md:py-8"
             >
-              <div>
+              <div className="md:sticky md:top-24 md:self-start">
                 <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
                   {formatDateRange(job.startDate, job.endDate)}
                 </div>
