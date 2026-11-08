@@ -1,10 +1,31 @@
+import { useEffect, useRef, useState } from "react";
 import { personalInfo } from "@/data/portfolio-data";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Linkedin, Download } from "lucide-react";
+import { Mail, MapPin, Linkedin, Download, ChevronDown } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export default function HeroSection() {
   const handle = personalInfo.website.split("/").pop();
+  const [cvOpen, setCvOpen] = useState(false);
+  const cvMenuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!cvOpen) return;
+    const onClickOutside = (event: MouseEvent) => {
+      if (cvMenuRef.current && !cvMenuRef.current.contains(event.target as Node)) {
+        setCvOpen(false);
+      }
+    };
+    const onEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setCvOpen(false);
+    };
+    document.addEventListener("mousedown", onClickOutside);
+    document.addEventListener("keydown", onEscape);
+    return () => {
+      document.removeEventListener("mousedown", onClickOutside);
+      document.removeEventListener("keydown", onEscape);
+    };
+  }, [cvOpen]);
 
   return (
     <section id="top" className="relative w-full max-w-7xl mx-auto px-6 md:px-12 pt-20 pb-8 md:pt-24 md:pb-12 overflow-hidden">
@@ -31,14 +52,14 @@ export default function HeroSection() {
         </span>
       </motion.p>
 
-      <div className="flex flex-col gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_220px] gap-10 lg:gap-14 items-center">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.08 }}
           className="min-w-0"
         >
-          <h1 className="font-display uppercase tracking-tight leading-[0.9] text-foreground text-[clamp(2.4rem,8vw,4.5rem)]">
+          <h1 className="font-display uppercase tracking-tight leading-[0.9] text-foreground text-[clamp(2.4rem,5.4vw,4.5rem)]">
             Geovane <span className="font-display text-accent-bright">Gofredo</span>
           </h1>
 
@@ -60,23 +81,49 @@ export default function HeroSection() {
               <WhatsAppIcon className="h-4 w-4" />
               Agendar uma conversa
             </a>
-            <a
-              href={`${import.meta.env.BASE_URL}CV-Geovane-Gofredo-2026.pdf`}
-              download
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-3 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground hover:border-accent-bright hover:bg-surface-hover transition-colors"
-            >
-              <Download className="h-4 w-4" />
-              Baixar CV (PDF)
-            </a>
-            <a
-              href={`${import.meta.env.BASE_URL}CV-Geovane-Gofredo-2026-EN.pdf`}
-              download
-              aria-label="Baixar CV em inglês"
-              title="Baixar CV em inglês"
-              className="inline-flex items-center justify-center rounded-full border border-border bg-surface px-4 py-3 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground hover:border-copper hover:bg-surface-hover transition-colors"
-            >
-              EN
-            </a>
+            <div ref={cvMenuRef} className="relative">
+              <button
+                type="button"
+                onClick={() => setCvOpen((value) => !value)}
+                aria-expanded={cvOpen}
+                aria-haspopup="menu"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-3 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground hover:border-accent-bright hover:bg-surface-hover transition-colors"
+              >
+                <Download className="h-4 w-4" />
+                Baixar CV (PDF)
+                <ChevronDown className={`h-4 w-4 transition-transform ${cvOpen ? "rotate-180" : ""}`} aria-hidden="true" />
+              </button>
+              {cvOpen && (
+                <div role="menu" aria-label="Escolha o idioma do currículo" className="absolute left-0 top-full z-30 mt-2 w-60 rounded-xl glass-card-elevated p-2 shadow-2xl">
+                  <a
+                    role="menuitem"
+                    href={`${import.meta.env.BASE_URL}CV-Geovane-Gofredo-2026.pdf`}
+                    download
+                    onClick={() => setCvOpen(false)}
+                    className="flex items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-xs font-mono uppercase tracking-widest text-foreground hover:bg-accent-soft transition-colors"
+                  >
+                    <span className="inline-flex items-center gap-2">
+                      <Download className="h-4 w-4" aria-hidden="true" />
+                      Português
+                    </span>
+                    <span className="text-[10px] tracking-[0.18em] text-muted">PT-BR</span>
+                  </a>
+                  <a
+                    role="menuitem"
+                    href={`${import.meta.env.BASE_URL}CV-Geovane-Gofredo-2026-EN.pdf`}
+                    download
+                    onClick={() => setCvOpen(false)}
+                    className="flex items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-xs font-mono uppercase tracking-widest text-foreground hover:bg-accent-soft transition-colors"
+                  >
+                    <span className="inline-flex items-center gap-2">
+                      <Download className="h-4 w-4" aria-hidden="true" />
+                      English
+                    </span>
+                    <span className="text-[10px] tracking-[0.18em] text-muted">EN</span>
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
 
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 font-mono text-[11px] md:text-xs">
@@ -103,9 +150,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.14 }}
-          className="min-w-0"
+          className="min-w-0 lg:justify-self-end"
         >
-          <div className="relative w-40 sm:w-48">
+          <div className="relative w-40 sm:w-48 lg:w-full lg:max-w-[220px]">
             <div aria-hidden="true" className="absolute -inset-3 rounded-full bg-accent-soft blur-xl" />
             <picture>
               <source srcSet={`${import.meta.env.BASE_URL}img/geovane.webp`} type="image/webp" />

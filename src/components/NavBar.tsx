@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Github, Linkedin, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const links = [
@@ -15,6 +16,7 @@ const links = [
 export default function NavBar() {
   const [active, setActive] = useState<string>("sobre");
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -50,35 +52,91 @@ export default function NavBar() {
     >
       <nav
         aria-label="Navegação principal"
-        className="max-w-7xl mx-auto px-4 md:px-12 h-16 flex items-center gap-2 md:gap-4"
+        className="max-w-7xl mx-auto px-6 md:px-12 h-16 flex items-center gap-2 md:gap-4"
       >
-        <a href="#top" className="shrink-0 label-mono text-foreground hover:text-foreground transition-colors">
+        <a href="#top" onClick={() => setOpen(false)} aria-label="Voltar ao topo" className="shrink-0 label-mono text-foreground hover:text-foreground transition-colors py-2">
           GG<span className="text-copper">.</span>
         </a>
 
-        <div className="flex flex-1 min-w-0 items-center justify-end gap-2 md:gap-3">
-          <div className="min-w-0 flex-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            <ul className="flex w-max flex-nowrap items-center gap-1 md:gap-2">
+        <div className="hidden md:flex flex-1 items-center justify-center">
+          <ul className="flex flex-wrap items-center justify-center gap-1 lg:gap-2">
+            {links.map((link) => (
+              <li key={link.id} className="shrink-0">
+                <a
+                  href={`#${link.id}`}
+                  aria-current={active === link.id ? "true" : undefined}
+                  className={cn(
+                    "inline-flex whitespace-nowrap font-mono text-[11px] lg:text-xs uppercase tracking-widest px-2.5 lg:px-3 py-2 rounded-full border transition-colors",
+                    active === link.id
+                      ? "text-foreground bg-accent-soft border-accent/30"
+                      : "text-muted hover:text-foreground border-transparent"
+                  )}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="ml-auto md:ml-0 flex items-center gap-2 shrink-0">
+          <a
+            href="https://github.com/GeovaneYu"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub de Geovane Gofredo"
+            title="GitHub"
+            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted hover:text-foreground hover:border-accent-bright transition-colors"
+          >
+            <Github className="h-4 w-4" aria-hidden="true" />
+          </a>
+          <a
+            href="https://linkedin.com/in/geovane-gofredo"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn de Geovane Gofredo"
+            title="LinkedIn"
+            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted hover:text-foreground hover:border-accent-bright transition-colors"
+          >
+            <Linkedin className="h-4 w-4" aria-hidden="true" />
+          </a>
+          <button
+            type="button"
+            onClick={() => setOpen((value) => !value)}
+            aria-expanded={open}
+            aria-controls="menu-mobile"
+            aria-label={open ? "Fechar menu" : "Abrir menu"}
+            className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground"
+          >
+            {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
+          </button>
+        </div>
+      </nav>
+
+      {open && (
+        <div id="menu-mobile" className="md:hidden border-t border-border bg-background/95 backdrop-blur">
+          <div className="max-w-7xl mx-auto px-6 py-4">
+            <ul className="flex flex-col gap-1">
               {links.map((link) => (
-                <li key={link.id} className="shrink-0">
+                <li key={link.id}>
                   <a
                     href={`#${link.id}`}
+                    onClick={() => setOpen(false)}
                     aria-current={active === link.id ? "true" : undefined}
                     className={cn(
-                      "inline-flex whitespace-nowrap font-mono text-[10px] md:text-xs uppercase tracking-widest px-2 md:px-3 py-2 rounded-md transition-colors",
-                      active === link.id
-                        ? "text-foreground bg-accent-soft"
-                        : "text-muted hover:text-foreground"
+                      "flex items-center justify-between rounded-lg px-3 py-2.5 font-mono text-xs uppercase tracking-widest transition-colors",
+                      active === link.id ? "text-foreground bg-accent-soft" : "text-muted hover:text-foreground"
                     )}
                   >
                     {link.label}
+                    <span aria-hidden="true" className="text-muted">→</span>
                   </a>
                 </li>
               ))}
             </ul>
           </div>
         </div>
-      </nav>
+      )}
     </header>
   );
 }

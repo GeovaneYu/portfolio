@@ -1,7 +1,17 @@
 import { motion } from "framer-motion";
-import { Github, ArrowUpRight } from "lucide-react";
+import { Github, ArrowUpRight, Star } from "lucide-react";
 
-const projects = [
+type Project = {
+  id: string;
+  num: string;
+  title: string;
+  text: string;
+  result: string;
+  url?: string;
+  lang?: string;
+};
+
+const projects: Project[] = [
   {
     id: "proj-1",
     num: "01",
@@ -23,6 +33,69 @@ const projects = [
     text: "Inventário, licenciamento e controle do ciclo de vida de hardware e software, com auditorias técnicas e compliance.",
     result: "Custos otimizados, licenciamento em dia e evidências de compliance.",
   },
+  {
+    id: "proj-4",
+    num: "04",
+    title: "Predial Fácil",
+    text: "Gestão predial e facilities para síndicos, com controle de equipamentos e manutenção (Next.js + Prisma + SQLite).",
+    result: "Organização de itens prediais próprios e terceirizados, com fluxo auditável.",
+    url: "https://github.com/GeovaneYu/predial-facil",
+    lang: "TypeScript",
+  },
+  {
+    id: "proj-5",
+    num: "05",
+    title: "Chamado Fácil",
+    text: "Gestão de chamados e suporte com SLA, equipe, fotos e linha do tempo (Next.js + Prisma + SQLite).",
+    result: "Triagem, atribuição e indicadores de atendimento para TI e facilities.",
+    url: "https://github.com/GeovaneYu/chamado-facil",
+    lang: "TypeScript",
+  },
+  {
+    id: "proj-6",
+    num: "06",
+    title: "Ativo Fácil",
+    text: "Sistema white-label de gestão de ativos de TI, próprios e alugados, com escopo auditável.",
+    result: "Inventário, movimentação e ciclo de vida de ativos com controle.",
+    url: "https://github.com/GeovaneYu/ativo-facil",
+    lang: "TypeScript",
+  },
+  {
+    id: "proj-7",
+    num: "07",
+    title: "Strada — Ativos de TI",
+    text: "Sistema de ativos para São Paulo e Rondonópolis, próprios e Allugg, com dashboard e NF.",
+    result: "Auditoria campo a campo, garantia, devoluções e exportação de evidências.",
+    url: "https://github.com/GeovaneYu/strada-ativos-ti",
+    lang: "TypeScript",
+  },
+  {
+    id: "proj-8",
+    num: "08",
+    title: "Strada Autopilot",
+    text: "Kit PowerShell para onboarding Intune/Autopilot User-Driven com TAP e mínimo toque humano.",
+    result: "Setup, ESP, Wi-Fi, enrollment e reuso de estações locadas em fluxo manual.",
+    url: "https://github.com/GeovaneYu/strada",
+    lang: "PowerShell",
+  },
+  {
+    id: "proj-9",
+    num: "09",
+    title: "Ocultar Meu E-mail",
+    text: "Extensão para Firefox que oculta e-mail via iCloud+ Hide My Email, com visual Tahoe Liquid Glass.",
+    result: "Privacidade com SF Pro, agrupamento e dark mode automático.",
+    url: "https://github.com/GeovaneYu/hidemymail",
+    lang: "JavaScript",
+  },
+  {
+    id: "proj-10",
+    num: "10",
+    title: "DonTranslateGoogle",
+    text: "Extensão leve que impede o Google de abrir resultados na versão traduzida (translate.goog).",
+    result: "Redireciona para a URL original, sem tracking e sem permissões amplas.",
+    url: "https://github.com/GeovaneYu/dontranslategoogle",
+    lang: "JavaScript",
+  },
 ];
 
 export default function ProjectsSection() {
@@ -32,7 +105,7 @@ export default function ProjectsSection() {
         <div>
           <h2 className="label-mono section-label">Projetos e resultados</h2>
           <p className="mt-2 max-w-xl text-[15px] leading-[1.6] text-muted">
-            Principais entregas e resultados com infraestrutura, cloud e governança.
+            Principais entregas e resultados com infraestrutura, cloud e governança — e os projetos abertos no GitHub.
           </p>
         </div>
         <a
@@ -57,9 +130,17 @@ export default function ProjectsSection() {
             transition={{ duration: 0.5, delay: index * 0.05 }}
             className="glass-card rounded-xl p-6 flex flex-col"
           >
-            <span className="font-display text-5xl leading-none text-copper" aria-hidden="true">
-              {project.num}
-            </span>
+            <div className="flex items-start justify-between gap-3">
+              <span className="font-display text-5xl leading-none text-copper" aria-hidden="true">
+                {project.num}
+              </span>
+              {project.lang && (
+                <span className="mt-1 inline-flex shrink-0 items-center gap-1.5 rounded-full border border-border bg-secondary px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest text-secondary-foreground">
+                  <Star className="h-3 w-3 text-copper" aria-hidden="true" />
+                  {project.lang}
+                </span>
+              )}
+            </div>
             <h3 className="mt-5 text-[17px] md:text-[18px] font-semibold leading-snug text-foreground">
               {project.title}
             </h3>
@@ -71,6 +152,18 @@ export default function ProjectsSection() {
               <p className="mt-2 text-[13px] leading-[1.6] text-muted">
                 {project.result}
               </p>
+              {project.url && (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-muted hover:text-foreground hover:border-accent-bright hover:bg-surface-hover transition-colors"
+                >
+                  <Github className="h-4 w-4" aria-hidden="true" />
+                  Ver repositório
+                  <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                </a>
+              )}
             </div>
           </motion.article>
         ))}
