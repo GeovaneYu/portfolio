@@ -11,7 +11,7 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contato" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-14 md:py-20">
+    <section id="contato" className="w-full max-w-4xl mx-auto px-6 md:px-8 py-14 md:py-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export default function ContactSection() {
           <span className="text-foreground font-medium">vamos encontrar a melhor solução</span>.
         </p>
 
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div className="mt-8 grid grid-cols-1 gap-5">
           {channels.map(({ icon: Icon, label, value, href, cta }) => (
             <a
               key={label}

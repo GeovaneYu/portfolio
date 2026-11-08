@@ -16,7 +16,7 @@ function formatDateRange(start: string, end: string | null): string {
 export default function ContentSection() {
   return (
     <>
-      <section id="experiencia" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-14 md:py-20">
+      <section id="experiencia" className="w-full max-w-4xl mx-auto px-6 md:px-8 py-14 md:py-20">
         <h2 className="label-mono section-label mb-8">Experiência profissional</h2>
 
         <div className="border-t border-border">
@@ -27,7 +27,7 @@ export default function ContentSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="grid gap-3 md:grid-cols-[190px_1fr] md:gap-10 border-b border-border py-6 md:py-8"
+              className="grid gap-3 border-b border-border py-6 md:py-8"
             >
               <div>
                 <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
@@ -47,7 +47,7 @@ export default function ContentSection() {
                   {job.role}
                 </h3>
                 <div className="mt-3 border-l border-accent/45 pl-5 md:pl-6">
-                  <div className="max-w-3xl space-y-2">
+                  <div className="max-w-none space-y-2">
                     {job.description.split("\n").map((line, lineIndex) => {
                       const colon = line.indexOf(":");
                       const isIntro = lineIndex === 0 && line.trim().endsWith(":");
@@ -73,10 +73,10 @@ export default function ContentSection() {
         </div>
       </section>
 
-      <section id="competencias" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-14 md:py-20">
+      <section id="competencias" className="w-full max-w-4xl mx-auto px-6 md:px-8 py-14 md:py-20">
         <h2 className="label-mono section-label mb-8">Competências técnicas</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 gap-5">
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.category}
@@ -105,7 +105,7 @@ export default function ContentSection() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 mt-12">
+        <div className="grid grid-cols-1 gap-12 mt-12">
           <div>
             <h2 className="label-mono section-label mb-8">Formação</h2>
             {education.map((edu) => (
