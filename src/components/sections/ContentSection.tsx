@@ -47,17 +47,13 @@ export default function ContentSection() {
                   {job.role}
                 </h3>
                 <div className="mt-3 border-l border-accent/45 pl-5 md:pl-6">
-                  <div className="max-w-3xl">
+                  <div className="max-w-3xl space-y-2">
                     {job.description.split("\n").map((line, lineIndex) => {
                       const colon = line.indexOf(":");
                       const isIntro = lineIndex === 0 && line.trim().endsWith(":");
                       const hasLead = colon > 0 && !isIntro;
                       return (
-                        <p key={lineIndex} className={hasLead ? "mt-3 flex gap-3 text-[15px] leading-[1.65] text-muted" : "text-[15px] leading-[1.7] text-muted"}>
-                          {hasLead && (
-                            <span aria-hidden="true" className="shrink-0 font-bold text-accent-bright select-none">—</span>
-                          )}
-                          <span className="min-w-0">
+                        <p key={lineIndex} className="text-[15px] leading-[1.7] text-muted">
                           {hasLead ? (
                             <>
                               <span className="text-foreground/90">{line.slice(0, colon + 1)}</span>
@@ -66,7 +62,6 @@ export default function ContentSection() {
                           ) : (
                             line
                           )}
-                          </span>
                         </p>
                       );
                     })}
