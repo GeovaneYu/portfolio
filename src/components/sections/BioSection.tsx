@@ -13,7 +13,7 @@ export default function BioSection() {
       <h2 className="label-mono section-label mb-8">Sobre</h2>
 
       <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-        <div className="lg:col-span-6 min-w-0">
+        <div className="lg:col-span-7 min-w-0">
           <blockquote className="font-display font-black uppercase leading-[0.95] tracking-tighter text-foreground text-[clamp(2rem,4vw,3rem)]">
             Organizo a operação<br />e entrego <span className="text-accent-bright">resultado.</span>
           </blockquote>
@@ -23,7 +23,7 @@ export default function BioSection() {
           </p>
         </div>
 
-        <div className="lg:col-span-6 min-w-0">
+        <div className="lg:col-span-5 min-w-0">
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted mb-4">
             O que eu entrego
           </p>
