@@ -83,7 +83,7 @@ export default function ProjectsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, delay: index * 0.05 }}
-            className="glass-card rounded-lg p-4 flex flex-col"
+            className="glass-card rounded-none p-4 flex flex-col"
           >
             <div className="flex items-start justify-between gap-2">
               <span className="font-display text-3xl leading-none text-copper" aria-hidden="true">

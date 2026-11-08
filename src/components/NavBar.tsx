@@ -54,8 +54,8 @@ export default function NavBar() {
         aria-label="Navegação principal"
         className="max-w-7xl mx-auto px-6 md:px-12 h-16 flex items-center gap-2 md:gap-4"
       >
-        <a href="#top" onClick={() => setOpen(false)} aria-label="Voltar ao topo" className="shrink-0 label-mono text-foreground hover:text-foreground transition-colors py-2">
-          GG<span className="text-copper">.</span>
+        <a href="#top" onClick={() => setOpen(false)} aria-label="Voltar ao topo" className="shrink-0 font-display text-lg font-extrabold uppercase tracking-tight text-foreground py-2">
+          Geovane Gofredo<span className="text-accent-bright">.</span>
         </a>
 
         <div className="hidden md:flex flex-1 items-center justify-center">
@@ -68,7 +68,7 @@ export default function NavBar() {
                   className={cn(
                     "inline-flex whitespace-nowrap font-mono text-[11px] lg:text-xs uppercase tracking-widest px-2.5 lg:px-3 py-2 rounded-full border transition-colors",
                     active === link.id
-                      ? "text-foreground bg-accent-soft border-accent/30"
+                      ? "text-background bg-foreground border-foreground"
                       : "text-muted hover:text-foreground border-transparent"
                   )}
                 >
@@ -86,7 +86,7 @@ export default function NavBar() {
             rel="noopener noreferrer"
             aria-label="GitHub de Geovane Gofredo"
             title="GitHub"
-            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted hover:text-foreground hover:border-accent-bright transition-colors"
+            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted hover:text-background hover:bg-foreground hover:border-foreground transition-colors"
           >
             <Github className="h-4 w-4" aria-hidden="true" />
           </a>
@@ -96,7 +96,7 @@ export default function NavBar() {
             rel="noopener noreferrer"
             aria-label="LinkedIn de Geovane Gofredo"
             title="LinkedIn"
-            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted hover:text-foreground hover:border-accent-bright transition-colors"
+            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted hover:text-background hover:bg-foreground hover:border-foreground transition-colors"
           >
             <Linkedin className="h-4 w-4" aria-hidden="true" />
           </a>
@@ -124,8 +124,8 @@ export default function NavBar() {
                     onClick={() => setOpen(false)}
                     aria-current={active === link.id ? "true" : undefined}
                     className={cn(
-                      "flex items-center justify-between rounded-lg px-3 py-2.5 font-mono text-xs uppercase tracking-widest transition-colors",
-                      active === link.id ? "text-foreground bg-accent-soft" : "text-muted hover:text-foreground"
+                      "flex items-center justify-between px-3 py-2.5 font-mono text-xs uppercase tracking-widest transition-colors",
+                      active === link.id ? "text-background bg-foreground" : "text-muted hover:text-foreground"
                     )}
                   >
                     {link.label}

@@ -84,7 +84,7 @@ export default function ContentSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="glass-card rounded-xl p-6"
+              className="glass-card rounded-none p-6"
             >
               <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
                 {category.category}

@@ -29,25 +29,16 @@ export default function HeroSection() {
 
   return (
     <section id="top" className="relative w-full max-w-7xl mx-auto px-6 md:px-12 pt-20 pb-8 md:pt-24 md:pb-12 overflow-hidden">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.12]"
-        style={{
-          backgroundImage:
-            "radial-gradient(ellipse 70% 45% at 18% 12%, rgba(31, 91, 85, 0.30), transparent 60%), radial-gradient(ellipse 45% 32% at 88% 8%, rgba(198, 162, 107, 0.12), transparent 65%)",
-        }}
-      />
-
       <motion.p
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="label-mono mb-6 inline-flex items-center gap-2"
       >
-        <span className="h-2 w-2 rounded-full bg-accent-bright" aria-hidden="true" />
+        <span className="h-2 w-2 bg-accent-bright" aria-hidden="true" />
         {personalInfo.title}
         <span className="hidden md:inline-flex items-center gap-2 ml-3 pl-3 border-l border-border font-mono text-[10px] tracking-widest text-muted" title="Disponível para novas oportunidades">
-          <span className="w-2 h-2 rounded-full bg-accent-bright animate-pulse" />
+          <span className="w-2 h-2 bg-accent-bright animate-pulse" />
           open to work
         </span>
       </motion.p>
@@ -61,7 +52,6 @@ export default function HeroSection() {
             className="shrink-0"
           >
             <div className="relative w-24 sm:w-28">
-              <div aria-hidden="true" className="absolute -inset-2 rounded-full bg-accent-soft blur-xl" />
               <picture>
                 <source srcSet={`${import.meta.env.BASE_URL}img/geovane.webp`} type="image/webp" />
                 <img
@@ -69,7 +59,7 @@ export default function HeroSection() {
                   alt="Geovane Gofredo"
                   width="360"
                   height="360"
-                  className="relative w-full aspect-square rounded-full object-cover border border-copper/80 shadow-[0_18px_36px_-14px_rgba(15,61,58,0.62)]"
+                  className="relative w-full aspect-square object-cover border border-foreground"
                   loading="eager"
                   decoding="async"
                   fetchPriority="high"
@@ -84,7 +74,7 @@ export default function HeroSection() {
             transition={{ duration: 0.55, delay: 0.08 }}
             className="min-w-0"
           >
-            <h1 className="font-display uppercase tracking-tight leading-[0.9] text-foreground text-[clamp(2.4rem,5.4vw,4.5rem)]">
+            <h1 className="font-display font-black uppercase tracking-tighter leading-[0.88] text-foreground text-[clamp(2.6rem,7vw,5.5rem)]">
               Geovane <span className="font-display text-accent-bright">Gofredo</span>
             </h1>
           </motion.div>
@@ -96,7 +86,7 @@ export default function HeroSection() {
           transition={{ duration: 0.55, delay: 0.12 }}
           className="min-w-0"
         >
-          <p className="max-w-none text-[20px] md:text-[24px] leading-[1.4] text-foreground">
+          <p className="max-w-none font-display text-[22px] md:text-[28px] font-bold tracking-tight leading-[1.15] text-foreground">
             Transformo operações críticas em ambientes estáveis, seguros e previsíveis.
           </p>
 
@@ -109,7 +99,7 @@ export default function HeroSection() {
               href={personalInfo.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-accent-bright bg-accent px-5 py-3 font-mono text-xs uppercase tracking-widest text-accent-foreground hover:bg-accent-dim transition-colors"
+              className="inline-flex items-center gap-2 rounded-full border border-foreground bg-foreground px-5 py-3 font-mono text-xs uppercase tracking-widest text-background hover:bg-black transition-colors"
             >
               <WhatsAppIcon className="h-4 w-4" />
               Agendar uma conversa
@@ -120,20 +110,20 @@ export default function HeroSection() {
                 onClick={() => setCvOpen((value) => !value)}
                 aria-expanded={cvOpen}
                 aria-haspopup="menu"
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-3 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground hover:border-accent-bright hover:bg-surface-hover transition-colors"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-foreground hover:bg-surface-hover transition-colors"
               >
                 <Download className="h-4 w-4" />
                 Baixar CV (PDF)
                 <ChevronDown className={`h-4 w-4 transition-transform ${cvOpen ? "rotate-180" : ""}`} aria-hidden="true" />
               </button>
               {cvOpen && (
-                <div role="menu" aria-label="Escolha o idioma do currículo" className="absolute left-0 top-full z-30 mt-2 w-60 rounded-xl glass-card-elevated p-2 shadow-2xl">
+                <div role="menu" aria-label="Escolha o idioma do currículo" className="absolute left-0 top-full z-30 mt-2 w-60 rounded-none glass-card-elevated p-2 shadow-2xl">
                   <a
                     role="menuitem"
                     href={`${import.meta.env.BASE_URL}CV-Geovane-Gofredo-2026.pdf`}
                     download
                     onClick={() => setCvOpen(false)}
-                    className="flex items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-xs font-mono uppercase tracking-widest text-foreground hover:bg-accent-soft transition-colors"
+                    className="flex items-center justify-between gap-3 px-3 py-2.5 text-xs font-mono uppercase tracking-widest text-foreground hover:bg-accent-soft transition-colors"
                   >
                     <span className="inline-flex items-center gap-2">
                       <Download className="h-4 w-4" aria-hidden="true" />
@@ -146,7 +136,7 @@ export default function HeroSection() {
                     href={`${import.meta.env.BASE_URL}CV-Geovane-Gofredo-2026-EN.pdf`}
                     download
                     onClick={() => setCvOpen(false)}
-                    className="flex items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-xs font-mono uppercase tracking-widest text-foreground hover:bg-accent-soft transition-colors"
+                    className="flex items-center justify-between gap-3 px-3 py-2.5 text-xs font-mono uppercase tracking-widest text-foreground hover:bg-accent-soft transition-colors"
                   >
                     <span className="inline-flex items-center gap-2">
                       <Download className="h-4 w-4" aria-hidden="true" />
