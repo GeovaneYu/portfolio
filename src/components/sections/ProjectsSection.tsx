@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, ArrowUpRight, Star } from "lucide-react";
+import { Github, ArrowUpRight } from "lucide-react";
 
 type Project = {
   id: string;
@@ -89,12 +89,6 @@ export default function ProjectsSection() {
               <span className="font-display text-2xl font-extrabold leading-none text-copper" aria-hidden="true">
                 {project.num}
               </span>
-              {project.lang && (
-                <span className="inline-flex shrink-0 items-center gap-1 rounded-full border border-border bg-secondary px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest text-secondary-foreground">
-                  <Star className="h-2.5 w-2.5 text-copper" aria-hidden="true" />
-                  {project.lang}
-                </span>
-              )}
             </div>
             <div className="min-w-0 flex-1">
               <h3 className="text-[15px] md:text-base font-bold leading-snug text-foreground">
@@ -103,18 +97,6 @@ export default function ProjectsSection() {
               <p className="mt-1.5 text-[13px] leading-[1.5] text-muted">
                 {project.text}
               </p>
-              {project.url && (
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1.5 font-mono text-[10px] uppercase tracking-widest text-muted hover:text-foreground hover:border-accent-bright hover:bg-surface-hover transition-colors"
-                >
-                  <Github className="h-3.5 w-3.5" aria-hidden="true" />
-                  Ver repositório
-                  <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
-                </a>
-              )}
             </div>
           </motion.article>
         ))}

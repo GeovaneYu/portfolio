@@ -28,7 +28,7 @@ export default function HeroSection() {
   }, [cvOpen]);
 
   return (
-    <section id="top" className="relative w-full max-w-7xl mx-auto px-6 md:px-12 pt-20 pb-8 md:pt-24 md:pb-12 overflow-hidden">
+    <section id="top" className="relative w-full max-w-7xl mx-auto px-6 md:px-12 pt-20 pb-8 md:pt-24 md:pb-12">
       <motion.p
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
@@ -113,7 +113,7 @@ export default function HeroSection() {
                 <ChevronDown className={`h-4 w-4 transition-transform ${cvOpen ? "rotate-180" : ""}`} aria-hidden="true" />
               </button>
               {cvOpen && (
-                <div role="menu" aria-label="Escolha o idioma do currículo" className="absolute left-0 top-full z-30 mt-2 w-60 rounded-none glass-card-elevated p-2 shadow-2xl">
+                <div role="menu" aria-label="Escolha o idioma do currículo" className="absolute left-0 top-full z-30 mt-2 w-60 rounded-none border-2 border-foreground bg-surface p-2 shadow-[6px_6px_0_0_#FF4D00]">
                   <a
                     role="menuitem"
                     href={`${import.meta.env.BASE_URL}CV-Geovane-Gofredo-2026.pdf`}
@@ -158,7 +158,7 @@ export default function HeroSection() {
               <Linkedin className="h-4 w-4 shrink-0 text-muted" />
               <span className="truncate">@{handle}</span>
             </a>
-            <div className="flex items-center gap-2 text-muted md:ml-auto">
+            <div className="flex items-center gap-2 text-muted">
               <MapPin className="h-4 w-4 shrink-0 text-muted" />
               <span>{personalInfo.location.city}</span>
             </div>
