@@ -53,8 +53,8 @@ export default function ContentSection() {
                       const isIntro = lineIndex === 0 && line.trim().endsWith(":");
                       const hasLead = colon > 0 && !isIntro;
                       return (
-                        <p key={lineIndex} className={lineIndex > 0 ? "mt-3 flex gap-3 text-[15px] leading-[1.65] text-muted" : "text-[15px] leading-[1.7] text-muted"}>
-                          {lineIndex > 0 && (
+                        <p key={lineIndex} className={hasLead ? "mt-3 flex gap-3 text-[15px] leading-[1.65] text-muted" : "text-[15px] leading-[1.7] text-muted"}>
+                          {hasLead && (
                             <span aria-hidden="true" className="shrink-0 font-bold text-accent-bright select-none">—</span>
                           )}
                           <span className="min-w-0">
