@@ -52,18 +52,51 @@ export default function HeroSection() {
         </span>
       </motion.p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_220px] gap-10 lg:gap-14 items-center">
+      <div className="flex flex-col gap-8">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.14 }}
+            className="shrink-0"
+          >
+            <div className="relative w-24 sm:w-28">
+              <div aria-hidden="true" className="absolute -inset-2 rounded-full bg-accent-soft blur-xl" />
+              <picture>
+                <source srcSet={`${import.meta.env.BASE_URL}img/geovane.webp`} type="image/webp" />
+                <img
+                  src={`${import.meta.env.BASE_URL}img/geovane.jpg`}
+                  alt="Geovane Gofredo"
+                  width="360"
+                  height="360"
+                  className="relative w-full aspect-square rounded-full object-cover border border-copper/80 shadow-[0_18px_36px_-14px_rgba(15,61,58,0.62)]"
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                />
+              </picture>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, delay: 0.08 }}
+            className="min-w-0"
+          >
+            <h1 className="font-display uppercase tracking-tight leading-[0.9] text-foreground text-[clamp(2.4rem,5.4vw,4.5rem)]">
+              Geovane <span className="font-display text-accent-bright">Gofredo</span>
+            </h1>
+          </motion.div>
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, delay: 0.08 }}
+          transition={{ duration: 0.55, delay: 0.12 }}
           className="min-w-0"
         >
-          <h1 className="font-display uppercase tracking-tight leading-[0.9] text-foreground text-[clamp(2.4rem,5.4vw,4.5rem)]">
-            Geovane <span className="font-display text-accent-bright">Gofredo</span>
-          </h1>
-
-          <p className="mt-6 max-w-none text-[20px] md:text-[24px] leading-[1.4] text-foreground">
+          <p className="max-w-none text-[20px] md:text-[24px] leading-[1.4] text-foreground">
             Transformo operações críticas em ambientes estáveis, seguros e previsíveis.
           </p>
 
@@ -143,30 +176,6 @@ export default function HeroSection() {
               <Linkedin className="h-4 w-4 shrink-0 text-muted" />
               <span className="truncate">@{handle}</span>
             </a>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.14 }}
-          className="min-w-0 lg:justify-self-end"
-        >
-          <div className="relative w-40 sm:w-48 lg:w-full lg:max-w-[220px]">
-            <div aria-hidden="true" className="absolute -inset-3 rounded-full bg-accent-soft blur-xl" />
-            <picture>
-              <source srcSet={`${import.meta.env.BASE_URL}img/geovane.webp`} type="image/webp" />
-              <img
-                src={`${import.meta.env.BASE_URL}img/geovane.jpg`}
-                alt="Geovane Gofredo"
-                width="360"
-                height="360"
-                className="relative w-full aspect-square rounded-full object-cover border border-copper/80 shadow-[0_24px_50px_-16px_rgba(15,61,58,0.62)]"
-                loading="eager"
-                decoding="async"
-                fetchPriority="high"
-              />
-            </picture>
           </div>
         </motion.div>
       </div>

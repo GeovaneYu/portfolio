@@ -120,7 +120,7 @@ export default function ProjectsSection() {
         </a>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {projects.map((project, index) => (
           <motion.article
             key={project.id}
@@ -128,28 +128,28 @@ export default function ProjectsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, delay: index * 0.05 }}
-            className="glass-card rounded-xl p-6 flex flex-col"
+            className="glass-card rounded-lg p-4 flex flex-col"
           >
-            <div className="flex items-start justify-between gap-3">
-              <span className="font-display text-5xl leading-none text-copper" aria-hidden="true">
+            <div className="flex items-start justify-between gap-2">
+              <span className="font-display text-3xl leading-none text-copper" aria-hidden="true">
                 {project.num}
               </span>
               {project.lang && (
-                <span className="mt-1 inline-flex shrink-0 items-center gap-1.5 rounded-full border border-border bg-secondary px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest text-secondary-foreground">
-                  <Star className="h-3 w-3 text-copper" aria-hidden="true" />
+                <span className="inline-flex shrink-0 items-center gap-1 rounded-full border border-border bg-secondary px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest text-secondary-foreground">
+                  <Star className="h-2.5 w-2.5 text-copper" aria-hidden="true" />
                   {project.lang}
                 </span>
               )}
             </div>
-            <h3 className="mt-5 text-[17px] md:text-[18px] font-semibold leading-snug text-foreground">
+            <h3 className="mt-3 text-[15px] md:text-base font-semibold leading-snug text-foreground">
               {project.title}
             </h3>
-            <p className="mt-3 text-[14px] leading-[1.6] text-muted flex-1">
+            <p className="mt-2 text-[13px] leading-[1.55] text-muted flex-1">
               {project.text}
             </p>
-            <div className="mt-5 border-t border-border pt-4">
-              <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Como foi entregue</p>
-              <p className="mt-2 text-[13px] leading-[1.6] text-muted">
+            <div className="mt-4 border-t border-border pt-3">
+              <p className="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">Como foi entregue</p>
+              <p className="mt-1.5 text-[12px] leading-[1.55] text-muted">
                 {project.result}
               </p>
               {project.url && (
@@ -157,11 +157,11 @@ export default function ProjectsSection() {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-muted hover:text-foreground hover:border-accent-bright hover:bg-surface-hover transition-colors"
+                  className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1.5 font-mono text-[10px] uppercase tracking-widest text-muted hover:text-foreground hover:border-accent-bright hover:bg-surface-hover transition-colors"
                 >
-                  <Github className="h-4 w-4" aria-hidden="true" />
+                  <Github className="h-3.5 w-3.5" aria-hidden="true" />
                   Ver repositório
-                  <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                  <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
                 </a>
               )}
             </div>
