@@ -54,7 +54,7 @@ export const experience: Experience[] = [
     id: "exp-3",
     company: "Sonda IT",
     role: "Analista Pleno de Suporte e Infraestrutura de TI",
-    location: "Barueri, SP",
+    location: "Santana de Parnaíba, SP",
     startDate: "2015-10",
     endDate: "2016-09",
     description:
