@@ -208,6 +208,11 @@ p {
 
 .lead {
   color: #111111;
+  font-weight: 400;
+}
+
+.dash {
+  color: #FF4D00;
   font-weight: 700;
 }
 
