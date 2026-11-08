@@ -29,7 +29,7 @@ body {
   min-height: 297mm;
   font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
   font-size: 6.65pt;
-  line-height: 1.24;
+  line-height: 1.21;
   color: #111111;
   background: #F4F4F0;
   -webkit-print-color-adjust: exact;
@@ -45,7 +45,7 @@ a {
 /* ===== Cabeçalho Neo-Swiss ===== */
 .header {
   position: relative;
-  padding: 4.2mm 10mm 3.8mm;
+  padding: 4.6mm 10mm 4mm;
   color: #111111;
 }
 
@@ -85,12 +85,12 @@ h1 .name-last {
 
 /* ===== Conteúdo ===== */
 .content {
-  padding: 3.4mm 10mm 7mm;
+  padding: 4mm 10mm 7mm;
   position: relative;
 }
 
 .section {
-  margin-top: 4pt;
+  margin-top: 18pt;
 }
 
 .section:first-child {
@@ -98,7 +98,7 @@ h1 .name-last {
 }
 
 h2 {
-  margin: 0 0 1.8mm;
+  margin: 0 0 2.2mm;
   font-size: 7.8pt;
   font-weight: 700;
   line-height: 1.2;
@@ -126,7 +126,7 @@ p {
 }
 
 .skills p {
-  margin-bottom: 1.8mm;
+  margin-bottom: 1.5mm;
   text-align: left;
 }
 
@@ -145,7 +145,7 @@ p {
 }
 
 .job {
-  margin: 0 0 2.6mm;
+  margin: 0 0 1.2mm;
   page-break-inside: avoid;
 }
 
@@ -185,20 +185,20 @@ p {
 }
 
 .role {
-  margin: 1.1mm 0 0;
+  margin: 1.4mm 0 0;
   font-size: 7.5pt;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.21;
   color: #111111;
 }
 
 /* Recuo único de todas as descrições, alinhado abaixo de empresa/cargo */
 .job-body {
-  margin: 1.2mm 0 0 6.4mm;
+  margin: 1.5mm 0 0 6.4mm;
 }
 
 .job-body p {
-  margin: 0 0 0.7mm;
+  margin: 0 0 0.6mm;
   text-align: justify;
 }
 
@@ -214,12 +214,13 @@ p {
 /* ===== Idiomas e formação ===== */
 .languages,
 .education {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .languages p,
 .education p {
-  margin: 0 0 0.65mm;
+  margin: 0 0 1mm;
 }
 
 .languages .language {
@@ -227,7 +228,7 @@ p {
   font-weight: 700;
 }
 
-.education { margin-top: 2pt; }
+.education { margin-top: 18pt; }
 
 .education.compact p {
   margin: 0;
