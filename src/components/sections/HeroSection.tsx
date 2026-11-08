@@ -74,7 +74,7 @@ export default function HeroSection() {
             transition={{ duration: 0.55, delay: 0.08 }}
             className="min-w-0"
           >
-            <h1 className="font-display font-black uppercase tracking-tighter leading-[0.86] text-foreground text-[clamp(2.8rem,8.5vw,6.8rem)]">
+            <h1 className="font-display font-black uppercase tracking-tighter leading-[0.88] text-foreground text-[clamp(2.6rem,7vw,5.5rem)]">
               Geovane <span className="font-display text-accent-bright">Gofredo</span>
             </h1>
           </motion.div>
@@ -166,13 +166,6 @@ export default function HeroSection() {
               <Linkedin className="h-4 w-4 shrink-0 text-muted" />
               <span className="truncate">@{handle}</span>
             </a>
-          </div>
-
-          <div aria-hidden="true" className="mt-10 overflow-hidden border-y border-border py-3 select-none">
-            <div className="animate-marquee flex w-max whitespace-nowrap font-display text-sm font-bold uppercase tracking-[0.18em] text-foreground">
-              <span className="pr-8">Liderança de TI <span className="text-accent-bright">·</span> Governança <span className="text-accent-bright">·</span> Service Delivery <span className="text-accent-bright">·</span> ITSM/SDM <span className="text-accent-bright">·</span> N1/N2/N3 <span className="text-accent-bright">·</span> Infraestrutura <span className="text-accent-bright">·</span> Cloud <span className="text-accent-bright">·</span>&nbsp;</span>
-              <span className="pr-8">Liderança de TI <span className="text-accent-bright">·</span> Governança <span className="text-accent-bright">·</span> Service Delivery <span className="text-accent-bright">·</span> ITSM/SDM <span className="text-accent-bright">·</span> N1/N2/N3 <span className="text-accent-bright">·</span> Infraestrutura <span className="text-accent-bright">·</span> Cloud <span className="text-accent-bright">·</span>&nbsp;</span>
-            </div>
           </div>
         </motion.div>
       </div>
